@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>消息中心</title>
+    <link href="assets/plugins/font-awesome/css/font-awesome.min.css" tppabs="http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/plugins/bootstrap/css/bootstrap.min.css" tppabs="http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/pages/css/style-shop.css" tppabs="http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/assets/pages/css/style-shop.css" rel="stylesheet" type="text/css">
+    <link href="assets/corporate/css/style.css" tppabs="http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/assets/corporate/css/style.css" rel="stylesheet">
+    <link href="assets/corporate/css/themes/red.css" tppabs="http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/assets/corporate/css/themes/red.css" rel="stylesheet" id="style-color">
+    
+    <link rel="stylesheet" type="text/css" href="css/message-center.css">
+    <link rel="stylesheet" type="text/css" href="css/build.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css"/>
+    <link rel="stylesheet" href="css/jquery.emoji.css"/>
+</head>
+<body style="background: url(assets/pages/img/message-background.jpg) top/cover no-repeat fixed;">
+<div class="ecommerce">
+    <!-- 最顶部 -->
+    <div class="pre-header">
+        <div style="margin: 0px 30px;">
+            <div class="row">
+                <div class="col-md-3 col-sm-3 additional-shop-info">
+                    <ul class="list-unstyled list-inline" style="margin-bottom:0px ;font-size: 15px;">
+                      <li>
+                        <a class="site-logo" href="shop-index.html">
+                        <img src="assets/corporate/img/logos/logo-shop-red.png"></a>
+                      </li>  
+                </div>
+                <div class="col-md-9 col-sm-9 additional-nav" >
+                    <div class="header-navigation" >
+                      <ul>
+                        <li class="dropdown">
+                          <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
+                            <i class="fa fa-shopping-cart"></i>购物车</a>
+                          <ul class="dropdown-menu shopping-cart">
+                            <li>
+                              <div class="header-navigation-content " style="padding: 0px;">
+                                <ul class="scroller" style="height: 250px;">
+                                  <li>
+                                    <a href="shop-item.html">
+                                      <img src="assets/pages/img/cart-img.jpg" alt="Rolex Classic Watch" width="37" height="34">
+                                    </a>
+                                    <span class="cart-content-count">x 1</span>
+                                    <strong><a href="shop-item.html" >牛战士</a></strong>
+                                    <em>$777</em>
+                                    <b href="javascript:void(0);" class="del-goods">&nbsp;</b>
+                                  </li>
+                                  <li>
+                                    <a href="shop-item.html">
+                                      <img src="assets/pages/img/cart-img.jpg" alt="Rolex Classic Watch" width="37" height="34">
+                                    </a>
+                                    <span class="cart-content-count">x 1</span>
+                                    <strong><a href="shop-item.html" >面具怪</a></strong>
+                                    <em>$1230</em>
+                                    <b href="javascript:void(0);" class="del-goods">&nbsp;</b>
+                                  </li>
+                        
+                                </ul>
+                                <div class="text-right" style="padding:10px 10px">
+                                  <b href="shop-checkout.html" class="btn btn-primary">查看购物车</b>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="dropdown">
+                          <span class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
+                            收藏夹
+                          </span>
+                        </li>
+                        <li class="dropdown dropdown100 nav-catalogue">
+                          <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
+                            商品分类
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li style="padding: 0px;">
+                              <div class="header-navigation-content">
+                                <div class="row">
+                                  <div class="col-md-4 header-navigation-col">
+                                    <h4>男子</h4>
+                                    <ul>
+                                      <li><a href="shop-product-list.html" tppabs="http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/shop-product-list.html">Astro Trainers</a></li>
+                                      <li><a href="shop-product-list.html" tppabs="http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/shop-product-list.html">Basketball Shoes</a></li>
+                                      <li><a href="shop-product-list.html" tppabs="http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/shop-product-list.html">Boots</a></li>
+                                      <li><a href="shop-product-list.html" tppabs="http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/shop-product-list.html">Canvas Shoes</a></li>
+                                      <li><a href="shop-product-list.html" tppabs="http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/shop-product-list.html">Football Boots</a></li>
+                                      <li><a href="shop-product-list.html" tppabs="http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/shop-product-list.html">Golf Shoes</a></li>
+                                      <li><a href="shop-product-list.html" tppabs="http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/shop-product-list.html">Hi Tops</a></li>
+                                      <li><a href="shop-product-list.html" tppabs="http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/shop-product-list.html">Indoor and Court Trainers</a></li>
+                                    </ul>
+                                  </div>
+                                  <div class="col-md-4 header-navigation-col">
+                                    <h4>女子</h4>
+                                    <ul>
+                                      <li><a href="shop-product-list.html" >Base Layer</a></li>
+                                      <li><a href="shop-product-list.html">Character</a></li>
+                                      <li><a href="shop-product-list.html" >Chinos</a></li>
+                                      <li><a href="shop-product-list.html">Combats</a></li>
+                                      <li><a href="shop-product-list.html">Cricket Clothing</a></li>
+                                      <li><a href="shop-product-list.html">Fleeces</a></li>
+                                      <li><a href="shop-product-list.html">Gilets</a></li>
+                                      <li><a href="shop-product-list.html">Golf Tops</a></li>
+                                    </ul>
+                                  </div>
+                                  <div class="col-md-4 header-navigation-col">
+                                    <h4>儿童</h4>
+                                    <ul>
+                                      <li><a href="shop-product-list.html" tppabs="http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/shop-product-list.html">Belts</a></li>
+                                      <li><a href="shop-product-list.html" tppabs="http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/shop-product-list.html">Caps</a></li>
+                                      <li><a href="shop-product-list.html" tppabs="http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/shop-product-list.html">Gloves, Hats and Scarves</a></li>
+                                    </ul>
+                                  </div>
+                                  <div class="col-md-12 nav-brands">
+                                    <ul>
+                                      <li><a href="shop-product-list.html" tppabs="http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/shop-product-list.html"><img title="esprit" alt="esprit" src="assets/pages/img/brands/esprit.jpg" tppabs="http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/assets/pages/img/brands/esprit.jpg"></a></li>
+                                      <li><a href="shop-product-list.html" tppabs="http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/shop-product-list.html"><img title="gap" alt="gap" src="assets/pages/img/brands/gap.jpg" tppabs="http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/assets/pages/img/brands/gap.jpg"></a></li>
+                                      <li><a href="shop-product-list.html" tppabs="http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/shop-product-list.html"><img title="next" alt="next" src="assets/pages/img/brands/next.jpg" tppabs="http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/assets/pages/img/brands/next.jpg"></a></li>
+                                      <li><a href="shop-product-list.html" tppabs="http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/shop-product-list.html"><img title="puma" alt="puma" src="assets/pages/img/brands/puma.jpg" tppabs="http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/assets/pages/img/brands/puma.jpg"></a></li>
+                                      <li><a href="shop-product-list.html" tppabs="http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/shop-product-list.html"><img title="zara" alt="zara" src="assets/pages/img/brands/zara.jpg" tppabs="http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/assets/pages/img/brands/zara.jpg"></a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="search-panel">
+                          <form class="search-form" action="#">
+                             <div class="input-group">
+                                <div class="row" style="margin: 0px;">
+                                  <input type="text"  placeholder="Search" class="form-control">
+                                  <span class="input-group-btn">
+                                    <i class="fa fa-search"></i>
+                                  </span>
+                                </div>
+                                <!-- <div class="search-result">
+                                  <a type="text">aj666</a>
+                                </div> -->
+                            </div>
+                          </form>
+                        </li>
+                        <li class="dropdown">
+                          <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
+                            消息
+                          </a>
+                          <ul class="dropdown-menu news" style="margin: 0px -220px;">
+                            <li>
+                              <div class="header-navigation-content " style="padding: 0px;">
+                                <div class="panel_head"><span>未读通知</span></div>
+                                
+                                <ul class="panel_body scroller" style="height: 250px;">
+                                  <!-- <div class="not_news_image">
+                                    <img src>
+                                  </div> -->
+                                  <li>
+                                    <a>
+                                      <span class="info" href="shop-item.html" >消息内容消息内容消息内容消息内容消息内容</span>
+                                      <div style="float: right;">
+                                        <span class="type">系统消息</span>
+                                        <span class="time">2020-1-1</span>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a>
+                                      <span class="info" href="shop-item.html" >消息内容消息内容消息内容消息内容消息内容</span>
+                                      <div style="float: right;">
+                                        <span class="type">系统消息</span>
+                                        <span class="time">2020-1-1</span>
+                                      </div>
+                                    </a>
+                                  </li>
+                                </ul>
+                                <div class="panel_foot">
+                                  <span href="#">查看全部消息</span>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="dropdown">
+                          <span href="javascript:;">
+                            用户登录
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
+    
+    <div data-v-1 class="container">
+        <div data-v-1  class="link-message-container">
+            <div data-v-2 class="container">
+                <div data-v-2 class="space-left">
+                    <div data-v-2 class="side-bar">
+                        <div data-v-2 class="title">
+                            <div class="icon"><i class="fa fa-paper-plane" aria-hidden="true"></i></div>
+                            <div class="text">消息中心</div>
+                        </div>
+                        <ul data-v-2 class="list">
+                            <li data-v-2 class="item"><a href="#/reply">回复我的</a></li>
+                            <li data-v-2 class="item">
+                                <a href="#/love">
+                                    收到的赞
+                                    <span class="notify-number">66</span>
+                                </a>
+                            </li>
+                            <li data-v-2 class="item"><a href="#/system">系统通知</a></li>
+                            <li data-v-2 class="item"><a href="#/whisper">我的消息</a></li>
+                        </ul>
+                        <div class="divided-line"></div>
+                        <div data-v-2 class="setting item">
+                            <i class="fa fa-cog" aria-hidden="true"></i>
+                            <a href="#">消息设置</a>
+                        </div>
+                    </div>
+                </div>
+                <div data-v-3 class="space-right">
+                    <div data-v-3 class="space-right-top">
+                        <div class="title">
+                            <span>xx消息</span>
+                        </div> 
+                    </div>
+                    <div data-v-3 class="space-right-bottom">
+                        <div class=""><!-- 滚动区域 -->
+                            <div data-v-3 class="router-view">
+                                <!-- 回复 -->
+                                <!-- <div class="reply">
+                                    <div data-v-7 class="card reply-card">
+                                        <div data-reply class="reply-item">
+                                            <div data-reply class="basic-list-item">
+                                                <div class="left-box">
+                                                    <a class="avatar"></a>
+                                                </div>
+                                                <div class="center-box">
+                                                    <div class="line-1">
+                                                        <span class="name-field">
+                                                            <a>名字</a>
+                                                        </span>
+                                                        <span class="desc-field">
+                                                            回复了我的评论
+                                                        </span>
+                                                    </div>
+                                                    <div class="line-2">
+                                                        <div class="real-reply">
+                                                            <div class="content-list">
+                                                                <span class="text">回复</span>
+                                                                <a class="at">@他的名字</a>
+                                                                <span class="text">回复内容</span>
+                                                            </div>
+                                                            <div class="orginal-reply">
+                                                                我的名字：我评论的内容
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="line-3">
+                                                        <span class="time-filed">
+                                                            <span class="time time-span">2020-2-2 10:10</span>
+                                                        </span>
+                                                        <div class="action-field">
+                                                            <span class="action-button">
+                                                                <i class="fa fa-comment-o" aria-hidden="true"></i>回复
+                                                            </span>
+                                                            <span class="action-button">
+                                                                <i class="fa fa-trash-o" aria-hidden="true"></i>删除
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="right-box">
+                                                    <div class="text-box">买家秀的内容</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <!-- 点赞 -->
+                                <!-- <div class="love">
+                                    <div data-v-7 class="card love-card">
+                                        <div data-love class="love-item">
+                                            <div data-love class="basic-list-item">
+                                                <div class="left-box">
+                                                    <a class="avatar"></a>
+                                                </div>
+                                                <div class="center-box">
+                                                    <div class="line-1">
+                                                        <span class="name-field">
+                                                            <a>名字</a>
+                                                        </span>
+                                                        <span class="desc-field">
+                                                            赞了我的评论
+                                                        </span>
+                                                    </div>
+                                                    <div class="line-3">
+                                                        <span class="time-filed">
+                                                            <span class="time time-span">2020-2-2 10:10</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="right-box">
+                                                    <div class="text-box">买家秀的内容</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <!-- 系统通知 -->
+                                <!-- <div data-v-3 class="card system-item">
+                                    <div class="top">
+                                        <span class="title">消息标题11111</span>
+                                        <span class="time">2020年2月2日 10:10</span>
+                                    </div>
+                                    <div class="bottom">
+                                        <span class="text">消息内容11111</span>
+                                    </div>
+                                </div> -->
+                                <!-- 客服消息 -->
+                                <!-- <div data-v-5 class="card whisper">
+                                    <div class="list">
+                                        <div class="list-title">近期消息</div>
+                                        <div class="list-content list_item_cont">
+                                            <a class="list-item active">
+                                                <div class="avatar" style="background-image: url(assets/corporate/img/tx015.png);"></div>
+                                                <div class="name-box">
+                                                    <div class="name">商品名称</div>
+                                                    <div class="last-word">最后的消息</div>
+                                                </div>
+                                                <div class="close">
+                                                    <i class="fa fa-times" aria-hidden="true"></i>
+                                                </div>
+                                            </a>
+                                            <a class="list-item ">
+                                                <div class="avatar" style="background-image: url(assets/corporate/img/tx015.png);"></div>
+                                                <div class="name-box">
+                                                    <div class="name">商品名称</div>
+                                                    <div class="last-word">最后的消息</div>
+                                                </div>
+                                                <div class="close">
+                                                    <i class="fa fa-times" aria-hidden="true"></i>
+                                                </div>
+                                            </a>
+                                            <div class="list-loading">
+                                                <div class="lds-spinner">
+                                                    <i class="fa fa-spinner" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                            <div class="list-load-error">
+                                                <span>加载失败</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="dialog">
+                                        <div class="title">
+                                            <span>客服</span>
+                                            <div class="action-menu">
+                                                <div class="menu-list" style="display: none;">
+                                                    <a class="">投诉客服</a>
+                                                    <a class="">投诉客服</a>
+                                                </div>
+                                                <a class="icon-more"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="message-list">
+                                            <div class="message-list-content message_cont" >
+                                                <div class="msg-more">
+                                                    <div class="no-more">没有更多消息了~</div>
+                                                </div>
+                                                <div class="msg-time">
+                                                    <span class="time">2020年2月2日 12:12</span>
+                                                </div>
+                                                <div class="msg-item is-me">
+                                                    <a target="_blank" class="avatar" 
+                                                        style="background-image: url(assets/corporate/img/tx004.png);"></a>
+                                                    <div class="message">
+                                                        <div class="message-content is-me not-img">雷好劲啊</div>
+                                                    </div>
+                                                </div>
+                                                <div class="msg-item not-me">
+                                                    <a target="_blank" class="avatar" 
+                                                        style="background-image: url(assets/corporate/img/tx004.png);"></a>
+                                                    <div class="message">
+                                                        <div class="message-content not-me not-img">收皮啦雷</div>
+                                                    </div>
+                                                </div>
+                                                <div class="msg-item not-me">
+                                                    <a target="_blank" class="avatar" 
+                                                        style="background-image: url(assets/corporate/img/tx004.png);"></a>
+                                                    <div class="message img-padding">
+                                                        <div class="message-content not-me">
+                                                            <img src="assets/pages/img/message-nothing.png">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="msg-item is-me">
+                                                    <a target="_blank" class="avatar" 
+                                                        style="background-image: url(assets/corporate/img/tx004.png);"></a>
+                                                    <div class="message img-padding">
+                                                        <div class="message-content is-me">
+                                                            <img src="assets/pages/img/message-nothing.png">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="new-message-tip">
+                                            <span class="text">您有0条新消息</span>
+                                        </div>
+                                        <div class="send-box">
+                                            <div class="top">
+                                                <div class="space-margin">
+                                                    <div class="image-upload-btn">
+                                                        <i class="fa fa-picture-o" aria-hidden="true"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="space-margin">
+                                                    <a class="emotion-btn">
+                                                        <i class="fa fa-smile-o" aria-hidden="true"></i>
+                                                    </a>
+                                                    <div class="emotion-box" style="display:none;">
+                                                        <div class="faceDiv">
+                                                            <section class="emoji-box"></section>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="input-box">
+                                                <textarea id="input_textarea" placeholder="回复一下吧~" maxlength="100" autofocus="autofocus" escape="true"></textarea>
+                                                <div class="indicator">
+                                                    <span>0</span>/<span>100</span>
+                                                </div>
+                                            </div>
+                                            <div class="right top">
+                                                <button class="send-btn">发送</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <!-- 设置 -->
+                                <!-- <div class="config">
+                                    <div class="config-item">
+                                        <div class="text">
+                                            <span>消息提醒</span>
+                                            <span class="tip">（关闭后，消息将不再进行提醒）</span>
+                                        </div>
+                                        <div class="radio-list">
+                                            <label class="type-selector radio-selector">
+                                                <div class="radio radio-info radio-inline">
+                                                    <input name="status[0]" class="radio" id="index_1" type="radio" checked>
+                                                    <label for="index_1">开启</label>
+                                                </div>
+                                            </label>
+                                            <label class="type-selector radio-selector">
+                                                <div class="radio radio-info radio-inline">
+                                                    <input name="status[0]" class="radio" id="index_2" type="radio" >
+                                                    <label for="index_2">关闭</label>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="config">
+                                    <div class="config-item">
+                                        <div class="text">
+                                            <span>回复我的消息提醒</span>
+                                            <span class="tip">（关闭后，回复将不再进行提醒）</span>
+                                        </div>
+                                        <div class="radio-list">
+                                            <label class="type-selector radio-selector">
+                                                <div class="radio radio-info radio-inline">
+                                                    <input name="status[1]" class="radio" id="index_3" type="radio" checked>
+                                                    <label for="index_3">开启</label>
+                                                </div>
+                                            </label>
+                                            <label class="type-selector radio-selector">
+                                                <div class="radio radio-info radio-inline">
+                                                    <input name="status[1]" class="radio" id="index_4" type="radio" >
+                                                    <label for="index_4">关闭</label>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="config-item">
+                                        <div class="text">
+                                            <span>收到的赞消息提醒</span>
+                                            <span class="tip">（关闭后，回复将不再进行提醒）</span>
+                                        </div>
+                                        <div class="radio-list">
+                                            <label class="type-selector radio-selector">
+                                                <div class="radio radio-info radio-inline">
+                                                    <input name="status[2]" class="radio" id="index_5" type="radio" checked>
+                                                    <label for="index_5">开启</label>
+                                                </div>
+                                            </label>
+                                            <label class="type-selector radio-selector">
+                                                <div class="radio radio-info radio-inline">
+                                                    <input name="status[2]" class="radio" id="index_6" type="radio" >
+                                                    <label for="index_6">关闭</label>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div> 
+                                </div> -->
+                                <!-- 没有消息显示的图片 -->
+                                <!-- <div data-v-7 class="card">
+                                    <div class="nothing">
+                                        <img src="assets/pages/img/message-nothing.png">
+                                    </div>
+                                </div> -->
+                            </div>
+                            <!-- 加载中显示的图片 -->
+                            <!-- <div data-v-7 data-v-loading class="card">
+                                <div class="loading">
+                                    <img src="assets/pages/img/load.gif">
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+<script src="assets/plugins/jquery.min.js" tppabs="http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/assets/plugins/jquery.min.js" type="text/javascript"></script>
+<script src="assets/plugins/bootstrap/js/bootstrap.min.js" tppabs="http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>       
+
+<script src="js/jquery.mCustomScrollbar.min.js"></script>
+<script src="js/jquery.emoji.js"></script>
+<script>
+    $(function(){
+
+        //消息栏点击事件
+        $(".side-bar[data-v-2] .item").on("click",function(){
+            var $btn=$(this);
+            //清空消息框
+            $(".router-view[data-v-3] div").remove();
+            //为内容添加滚动条样式
+            $(".space-right-bottom[data-v-3]").attr("class","space-right-bottom scroll_wrap")
+                .children().attr("class","scroll_cont");
+            //显示加载的图片框
+            $(".card[data-v-loading]").css({"display":"block"});
+            if($(".list[data-v-2] .item").index(this)=="0"){
+                replyMessage();
+            }else if($(".list[data-v-2] .item").index(this)=="1"){
+                loveMessage();
+
+            }else if($(".list[data-v-2] .item").index(this)=="2"){
+                systemMessage();
+            }else if($(".list[data-v-2] .item").index(this)=="3"){
+                myMessage();
+                //聊天窗口不需要滚动条样式
+                $(".space-right-bottom[data-v-3]").removeClass("scroll_wrap")
+                    .children().removeClass("scroll_cont");
+            }else{
+                messageSetting();
+            }
+            //隐藏加载图片框
+            $(".card[data-v-loading]").css({"display":"none"});
+            messageBarClick($btn);
+        });
+
+        //回复消息
+        function replyMessage(){
+            var str='             <div class="reply">\n' +
+'                                    <div data-v-7 class="card reply-card">\n' +
+'                                        <div data-reply class="reply-item">\n' +
+'                                            <div data-reply class="basic-list-item">\n' +
+'                                                <div class="left-box">\n' +
+'                                                    <img class="avatar" src="assets/corporate/img/tx004.png"/>\n' +
+'                                                </div>\n' +
+'                                                <div class="center-box">\n' +
+'                                                    <div class="line-1">\n' +
+'                                                        <span class="name-field">\n' +
+'                                                            <a>名字</a>\n' +
+'                                                        </span>\n' +
+'                                                        <span class="desc-field">\n' +
+'                                                            回复了我的评论\n' +
+'                                                        </span>\n' +
+'                                                    </div>\n' +
+'                                                    <div class="line-2">\n' +
+'                                                        <div class="real-reply">\n' +
+'                                                            <div class="content-list">\n' +
+'                                                                <span class="text">回复</span>\n' +
+'                                                                <a class="at">@他的名字</a>\n' +
+'                                                                <span class="text">回复内容</span>\n' +
+'                                                            </div>\n' +
+'                                                            <div class="orginal-reply">\n' +
+'                                                                我的名字：我评论的内容\n' +
+'                                                            </div>\n' +
+'                                                        </div>\n' +
+'                                                    </div>\n' +
+'                                                    <div class="line-3">\n' +
+'                                                        <span class="time-filed">\n' +
+'                                                            <span class="time time-span">2020-2-2 10:10</span>\n' +
+'                                                        </span>\n' +
+'                                                        <div class="action-field">\n' +
+'                                                            <span class="action-button">\n' +
+'                                                                <i class="fa fa-comment-o" aria-hidden="true"></i>回复\n' +
+'                                                            </span>\n' +
+'                                                            <span class="action-button">\n' +
+'                                                                <i class="fa fa-trash-o" aria-hidden="true"></i>删除\n' +
+'                                                            </span>\n' +
+'                                                        </div>\n' +
+'                                                    </div>\n' +
+'                                                </div>\n' +
+'                                                <div class="right-box">\n' +
+'                                                    <div class="text-box">买家秀的内容</div>\n' +
+'                                                </div>\n' +
+'                                            </div>\n' +
+'                                        </div>\n' +
+'                                    </div>\n' +
+'                                </div>';
+            $(".router-view[data-v-3]").append(str);
+            loadReplyBtn();
+            loadDeleteBtn();
+        }
+
+        //点赞消息
+        function loveMessage() {
+            var str='<div class="love">\n' +
+'                                    <div data-v-7 class="card love-card">\n' +
+'                                        <div data-love class="love-item">\n' +
+'                                            <div data-love class="basic-list-item">\n' +
+'                                                <div class="left-box">\n' +
+'                                                    <img class="avatar" src="assets/corporate/img/tx004.png"/>\n' +
+'                                                </div>\n' +
+'                                                <div class="center-box">\n' +
+'                                                    <div class="line-1">\n' +
+'                                                        <span class="name-field">\n' +
+'                                                            <a>名字</a>\n' +
+'                                                        </span>\n' +
+'                                                        <span class="desc-field">\n' +
+'                                                            赞了我的评论\n' +
+'                                                        </span>\n' +
+'                                                    </div>\n' +
+'                                                    <div class="line-3">\n' +
+'                                                        <span class="time-filed">\n' +
+'                                                            <span class="time time-span">2020-2-2 10:10</span>\n' +
+'                                                        </span>\n' +
+'                                                    </div>\n' +
+'                                                </div>\n' +
+'                                                <div class="right-box">\n' +
+'                                                    <div class="text-box">买家秀的内容</div>\n' +
+'                                                </div>\n' +
+'                                            </div>\n' +
+'                                        </div>\n' +
+'                                    </div>\n' +
+'                                </div>';
+            $(".router-view[data-v-3]").append(str);
+        }
+
+        //系统消息
+        function systemMessage(){
+            $(".router-view[data-v-3]")
+                .append('<div class="system">'+
+                            '<div data-v-3 data-v-7 class="card system-item">\n' +
+'                                    <div class="top">\n' +
+'                                        <span class="title">消息标题11111</span>\n' +
+'                                        <span class="time">2020年2月2日 10:10</span>\n' +
+'                                    </div>\n' +
+'                                    <div class="bottom">\n' +
+'                                        <span class="text">消息内容11111</span>\n' +
+'                                    </div>\n' +
+'                                </div>'+
+                            '</div>');
+            
+        }
+
+        //我的消息
+        function myMessage(){
+            var str='<div data-v-5 class="card whisper">\n' +
+                    '    <div class="list">\n' +
+                    '        <div class="list-title">近期消息</div>\n' +
+                    '        <div data-v-5 class="list-content list_item_cont">\n' +
+                    '            <a class="list-item active">\n' +
+                    '                <div class="avatar" style="background-image: url(assets/corporate/img/tx015.png);"></div>\n' +
+                    '                <div class="name-box">\n' +
+                    '                    <div class="name">商品名称</div>\n' +
+                    '                    <div class="last-word">最后的消息</div>\n' +
+                    '                </div>\n' +
+                    '                <div class="close">\n' +
+                    '                    <i class="fa fa-times" aria-hidden="true"></i>\n' +
+                    '                </div>\n' +
+                    '            </a>\n' +
+                    '            <a class="list-item">\n' +
+                    '                <div class="avatar" style="background-image: url(assets/corporate/img/tx015.png);"></div>\n' +
+                    '                <div class="name-box">\n' +
+                    '                    <div class="name">商品名称</div>\n' +
+                    '                    <div class="last-word">最后的消息</div>\n' +
+                    '                </div>\n' +
+                    '                <div class="close">\n' +
+                    '                    <i class="fa fa-times" aria-hidden="true"></i>\n' +
+                    '                </div>\n' +
+                    '            </a>\n' +
+                    '            <div class="list-loading">\n' +
+                    '                <div class="lds-spinner">\n' +
+                    '                    <i class="fa fa-spinner" aria-hidden="true"></i>\n' +
+                    '                </div>\n' +
+                    '            </div>\n' +
+                    '            <div class="list-load-error">\n' +
+                    '                <span>加载失败</span>\n' +
+                    '            </div>\n' +
+                    '        </div>\n' +
+                    '    </div>\n' +
+                    '    <div class="dialog">\n' +
+                    '        <div class="title">\n' +
+                    '            <span>客服</span>\n' +
+                    '            <div class="action-menu">\n' +
+                    '                <div class="menu-list" style="display: none;">\n' +
+                    '                    <a class="">投诉客服</a>\n' +
+                    '                    <a class="">投诉客服</a>\n' +
+                    '                </div>\n' +
+                    '                <a class="icon-more"><i class="fa fa-angle-down" aria-hidden="true"></i></a>\n' +
+                    '            </div>\n' +
+                    '            \n' +
+                    '        </div>\n' +
+                    '        <div class="new-message-tip" style="display: none;">\n' +
+                    '            <span class="text">您有0条新消息</span>\n' +
+                    '        </div>\n' +
+                    '        <div class="send-box">\n' +
+                    '            <div class="input-box">\n' +
+                    '                <textarea class="textarea" placeholder="回复一下吧~" maxlength="100" autofocus="autofocus" escape="true"></textarea>\n' +
+                    '                <div class="indicator">\n' +
+                    '                    <span>0</span>/<span>100</span>\n' +
+                    '                </div>\n' +
+                    '            </div>\n' +
+                    '            <div class="right top" id="btnParse">\n' +
+                    '                <button class="send-btn">发送</button>\n' +
+                    '            </div>\n' +
+                    '        </div>\n' +
+                    '    </div>\n' +
+                    '    <div class="dialog" style="display:none">\n' +
+                    '        <div class="title">\n' +
+                    '            <span>客服</span>\n' +
+                    '            <div class="action-menu">\n' +
+                    '                <div class="menu-list" style="display: none;">\n' +
+                    '                    <a class="">投诉客服</a>\n' +
+                    '                    <a class="">投诉客服</a>\n' +
+                    '                </div>\n' +
+                    '                <a class="icon-more"><i class="fa fa-angle-down" aria-hidden="true"></i></a>\n' +
+                    '            </div>\n' +
+                    '            \n' +
+                    '        </div>\n' +
+                    '        <div class="new-message-tip" style="display: none;">\n' +
+                    '            <span class="text">您有0条新消息</span>\n' +
+                    '        </div>\n' +
+                    '        <div class="send-box">\n' +
+                    '            <div class="input-box">\n' +
+                    '                <textarea class="textarea" placeholder="回复一下吧~" maxlength="100" autofocus="autofocus" escape="true"></textarea>\n' +
+                    '                <div class="indicator">\n' +
+                    '                    <span>0</span>/<span>100</span>\n' +
+                    '                </div>\n' +
+                    '            </div>\n' +
+                    '            <div class="right top">\n' +
+                    '                <button class="send-btn" name="send-btn">发送</button>\n' +
+                    '            </div>\n' +
+                    '        </div>\n' +
+                    '    </div>\n' +
+                    '</div>';
+            $(".router-view[data-v-3]").append(str);
+            loadMyMessageBtnClick();
+            loadChatWindow($(".whisper[data-v-5] .dialog:eq(0)"));
+        }
+
+        //消息设置
+        function messageSetting() {
+            var str='<div class="config">\n' +
+            '                                    <div class="config-item">\n' +
+            '                                        <div class="text">\n' +
+            '                                            <span>消息提醒</span>\n' +
+            '                                            <span class="tip">（关闭后，消息将不再进行提醒）</span>\n' +
+            '                                        </div>\n' +
+            '                                        <div class="radio-list">\n' +
+            '                                            <label class="type-selector radio-selector">\n' +
+            '                                                <div class="radio radio-info radio-inline">\n' +
+            '                                                    <input name="status[0]" class="radio" id="index_1" type="radio" checked>\n' +
+            '                                                    <label for="index_1">开启</label>\n' +
+            '                                                </div>\n' +
+            '                                            </label>\n' +
+            '                                            <label class="type-selector radio-selector">\n' +
+            '                                                <div class="radio radio-info radio-inline">\n' +
+            '                                                    <input name="status[0]" class="radio" id="index_2" type="radio" >\n' +
+            '                                                    <label for="index_2">关闭</label>\n' +
+            '                                                </div>\n' +
+            '                                            </label>\n' +
+            '                                        </div>\n' +
+            '                                    </div>\n' +
+            '                                </div>\n' +
+            '                                <div class="config">\n' +
+            '                                    <div class="config-item">\n' +
+            '                                        <div class="text">\n' +
+            '                                            <span>回复我的消息提醒</span>\n' +
+            '                                            <span class="tip">（关闭后，回复将不再进行提醒）</span>\n' +
+            '                                        </div>\n' +
+            '                                        <div class="radio-list">\n' +
+            '                                            <label class="type-selector radio-selector">\n' +
+            '                                                <div class="radio radio-info radio-inline">\n' +
+            '                                                    <input name="status[1]" class="radio" id="index_3" type="radio" checked>\n' +
+            '                                                    <label for="index_3">开启</label>\n' +
+            '                                                </div>\n' +
+            '                                            </label>\n' +
+            '                                            <label class="type-selector radio-selector">\n' +
+            '                                                <div class="radio radio-info radio-inline">\n' +
+            '                                                    <input name="status[1]" class="radio" id="index_4" type="radio" >\n' +
+            '                                                    <label for="index_4">关闭</label>\n' +
+            '                                                </div>\n' +
+            '                                            </label>\n' +
+            '                                        </div>\n' +
+            '                                    </div>\n' +
+            '                                    <div class="config-item">\n' +
+            '                                        <div class="text">\n' +
+            '                                            <span>收到的赞消息提醒</span>\n' +
+            '                                            <span class="tip">（关闭后，回复将不再进行提醒）</span>\n' +
+            '                                        </div>\n' +
+            '                                        <div class="radio-list">\n' +
+            '                                            <label class="type-selector radio-selector">\n' +
+            '                                                <div class="radio radio-info radio-inline">\n' +
+            '                                                    <input name="status[2]" class="radio" id="index_5" type="radio" checked>\n' +
+            '                                                    <label for="index_5">开启</label>\n' +
+            '                                                </div>\n' +
+            '                                            </label>\n' +
+            '                                            <label class="type-selector radio-selector">\n' +
+            '                                                <div class="radio radio-info radio-inline">\n' +
+            '                                                    <input name="status[2]" class="radio" id="index_6" type="radio" >\n' +
+            '                                                    <label for="index_6">关闭</label>\n' +
+            '                                                </div>\n' +
+            '                                            </label>\n' +
+            '                                        </div>\n' +
+            '                                    </div> \n' +
+            '                                </div>';
+            $(".router-view[data-v-3]").append(str);
+        }
+
+        //消息栏变色
+        function messageBarClick($btn){
+            $(".item[data-v-2]").css({"color":""});
+            $btn.css({"color":"#2faee3"});
+            $(".space-right-top[data-v-3]").find("span").empty().append($btn.find("a").text());
+        }
+
+        //回复按钮事件
+        function loadReplyBtn(){
+            //回复按钮点击事件
+            $(".action-field").find("span:eq(0)").off("click").on("click",function(){
+                var $this=$(this);  
+                //获取当前评论框元素
+                var $replyItem=$this.parent().parent().parent().parent().parent(); 
+                if($this.hasClass("active")){//已点击回复隐藏评论框
+                    $this.css({"color":"inherit"});
+                    $this.removeClass("active");
+                    $replyItem.find(".reply-box[data-v-9]").css({"display":"none"});
+                }else{//没有点击则显示
+                    $this.css({"color":"#2faee3"}).find("i").css({"color":"#999"});
+                    $this.addClass("active");
+                    //显示回复框并设置焦点
+                    $replyItem.find(".reply-box[data-v-9]").css({"display":"flex"})
+                        .find("textarea").focus();
+                }
+                if($replyItem.find(".reply-box[data-v-9]").length<=0){//一条评论一个回复框
+                    var str='<div data-v-9 class="reply-box">\n' +
+    '                            <div class="left-box">\n' +
+    '                              <img class="my-avatar" src="assets/corporate/img/tx004.png"/>\n' +
+    '                            </div>\n' +
+    '                            <div class="center-box">\n' +
+    '                              <textarea class="reply-textarea" placeholder="文明用语" ></textarea>\n' +
+                                '</div>'+
+                                '<div class="right-box">'+
+                                    '<button type="submit" data-id='+1001+' class="send-button">发表</br>评论</button>\n' +
+    '                            </div>\n' +
+    '                          </div>';
+                    $replyItem.append(str);
+                    //设置回复框焦点
+                    $replyItem.find(".reply-box[data-v-9]").find("textarea").focus();
+                    sendCommentBtn();
+                }
+            })
+        }
+
+        //加载回复评论发送按钮点击事件
+        function sendCommentBtn(){
+            $(".reply-box[data-v-9] .send-button").off("click").on("click",function(){
+                var $this=$(this);
+                $this.parent().parent().css({"display":"none"});
+            })
+        }   
+
+        //删除评论按钮事件
+        function loadDeleteBtn($btn){
+            $(".action-field").find("span:eq(1)").off("click").on("click",function(){
+                $this=$(this);
+                $(".confirm-popup").remove();
+                var str='<div data-v-0 class="confirm-popup">\n' +
+'                                    <div class="popup-panel">\n' +
+'                                        <div class="title-ctnr">\n' +
+'                                            <h2>删除</h2>\n' +
+'                                        </div>\n' +
+'                                        <div class="popup-content-ctnr">\n' +
+'                                            <div class="content">\n' +
+'                                                <div class="text">删除该条评论后将无法恢复，是否继续？</div>\n' +
+'                                            </div>\n' +
+'                                            <div class="popup-btn-ctnr">\n' +
+'                                                <button class="button-primary">\n' +
+'                                                    <span class="text">确定</span>\n' +
+'                                                </button>\n' +
+'                                                <button class="button-close">\n' +
+'                                                    <span class="text">取消</span>\n' +
+'                                                </button>\n' +
+'                                            </div>\n' +
+'                                        </div>\n' +
+'                                        <div class="close-btn">\n' +
+'                                            <i class="fa fa-times" aria-hidden="true"></i> \n' +
+'                                        </div>\n' +
+'                                    </div>\n' +
+'                                </div>';
+                $("body").append(str);
+                $(".confirm-popup .button-primary").off("click").on("click",function(){
+                    
+                });
+                $(".confirm-popup .button-close").off("click").on("click",function(){
+                    $(".confirm-popup").remove();
+                });
+                $(".confirm-popup .close-btn").off("click").on("click",function(){
+                    $(".confirm-popup").remove();
+                });
+            });
+        }
+
+        //我的消息界面所有按钮事件
+        function loadMyMessageBtnClick(){
+            //鼠标滑入显示会话关闭按钮
+            $(".whisper[data-v-5] .list-item").off("mouseenter").on("mouseenter",function(){
+                $(this).find(".close").css({"transform":"translateX(0)","opacity":"1"});
+            })
+            //鼠标滑出隐藏会话关闭按钮
+            $(".whisper[data-v-5] .list-item").off("mouseleave").on("mouseleave",function(){
+                $(this).find(".close").css({"transform":"","opacity":"0"});
+            })
+            //会话点击事件
+            $(".whisper[data-v-5] .list-item").off("click").on("click",function(){
+                var $this=$(this);
+                //获取点击会话下标
+                var index=$(".list-content[data-v-5] .list-item").index(this);
+                //改变点击的会话框样式
+                $(".whisper[data-v-5] .list-item").removeClass("active");
+                $this.addClass("active");
+                //隐藏所有聊天窗口
+                $(".whisper[data-v-5] .dialog").css({"display":"none"});
+                //根据下标显示点击的会话聊天窗口
+                $(".whisper[data-v-5] .dialog:eq("+index+")").css({"display":"flex"});
+                //重载当前聊天窗口
+                loadChatWindow($(".whisper[data-v-5] .dialog:eq("+index+")"));
+
+            });
+            //会话关闭按钮点击事件
+            $(".whisper[data-v-5] .close").off("click").on("click",function(){
+                $(this).parent().remove();
+            });
+            //聊天窗口的更多按钮点击事件
+            $(".whisper[data-v-5] .action-menu").off("click").on("click",function(){
+                var $this=$(this);
+                $this.find(".menu-list").toggle(250);
+            })
+            //聊天输入框监听事件
+            $(".whisper[data-v-5] textarea").bind("input propertychange",function(){
+                var $this=$(this);
+                if($this.val().trim()!=""){//有内容则计算字数并改变发送按钮样式
+                    $this.parent().next().find(".send-btn").addClass("active");
+                    $this.next().find("span:eq(0)").text($this.val().length);
+                }else{
+                    $this.parent().next().find(".send-btn").removeClass("active"); 
+                    $this.next().find("span:eq(0)").text(0);
+                }
+            });
+            //聊天输入框回车事件
+            $(".whisper[data-v-5] textarea").keydown(function(e){
+                var $this=$(this);
+                if(e.keyCode == 13 && e.shiftKey){//回车+shift键才触发
+                }else if(e.keyCode == 13){
+                    e.preventDefault();//避免回车键换行
+                    sendMessage($this.parent().next().find(".send-btn"));
+                }
+            });
+            //聊天发送按钮点击事件
+            $(".whisper[data-v-5] .send-btn").off("click").on("click",function(){
+                sendMessage($(this));
+            });
+        }
+
+        //重新加载单个聊天窗口
+        function loadChatWindow($this){
+            //重载聊天内容
+            $(".dialog .message-list").remove();
+            if($(".dialog .message-list").length<=0){
+                $this.children("div:eq(0)")
+                .after('      <div class="message-list">\n' +
+                    '            <div class="message-list-content message_cont" >\n' +
+                    '                <div class="msg-more">\n' +
+                    '                    <div class="no-more">没有更多消息了~</div>\n' +
+                    '                </div>\n' +
+                    '                <div class="msg-time">\n' +
+                    '                    <span class="time">2020年2月2日 12:12</span>\n' +
+                    '                </div>\n' +
+                    '                <div class="msg-item is-me">\n' +
+                    '                    <a target="_blank" class="avatar" \n' +
+                    '                        style="background-image: url(assets/corporate/img/tx004.png);"></a>\n' +
+                    '                    <div class="message">\n' +
+                    '                        <div class="message-content is-me not-img">雷好劲啊</div>\n' +
+                    '                    </div>\n' +
+                    '                </div>\n' +
+                    '                <div class="msg-item not-me">\n' +
+                    '                    <a target="_blank" class="avatar" \n' +
+                    '                        style="background-image: url(assets/corporate/img/tx004.png);"></a>\n' +
+                    '                    <div class="message">\n' +
+                    '                        <div class="message-content not-me not-img">收皮啦雷</div>\n' +
+                    '                    </div>\n' +
+                    '                </div>\n' +
+                    '                <div class="msg-item not-me">\n' +
+                    '                    <a target="_blank" class="avatar" \n' +
+                    '                        style="background-image: url(assets/corporate/img/tx004.png);"></a>\n' +
+                    '                    <div class="message img-padding">\n' +
+                    '                        <div class="message-content not-me">\n' +
+                    '                            <img class="image" src="assets/pages/img/message-nothing.png">\n' +
+                    '                        </div>\n' +
+                    '                    </div>\n' +
+                    '                </div>\n' +
+                    '                <div class="msg-item is-me">\n' +
+                    '                    <a target="_blank" class="avatar" \n' +
+                    '                        style="background-image: url(assets/corporate/img/tx004.png);"></a>\n' +
+                    '                    <div class="message img-padding">\n' +
+                    '                        <div class="message-content is-me">\n' +
+                    '                            <img class="image" src="assets/pages/img/message-nothing.png">\n' +
+                    '                        </div>\n' +
+                    '                    </div>\n' +
+                    '                </div>\n' +
+                    '            </div>\n' +
+                    '        </div>\n');
+            }
+            //重载表情和图片按钮
+            $(".dialog .operation").remove();
+            if($(".dialog .operation").length<=0){
+                $this.children(".send-box").prepend('<div class="top operation">\n' +
+                                    '                <div class="space-margin">\n' +
+                                    '                    <div class="image-upload-btn">\n' +
+                                    '                        <i class="fa fa-picture-o" aria-hidden="true"></i>\n' +
+                                    '                    </div>\n' +
+                                    '                </div>\n' +
+                                    '                <div class="space-margin">\n' +
+                                    '                    <button class="emotion-btn">\n' +
+                                    '                        <i class="fa fa-smile-o" aria-hidden="true"></i>\n' +
+                                    '                    </button>\n' +
+                                    '                </div>\n' +
+                                    '            </div>\n'); 
+                //表情按钮
+                $(".whisper[data-v-5] .emotion-btn").on('click', function (e) {
+                    var $this=$(this);
+                    $(".emoji_container").css("left",e.pageX).css("top",e.pageY-325);
+                                
+                });
+            }
+            //重载表情配置
+            $(".emoji_container").remove();
+            if($(".emoji_container").length<=0){
+                $this.find(".textarea").emoji({
+                    button: ".emotion-btn",
+                    animation: 'fade',
+                    showTab: true,
+                    position:"topRight",
+                    icons: [{
+                        name: "emoji",
+                        path: "emoji/1/bqfh",
+                        maxNum: 50,
+                        file: ".png",
+                        placeholder: "{{alias}}",
+                        alias: {
+                            1: "hehe",
+                            2: "haha",
+                            3: "tushe",
+                            4: "a",
+                            5: "ku",
+                            6: "lu",
+                            7: "kaixin",
+                            8: "han",
+                            9: "lei",
+                            10: "heixian",
+                            11: "bishi",
+                            12: "bugaoxing",
+                            13: "zhenbang",
+                            14: "qian",
+                            15: "yiwen",
+                            16: "yinxian",
+                            17: "tu",
+                            18: "yi",
+                            19: "weiqu",
+                            20: "huaxin",
+                            21: "hu",
+                            22: "xiaonian",
+                            23: "neng",
+                            24: "taikaixin",
+                            25: "huaji",
+                            26: "mianqiang",
+                            27: "kuanghan",
+                            28: "guai",
+                            29: "shuijiao",
+                            30: "jinku",
+                            31: "shengqi",
+                            32: "jinya",
+                            33: "pen",
+                            34: "aixin",
+                            35: "xinsui",
+                            36: "meigui",
+                            37: "liwu",
+                            38: "caihong",
+                            39: "xxyl",
+                            40: "taiyang",
+                            41: "qianbi",
+                            42: "dnegpao",
+                            43: "chabei",
+                            44: "dangao",
+                            45: "yinyue",
+                            46: "haha2",
+                            47: "shenli",
+                            48: "damuzhi",
+                            49: "ruo",
+                            50: "OK"
+                        },
+                        title: {
+                            1: "呵呵",
+                            2: "哈哈",
+                            3: "吐舌",
+                            4: "啊",
+                            5: "酷",
+                            6: "怒",
+                            7: "开心",
+                            8: "汗",
+                            9: "泪",
+                            10: "黑线",
+                            11: "鄙视",
+                            12: "不高兴",
+                            13: "真棒",
+                            14: "钱",
+                            15: "疑问",
+                            16: "阴脸",
+                            17: "吐",
+                            18: "咦",
+                            19: "委屈",
+                            20: "花心",
+                            21: "呼~",
+                            22: "笑脸",
+                            23: "冷",
+                            24: "太开心",
+                            25: "滑稽",
+                            26: "勉强",
+                            27: "狂汗",
+                            28: "乖",
+                            29: "睡觉",
+                            30: "惊哭",
+                            31: "生气",
+                            32: "惊讶",
+                            33: "喷",
+                            34: "爱心",
+                            35: "心碎",
+                            36: "玫瑰",
+                            37: "礼物",
+                            38: "彩虹",
+                            39: "星星月亮",
+                            40: "太阳",
+                            41: "钱币",
+                            42: "灯泡",
+                            43: "茶杯",
+                            44: "蛋糕",
+                            45: "音乐",
+                            46: "haha",
+                            47: "胜利",
+                            48: "大拇指",
+                            49: "弱",
+                            50: "OK"
+                        }
+                    },{
+                        name: "经典表情",
+                        path: "emoji/qq/",
+                        maxNum: 91,
+                        file: ".gif",
+                        placeholder: "#qq_{alias}#"
+                    }]
+                });
+            }
+            //让滚动条到最底部
+            $(".message_cont").scrollTop($(".message_cont")[0].scrollHeight); 
+        }
+
+        //发送一条聊天消息要处理的事务
+        function sendMessage($this){
+            var cont=$this.parent().prev().find("textarea").val().trim();//获取聊天框内容
+            cont=cont.replace(/\n/g,"<br/>");//把回车值转换为换行
+            if(cont!=""&&cont!=null){//有内容才可发送
+                var str=('<div class="msg-item is-me">\n' +
+                    '    <a target="_blank" class="avatar" \n' +
+                    '        style="background-image: url(assets/corporate/img/tx004.png);"></a>\n' +
+                    '    <div class="message">\n' +
+                    '        <div class="message-content is-me not-img">'+cont+'</div>\n' +
+                    '    </div>\n' +
+                    '</div>')
+                //添加一条聊天消息
+                $this.parent().parent().prev().prev()
+                    .find(".message-list-content").append(str);
+                emojiParse();
+                //让滚动条到最底部
+                $(".message_cont").scrollTop($(".message_cont")[0].scrollHeight); 
+                //清空输入框并获取焦点
+                $this.parent().prev().find("textarea").val("").focus();
+                //字数清0并改变发送按钮样式
+                $this.removeClass("active"); 
+                $this.parent().prev().find(".indicator span:eq(0)").text(0);
+            }
+        }
+
+        //表情格式转码
+        function emojiParse(){
+            $(".message").removeData("plugin_emojiParse");
+            $(".message").emojiParse({
+                icons: [{
+                    path: "emoji/1/bqfh",
+                    file: ".png",
+                    placeholder: "{{alias}}",
+                    alias: {
+                        1: "hehe",
+                        2: "haha",
+                        3: "tushe",
+                        4: "a",
+                        5: "ku",
+                        6: "lu",
+                        7: "kaixin",
+                        8: "han",
+                        9: "lei",
+                        10: "heixian",
+                        11: "bishi",
+                        12: "bugaoxing",
+                        13: "zhenbang",
+                        14: "qian",
+                        15: "yiwen",
+                        16: "yinxian",
+                        17: "tu",
+                        18: "yi",
+                        19: "weiqu",
+                        20: "huaxin",
+                        21: "hu",
+                        22: "xiaonian",
+                        23: "neng",
+                        24: "taikaixin",
+                        25: "huaji",
+                        26: "mianqiang",
+                        27: "kuanghan",
+                        28: "guai",
+                        29: "shuijiao",
+                        30: "jinku",
+                        31: "shengqi",
+                        32: "jinya",
+                        33: "pen",
+                        34: "aixin",
+                        35: "xinsui",
+                        36: "meigui",
+                        37: "liwu",
+                        38: "caihong",
+                        39: "xxyl",
+                        40: "taiyang",
+                        41: "qianbi",
+                        42: "dnegpao",
+                        43: "chabei",
+                        44: "dangao",
+                        45: "yinyue",
+                        46: "haha2",
+                        47: "shenli",
+                        48: "damuzhi",
+                        49: "ruo",
+                        50: "OK"
+                    }
+                },{
+                    path: "emoji/qq/",
+                    file: ".gif",
+                    placeholder: "#qq_{alias}#"
+                }]
+            });
+        }
+    })     
+</script>
+</body>
+</html>

@@ -1,0 +1,322 @@
+.goods-type li{
+    float: left;
+}
+.goods-type li .goods-type-select{
+    padding: 4px 9px 4px 9px;
+    margin: 3px 6px;
+    color: darkslategray;
+    border: 1px solid #FFE3DB;
+}
+.goods-type li .goods-type-select:hover{
+    cursor: pointer;
+    border: 1px solid #E84D1C;
+}
+.goods-type li .goods-num-zoo{
+    background-color: #F1F1F1;
+    color: darkslategray;
+    padding: 5px 10px 5px 10px;
+    margin: 3px 6px;
+}
+.goods-type li .goods-num-zoo:hover{
+    color: darkslategray;
+    border: 0px;
+    cursor: no-drop;
+}
+.goods-selected-p{
+    color: #BEBEBE;
+}
+.goods-type-selected{
+    padding: 4px 9px 4px 9px;
+    margin: 3px 6px;
+    border: 1px solid #E84D1C;
+}
+.goods-type-selected:hover{
+    border: 1px solid #E84D1C;
+    cursor: pointer;
+}
+
+
+/* 评论模块 */
+.reviews-form {
+	padding-top: 20px;
+}
+.reviews-form label {
+	font-weight: normal;
+}
+.reviews-form input.form-control {
+	color: #aaa;
+}
+
+.reply-wrap *{
+	box-sizing: content-box;
+}
+.reply-wrap img{
+	border: none;
+    vertical-align: middle;
+}
+.user-face{
+	float: left;
+    margin: 14px 0 0 5px;
+    position: relative;
+}
+.user-face a{
+	outline: none;
+    color: #00a1d6;
+    text-decoration: none;
+    cursor: pointer;
+}
+.user-face a img{
+	width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+.review-item {
+	overflow: hidden;
+	position: relative;
+    margin-left: 85px;
+    padding: 12px 0 0px;
+    border-top: 1px solid #e5e9ef;
+}
+.review-item .user {
+	font-size: 12px;
+    font-weight: 700;
+    line-height: 18px;
+    padding-bottom: 4px;
+    display: block;
+    word-wrap: break-word;
+}
+.review-item .user a {
+	color: #6d757a;
+	vertical-align: middle;
+}
+.review-item .user .rateit {
+	float: right;
+	top: 3px;
+	right: 0;
+}
+.review-item .text {
+	line-height: 20px;
+	padding: 2px 0;
+	margin: 0px;
+    font-size: 14px;
+    text-shadow: none;
+    overflow: hidden;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+.review-item .preview{
+	margin: 10px 0px;
+}
+.review-item .preview ul{
+	list-style: none;
+    padding: 0;
+	display: flow-root;
+}
+.review-item .preview ul li{
+	float: left;
+    border: 2px solid #F0F0F0;
+    padding: 2px;
+    margin-right: 6px;
+    position: relative;
+    background-color: #FFF;
+    -webkit-transition: border-color .3s ease-out;
+    -moz-transition: border-color .3s ease-out;
+    -o-transition: border-color .3s ease-out;
+    transition: border-color .3s ease-out;
+}
+.review-item .preview ul li.active{
+	border-color: #f60;
+}
+.review-item .preview ul li.active::after{
+	display: inline-block;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    border-top: 6px solid #f60;
+    border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	content: "";
+    position: absolute;
+    left: 15px;
+    bottom: -8px;
+}
+.review-item .preview li img{
+	display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #FCFCFC;
+}
+.review-item .preview .viewer-stage{
+	position: relative;
+    margin: 10px 0;
+    border: 1px solid #DDD;
+    background: #FFF;
+    padding: 5px;
+    overflow: hidden;
+	display: none;
+	height: auto;
+	transition: width .16s linear; 
+	min-width: 250px;
+}
+.review-item .preview .toolbar{
+	margin-bottom: 5px;
+}
+.review-item .preview .toolbar a{
+	margin-right: 7px;
+    color: #606060;
+    outline: 0;
+}
+.review-item .preview .toolbar a>i{
+	margin-right: 2px;
+}
+.review-item .preview .toolbar a:hover{
+	color: #09C;
+	text-decoration: none;
+	cursor: pointer;
+}
+.review-item .preview .img-box{
+	position: relative;
+	padding-top: 0px;
+    padding-bottom: 0px;
+}
+.review-item .preview .image-wrapper{
+	position: relative;
+    margin: 0 auto;
+    text-align: center;
+	color: #DDD;
+	/* display: -webkit-box;
+    display: -ms-flexbox; */
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+	align-items: center;
+	transition: height .16s linear; 
+	min-height: 50px;
+}
+.review-item .preview .image-wrapper img{
+	margin-left: 0px;
+    margin-top: 0px;
+	/* position: absolute; */
+    left: 0;
+    top: 0;
+    vertical-align: middle;
+	background-color: #FCFCFC;
+	transition-duration: 100ms;
+}
+.review-item .img-box  a{
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+	outline: 0;
+	cursor: pointer;
+}
+.review-item .img-box .prev{
+    left: 0;
+    width: 30px;
+}
+.review-item .img-box .prev i{
+	left: 20px;
+	background-position: 0 0;
+}
+.review-item .img-box .next{
+	right: 0;
+	width: 30px;
+}
+.review-item .img-box .next i{
+	right: 20px;
+	background-position: 0 0;
+}
+.review-item .img-box a>i{
+	display: none;
+    position: absolute;
+    top: 50%;
+    font-size: 24px;
+    margin-top: -12px;
+    color: #f60;
+	text-shadow: 2px 1px 3px rgba(0,0,0,.5);
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-text-stroke-width: .2px;
+    -webkit-font-smoothing: antialiased;
+}
+.review-item .img-box .display{
+	display: none;
+}
+.review-item .info{
+	color: #99a2aa;
+    line-height: 26px;
+    font-size: 12px;
+}
+.review-item .info .time {
+	margin-right: 20px;
+}
+.review-item .info .like{
+	margin-right: 20px;
+	cursor: pointer;
+}
+.review-item .info .like i{
+	margin-right: 5px;
+}
+.review-item .info .reply,.review-item .info .report{
+	padding: 0 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+}
+.review-item .info .report{
+	float: right;
+    margin-right: 0px;
+}
+.review-item .info .reply:hover,.review-item .info .report:hover{
+	color: #f60;
+    background: #e5e9ef;
+}
+.review-item .info .attribute {
+	margin-right: 20px;
+	cursor: pointer;
+}
+.reply-box .reply-item{
+	padding: 10px 0;
+}
+.reply-box .reply-item .reply-face{
+	top: 0;
+	display: inline-block;
+    position: relative;
+    margin-right: 10px;
+    vertical-align: top;
+}
+.reply-box .reply-item .reply-face img{
+	width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+.reply-box .reply-con{
+	float: right;
+	width: calc(100% - 34px);
+	display: inline-block;
+}
+.reply-box .reply-con .text-con{
+	font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+	white-space: pre-wrap;
+	margin-left: 15px;
+}
+.reply-box .reply-item .info{
+	margin-left: 37px;
+}
+.reply-box .reply-item .like{
+	float: none;
+}
+.reply-box .reply-item .report{
+	display: none;
+}
+/* 评论模块end */
