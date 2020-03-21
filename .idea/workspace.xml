@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8720a9a1-e80e-4907-a751-2274165dc2ff" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/pages/css/style-shop.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/pages/css/style-shop.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/plugins/font-awesome/css/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/plugins/font-awesome/css/font-awesome.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-index-header-fix.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-index-light-footer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop-item.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-item.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -137,7 +132,7 @@
       <updated>1583923586533</updated>
       <workItem from="1583923588144" duration="2166000" />
       <workItem from="1583929397434" duration="167000" />
-      <workItem from="1584691240410" duration="6650000" />
+      <workItem from="1584691240410" duration="8643000" />
     </task>
     <task id="LOCAL-00001" summary="create web project">
       <created>1583923929136</created>
@@ -181,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583950733992</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="修改了商品页面">
+      <created>1584727810038</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1584727810038</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,21 +193,22 @@
     <MESSAGE value="create web project" />
     <MESSAGE value="add README.md" />
     <MESSAGE value="删除了.idea" />
-    <option name="LAST_COMMIT_MESSAGE" value="删除了.idea" />
+    <MESSAGE value="修改了商品页面" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改了商品页面" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="380" y="114" key="CommitChangelistDialog2" timestamp="1583950730632">
+    <state x="380" y="114" key="CommitChangelistDialog2" timestamp="1584727806513">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="380" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1583950730632" />
+    <state x="380" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1584727806513" />
     <state x="740" y="264" key="FileChooserDialogImpl" timestamp="1583998669798">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="264" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1583998669798" />
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1583943421768">
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1584727811700">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1583943421768" />
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1584727811700" />
     <state x="639" y="322" key="git4idea.merge.GitPullDialog" timestamp="1584691356830">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
