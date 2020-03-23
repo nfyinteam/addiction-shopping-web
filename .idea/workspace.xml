@@ -2,7 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8720a9a1-e80e-4907-a751-2274165dc2ff" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/pages/img/data-v-4-image2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/pages/img/data-v-4-image3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/pagination.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/LocalResizeIMG.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jquery.pagination.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/mobileBUGFix.mini.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-index-header-fix.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-index-light-footer.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/css/shopping-goods.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/pages/css/shopping-goods.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/css/style-shop.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/pages/css/style-shop.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/plugins/bootstrap/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/plugins/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/plugins/font-awesome/css/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/plugins/font-awesome/css/font-awesome.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/jquery.emoji.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/jquery.emoji.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/message-center.html" beforeDir="false" afterPath="$PROJECT_DIR$/message-center.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop-item.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-item.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,7 +45,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="130f07005970733a64cdfb64f6f08442fa58e44a" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -132,7 +148,7 @@
       <updated>1583923586533</updated>
       <workItem from="1583923588144" duration="2166000" />
       <workItem from="1583929397434" duration="167000" />
-      <workItem from="1584691240410" duration="8643000" />
+      <workItem from="1584691240410" duration="9967000" />
     </task>
     <task id="LOCAL-00001" summary="create web project">
       <created>1583923929136</created>
@@ -183,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584727810038</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="修改了商品页面">
+      <created>1584773686711</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1584773686711</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -197,22 +220,22 @@
     <option name="LAST_COMMIT_MESSAGE" value="修改了商品页面" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="380" y="114" key="CommitChangelistDialog2" timestamp="1584727806513">
+    <state x="380" y="114" key="CommitChangelistDialog2" timestamp="1584773683301">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="380" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1584727806513" />
+    <state x="380" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1584773683301" />
     <state x="740" y="264" key="FileChooserDialogImpl" timestamp="1583998669798">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="264" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1583998669798" />
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1584727811700">
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1584773689070">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1584727811700" />
-    <state x="639" y="322" key="git4idea.merge.GitPullDialog" timestamp="1584691356830">
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1584773689070" />
+    <state x="639" y="322" key="git4idea.merge.GitPullDialog" timestamp="1584942919181">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="639" y="322" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584691356830" />
+    <state x="639" y="322" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584942919181" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1584725626563">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

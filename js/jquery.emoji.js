@@ -321,9 +321,11 @@
                     field.focus();
                 }
                 //添加表情后的事情
-                field.parentNode.nextElementSibling.getElementsByClassName("send-btn")[0].
-                    className+=" active";
-                field.nextElementSibling.children[0].innerHTML=field.value.length;
+                if(field.parentNode.nextElementSibling.getElementsByClassName("send-btn")[0]!=null){                    
+                    field.parentNode.nextElementSibling.getElementsByClassName("send-btn")[0].
+                        className+=" active";
+                    field.nextElementSibling.children[0].innerHTML=field.value.length;
+                }
             }
         },
 
