@@ -1,0 +1,37 @@
+.navigation{
+    height: 12rem;
+    margin-left: 2.4rem;
+    margin-top: 5rem;
+    background-color: 	#87CEFA;
+    border-radius:5px 5px 5px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.navigation:hover{
+    background-color: 	rgb(120, 187, 230);
+}
+.teltext{
+    font-size: 2rem;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+a:hover{
+    text-decoration: none;
+    color: #fff;
+}
+body{
+    background-color: #D3D3D3;
+}
+

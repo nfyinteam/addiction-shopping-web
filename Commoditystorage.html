@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品入库管理</title>
+    <link rel="stylesheet" href="./css/borain-timeChoice.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/commoditystorage.css">
+    <link rel="stylesheet" href="./css/bootstrap-select.css">
+    <link href="./font-awesome-4.7.0/css/font-awesome.min.css" tppabs="http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  </head>
+<body>
+    <div class="container">
+        <!-- 流程导航 -->
+        <div class="row ">
+            <div class="menus menus1">
+                <ul>
+                    <div class="bg"></div>
+                    <li><span>选择仓库</span></li>
+                    <li><span>选择仓库</span></li>
+                    <li><span>选择仓库</span></li>
+                </ul>
+            <div class="clear"></div>
+            </div>
+        </div><!--流程导航结束 -->
+        <!-- 标题 -->
+        <div class="row">
+            <div class="titletwo">
+                <i class="fa fa-list fa-lg isty" aria-hidden="true" ></i>
+                <span class="isty">入库信息查询</span>
+            </div>
+                
+        </div><!--标题-->
+        <!-- table -->
+        <div class="row contentborder">
+            <!-- 设计表格间距 -->
+            <div class="row tablepa">
+                    <div class="row" style="float: right;">1</div>
+                    <div class="content">
+                        
+                        <form class="formdata" id="f1">
+                            
+                            <!-- <input class="start-two" placeholder="点击选择时间" id="data" type="text"  value="" /> -->
+                            <!-- <input type="button" value="点击" id="btn"> -->
+                            
+                            <div class="col-lg-3" style="margin-bottom: 1rem">
+                                    
+                                    <div class="input-group">
+                                      <input type="text" class="form-control start-two" id="data" value="" placeholder="点击选择时间查询">
+                                      <span class="input-group-btn">
+                                        <button class="btn btn-default" id="btn" type="button">Go!</button>
+                                      </span>
+                                    </div><!-- /input-group -->
+                            </div><!-- /.col-lg-6 -->
+                            <div class="col-lg-6" style="float: right">
+                                    <div class="input-group">
+                                      <input type="text" class="form-control" placeholder="输入订单信息查询">
+                                      <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button">Go!</button>
+                                      </span>
+                                    </div><!-- /input-group -->
+                            </div><!-- /.col-lg-6 -->
+                        </form>
+                             
+                    </div>
+                <table class="table table-bordered ">
+                     <tr>
+                        <th><input type="checkbox"/></th>
+                        <th>编号</th>
+                        <th>wms订单号</th>
+                        <th>入库状态</th>
+                        <th>单据类型</th>
+                        <th>预计到货时间</th>
+                        <th>创建时间</th>
+                        <th>系列</th>
+                        <th>ERQ订单号</th>
+                    </tr>
+                </table>
+                <div class="row">
+                                <nav aria-label="Page navigation" style="float: right;margin-right: 4rem">
+                                        <ul class="pagination">
+                                          <li>
+                                            <a href="#" aria-label="Previous">
+                                              <span aria-hidden="true">&laquo;</span>
+                                            </a>
+                                          </li>
+                                          <li><a href="#">1</a></li>
+                                          <li><a href="#">2</a></li>
+                                          <li><a href="#">3</a></li>
+                                          <li><a href="#">4</a></li>
+                                          <li><a href="#">5</a></li>
+                                          <li>
+                                            <a href="#" aria-label="Next">
+                                              <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                          </li>
+                                        </ul>
+                                      </nav>
+                </div>
+            </div><!--设计表格间距结束-->
+            
+        </div><!--table结束-->
+    </div>
+  
+    <script src="./js/jquery-2.1.1.min.js"></script>
+    <script src="./js/bootstrap-select.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/commoditystorage.js"></script>
+    <script src="./js/borain-timeChoice.js"></script>
+    <script>
+    //  level分为 YM YMD H HM 四个有效值，分别表示年月 年月日 年月日时 年月日时分,less表示是否不可小于当前时间。年-月-日 时:分 时为24小时制
+//  为确保控件结构只出现一次，在有需要的时候进行一次调用。
+    onLoadTimeChoiceDemo();
+
+    borainTimeChoice({
+        start:".start",
+        end:".end",
+        level:"YM",
+        less:true
+    });
+
+    borainTimeChoice({
+        start:".start-two",
+        end:"",
+        level:"H",
+        less:false
+    });
+    $('.dropdown-toggle').dropdown()
+    </script>
+    <script>
+        $(function(){
+            $("#btn").on('click',function(){
+                alert($('#data').val());
+            })
+        })
+    </script>
+</body>
+</html>

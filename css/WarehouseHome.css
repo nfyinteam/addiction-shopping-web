@@ -1,0 +1,114 @@
+.telmagin{
+    margin-left: 3rem;
+    font-size: 2rem;
+}
+.telmagindiv{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.telmagindiv{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.basicinformation{
+    border-radius:5px 5px 5px 5px;
+    background-color: #009FE9;
+    margin-left: 3rem;
+    display: flex;
+    
+    
+    flex-direction: column;
+}
+.imgsize{
+    width: 45px;
+    height: 45px;
+    margin-top: 1rem;
+}
+.Quantity{
+    flex: 1;
+    text-align: right;
+    margin-right: 1rem;
+}
+.Quantityfather{
+    display: flex;
+align-items: center;
+
+}
+.mintel{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+.Quantitytextsize{
+    margin-top: 0.5rem;
+    font-size: 2rem;
+
+    color: #ffffff;
+}
+/* 量子数据div设置 */
+
+.mindiv{
+    border: rgb(233, 232, 232) 1px solid;
+    background-color: rgb(255, 255, 255);
+}
+.mindiv2{
+    border: rgb(233, 232, 232) 1px solid;
+    background-color: rgb(255, 255, 255);
+    margin-top: 1rem;
+    margin-left: 1rem；
+}
+.fontsize{
+    font-size: 1rem;
+    font-weight:bold;
+}
+.divcenter{
+    display: flex;
+align-items: center;
+}
+.shuj{
+    font-size: 3rem;
+    color: #009FE9;
+    margin-left: 1rem;
+}
+.shijian{
+    font-size: 1px;
+    color: rgb(154, 157, 158);
+    margin-left: 1rem;
+}
+.divxx{
+    border-bottom: rgb(233, 232, 232) 1px dashed;
+}
+.fontsize2{
+    font-size: 1rem;
+    font-weight:bold;
+    margin-left: 1.5rem; 
+}
+
+.xxdivmax2{
+    height: 30px;
+    
+}
+.xxdivmax3
+{
+    margin-top: 5px;
+}
+.xxspam{
+    font-size: 2px;
+    color: #ededed;
+    margin-right: 0rem;
+}
+.xxspam2{
+    border-radius: 10px 10px 10px 10px;
+    color: #ffffff;
+    background-color: #86c97f;
+    float:right;
+    width: 30px;
+    height: 20px;
+}
+.xxspam3{
+    margin: 0.1rem;
+    
+}
+.xxdb{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}

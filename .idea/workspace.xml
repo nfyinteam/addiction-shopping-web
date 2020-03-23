@@ -2,24 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8720a9a1-e80e-4907-a751-2274165dc2ff" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/pages/img/data-v-4-image2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/pages/img/data-v-4-image3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/pagination.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/LocalResizeIMG.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/jquery.pagination.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/mobileBUGFix.mini.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-index-header-fix.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-index-light-footer.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/pages/css/shopping-goods.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/pages/css/shopping-goods.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/pages/css/style-shop.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/pages/css/style-shop.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/plugins/bootstrap/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/plugins/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/plugins/font-awesome/css/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/plugins/font-awesome/css/font-awesome.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/jquery.emoji.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/jquery.emoji.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-center.html" beforeDir="false" afterPath="$PROJECT_DIR$/message-center.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-item.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-item.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,59 +53,13 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\ideaprojects\addiction-shopping-web" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <module name="addiction-shopping-web" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
-      <module name="addiction-shopping-web" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -149,6 +86,7 @@
       <workItem from="1583923588144" duration="2166000" />
       <workItem from="1583929397434" duration="167000" />
       <workItem from="1584691240410" duration="9967000" />
+      <workItem from="1584966029780" duration="124000" />
     </task>
     <task id="LOCAL-00001" summary="create web project">
       <created>1583923929136</created>
@@ -232,10 +170,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1584773689070" />
-    <state x="639" y="322" key="git4idea.merge.GitPullDialog" timestamp="1584942919181">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="559" y="327" key="git4idea.merge.GitPullDialog" timestamp="1584966127976">
+      <screen x="0" y="23" width="1680" height="982" />
     </state>
     <state x="639" y="322" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584942919181" />
+    <state x="559" y="327" key="git4idea.merge.GitPullDialog/0.23.1680.982@0.23.1680.982" timestamp="1584966127976" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1584725626563">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
