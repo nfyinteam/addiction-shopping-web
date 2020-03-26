@@ -133,6 +133,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585209208948" />
+    <state x="537" y="114" key="CommitChangelistDialog2" timestamp="1585209504400">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="537" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585209504400" />
     <state x="669" y="236" key="MultipleFileMergeDialog" timestamp="1585209307044">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -141,10 +145,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="705" y="235" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585209339487" />
-    <state x="639" y="322" key="git4idea.merge.GitPullDialog" timestamp="1585209277143">
+    <state x="639" y="322" key="git4idea.merge.GitPullDialog" timestamp="1585209516253">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="639" y="322" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585209277143" />
+    <state x="639" y="322" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585209516253" />
     <state x="750" y="426" key="git4idea.ui.GitResetDialog" timestamp="1585209197222">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
