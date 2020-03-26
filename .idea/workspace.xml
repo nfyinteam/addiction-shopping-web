@@ -2,29 +2,79 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8720a9a1-e80e-4907-a751-2274165dc2ff" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/pages/img/data-v-4-image2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/pages/img/data-v-4-image3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/pagination.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/LocalResizeIMG.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jquery.pagination.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/mobileBUGFix.mini.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-index-header-fix.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-index-light-footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/pages/css/shopping-goods.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/pages/css/shopping-goods.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/pages/css/style-shop.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/pages/css/style-shop.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/plugins/bootstrap/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/plugins/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/plugins/font-awesome/css/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/plugins/font-awesome/css/font-awesome.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/home.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/jquery.emoji.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/jquery.emoji.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/message-center.html" beforeDir="false" afterPath="$PROJECT_DIR$/message-center.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-shopping-cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-shopping-cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-item.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-item.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Rebase.Settings">
+    <option name="ONTO" value="refs/remotes/Han/goods" />
+  </component>
   <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="goods" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="goods" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="D:\ideaprojects\addiction-shopping-web\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1YynE2Or4L8E0q6Ly6ypMOTpex4" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ideaprojects\addiction-shopping-web" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
       <module name="addiction-shopping-web" />
@@ -90,68 +140,109 @@
     <configuration />
   </component>
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8720a9a1-e80e-4907-a751-2274165dc2ff" name="Default Changelist" comment="" />
+      <created>1583923586533</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583923586533</updated>
+      <workItem from="1583923588144" duration="2166000" />
+      <workItem from="1583929397434" duration="167000" />
+      <workItem from="1584691240410" duration="9967000" />
+    </task>
+    <task id="LOCAL-00001" summary="create web project">
+      <created>1583923929136</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1583923929136</updated>
+    </task>
+    <task id="LOCAL-00002" summary="create web project">
+      <created>1583926883293</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1583926883293</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add README.md">
+      <created>1583926956762</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1583926956762</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add README.md">
+      <created>1583927075781</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1583927075781</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add README.md">
+      <created>1583943352512</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1583943352512</updated>
+    </task>
+    <task id="LOCAL-00006" summary="删除了.idea">
+      <created>1583950733992</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1583950733992</updated>
+    </task>
+    <task id="LOCAL-00007" summary="修改了商品页面">
+      <created>1584727810038</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1584727810038</updated>
+    </task>
+    <task id="LOCAL-00008" summary="修改了商品页面">
+      <created>1584773686711</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1584773686711</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="1">
-          <value>
-            <State>
-              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="HEAD" />
-                      </list>
-                    </value>
-                  </entry>
-                  <entry key="roots">
-                    <value>
-                      <list>
-                        <option value="$PROJECT_DIR$" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="OPEN_TABS">
-      <set>
-        <option value="1" />
-      </set>
-    </option>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="create web project" />
+    <MESSAGE value="add README.md" />
+    <MESSAGE value="删除了.idea" />
+    <MESSAGE value="修改了商品页面" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改了商品页面" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="690" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585209208948">
+    <state x="380" y="114" key="CommitChangelistDialog2" timestamp="1584773683301">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585209208948" />
-    <state x="537" y="114" key="CommitChangelistDialog2" timestamp="1585209504400">
+    <state x="380" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1584773683301" />
+    <state x="740" y="264" key="FileChooserDialogImpl" timestamp="1583998669798">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="537" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585209504400" />
-    <state x="669" y="236" key="MultipleFileMergeDialog" timestamp="1585209307044">
+    <state x="740" y="264" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1583998669798" />
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1584773689070">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="669" y="236" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585209307044" />
-    <state x="705" y="235" key="git4idea.branch.GitSmartOperationDialog" timestamp="1585209339487">
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1584773689070" />
+    <state x="639" y="322" key="git4idea.merge.GitPullDialog" timestamp="1584942919181">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="705" y="235" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585209339487" />
-    <state x="639" y="322" key="git4idea.merge.GitPullDialog" timestamp="1585209516253">
+    <state x="639" y="322" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584942919181" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1584725626563">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="639" y="322" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585209516253" />
-    <state x="750" y="426" key="git4idea.ui.GitResetDialog" timestamp="1585209197222">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1584725626563" />
+    <state x="790" y="314" key="svn.repositoryBrowser" timestamp="1583923653780">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="750" y="426" key="git4idea.ui.GitResetDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585209197222" />
+    <state x="790" y="314" key="svn.repositoryBrowser/0.0.1920.1040@0.0.1920.1040" timestamp="1583923653780" />
   </component>
 </project>
