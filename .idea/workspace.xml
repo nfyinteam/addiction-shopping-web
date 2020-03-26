@@ -3,9 +3,22 @@
   <component name="ChangeListManager">
     <list default="true" id="8720a9a1-e80e-4907-a751-2274165dc2ff" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-index-header-fix.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-index-light-footer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-about.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-account.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-account.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-checkout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-contacts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-faq.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-faq.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-goods-compare.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-goods-compare.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop-item.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-item.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-privacy-policy.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-privacy-policy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-product-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-product-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-search-result.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-search-result.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-shopping-cart-null.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-shopping-cart-null.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-shopping-cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-shopping-cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-standart-forms.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-standart-forms.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-terms-conditions-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-terms-conditions-page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-wishlist.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-wishlist.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +99,7 @@
       <workItem from="1583923588144" duration="2166000" />
       <workItem from="1583929397434" duration="167000" />
       <workItem from="1584691240410" duration="9967000" />
-      <workItem from="1585211842920" duration="2077000" />
+      <workItem from="1585211842920" duration="6617000" />
     </task>
     <task id="LOCAL-00001" summary="create web project">
       <created>1583923929136</created>
@@ -144,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584773686711</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="修改了商品页面">
+      <created>1585214053759</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1585214053759</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,18 +193,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585209646738" />
-    <state x="380" y="114" key="CommitChangelistDialog2" timestamp="1584773683301">
+    <state x="380" y="114" key="CommitChangelistDialog2" timestamp="1585214048303">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="380" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1584773683301" />
+    <state x="380" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585214048303" />
     <state x="740" y="264" key="FileChooserDialogImpl" timestamp="1583998669798">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="264" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1583998669798" />
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1584773689070">
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1585214055975">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1584773689070" />
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1585214055975" />
     <state x="639" y="322" key="git4idea.merge.GitPullDialog" timestamp="1584942919181">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
