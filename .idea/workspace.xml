@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8720a9a1-e80e-4907-a751-2274165dc2ff" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/corporate/img/logos/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/shop-item.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/goods_addInfo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/css/shopping-goods.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/pages/css/shopping-goods.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/css/style-shop.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/pages/css/style-shop.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop-item.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-item.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +58,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../hansen" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../addiction-shopping" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -89,7 +90,7 @@
       <workItem from="1583923588144" duration="2166000" />
       <workItem from="1583929397434" duration="167000" />
       <workItem from="1584691240410" duration="9967000" />
-      <workItem from="1585211842920" duration="20767000" />
+      <workItem from="1585211842920" duration="33495000" />
     </task>
     <task id="LOCAL-00001" summary="create web project">
       <created>1583923929136</created>
@@ -161,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585220442035</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="实现了商品加载名称价格">
+      <created>1585619595836</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1585619595836</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,33 +193,38 @@
     <MESSAGE value="删除了.idea" />
     <MESSAGE value="修改了商品页面" />
     <MESSAGE value="修改了所有页面的导航栏" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改了所有页面的导航栏" />
+    <MESSAGE value="实现了商品加载名称价格" />
+    <option name="LAST_COMMIT_MESSAGE" value="实现了商品加载名称价格" />
   </component>
   <component name="WindowStateProjectService">
     <state x="690" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585209646738">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585209646738" />
-    <state x="380" y="114" key="CommitChangelistDialog2" timestamp="1585619551667">
+    <state x="380" y="114" key="CommitChangelistDialog2" timestamp="1585619593681">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="380" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585619551667" />
-    <state x="740" y="264" key="FileChooserDialogImpl" timestamp="1585594283298">
+    <state x="380" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585619593681" />
+    <state x="740" y="264" key="FileChooserDialogImpl" timestamp="1585620132319">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="264" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1585594283298" />
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1585220444284">
+    <state x="740" y="264" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1585620132319" />
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1585619597760">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1585220444284" />
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1585619597760" />
     <state x="639" y="322" key="git4idea.merge.GitPullDialog" timestamp="1584942919181">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="639" y="322" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584942919181" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1585581408101">
+    <state x="616" y="240" key="run.anything.popup" timestamp="1585657614550">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1585581408101" />
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1585657614550" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1585658240476">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1585658240476" />
     <state x="790" y="314" key="svn.repositoryBrowser" timestamp="1583923653780">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

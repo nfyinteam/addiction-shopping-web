@@ -924,3 +924,12 @@ line-height: 118px;
     background: #c40000;
     border-color: #c40000;
 }
+.goods-type{
+    float: left;
+    margin-left: -6%;
+    margin-top: -0.5%;
+}
+.goods-type-name{
+    float: left;
+    font-size:16px;
+}
