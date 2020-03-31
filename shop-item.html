@@ -11,7 +11,7 @@
 <!-- Head BEGIN -->
 <head>
     <meta charset="utf-8">
-    <title>Cool green dress with red bell | Metronic Shop UI</title>
+    <title></title>
 
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -313,7 +313,7 @@
                 <a href="javascript:if(confirm('http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/index.html  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������������ļ�δ�ҵ���  \n\n�����ڷ������ϴ���?'))window.location='http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/index.html'"
                    tppabs="http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/index.html">首页</a></li>
             <li><a href="">商品搜索</a></li>
-            <li class="active">Air Jordan 1</li>
+            <li class="active" id="good_title"></li>
         </ul>
         <!-- BEGIN SIDEBAR & CONTENT -->
         <div class="row margin-bottom-40">
@@ -503,42 +503,33 @@
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
                             <div class="product-main-image">
-                                <img src="assets/pages/img/products/model7.jpg"
-                                     tppabs="http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/assets/pages/img/products/model7.jpg"
-                                     alt="Cool green dress with red bell" class="img-responsive"
-                                     data-BigImgsrc="assets/pages/img/products/model7.jpg">
+                                <img src="assets/pages/img/products/model7.jpg" alt="Cool green dress with red bell" class="img-responsive" data-BigImgsrc="assets/pages/img/products/model7.jpg">
                             </div>
                             <div class="product-other-images">
-                                <a href="assets/pages/img/products/model3.jpg"
-                                   tppabs="http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/assets/pages/img/products/model3.jpg"
-                                   class="fancybox-button" rel="photos-lib"><img alt="Berry Lace Dress"
-                                                                                 src="assets/pages/img/products/model3.jpg"
-                                                                                 tppabs="http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/assets/pages/img/products/model3.jpg"></a>
-                                <a href="assets/pages/img/products/model4.jpg"
-                                   tppabs="http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/assets/pages/img/products/model4.jpg"
-                                   class="fancybox-button" rel="photos-lib"><img alt="Berry Lace Dress"
-                                                                                 src="assets/pages/img/products/model4.jpg"
-                                                                                 tppabs="http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/assets/pages/img/products/model4.jpg"></a>
-                                <a href="assets/pages/img/products/model5.jpg"
-                                   tppabs="http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/assets/pages/img/products/model5.jpg"
-                                   class="fancybox-button" rel="photos-lib"><img alt="Berry Lace Dress"
-                                                                                 src="assets/pages/img/products/model5.jpg"
-                                                                                 tppabs="http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/assets/pages/img/products/model5.jpg"></a>
+                                <a href="assets/pages/img/products/model3.jpg" class="fancybox-button" rel="photos-lib">
+                                    <img alt="Berry Lace Dress" src="assets/pages/img/products/model3.jpg">
+                                </a>
+                                <a href="assets/pages/img/products/model4.jpg" class="fancybox-button" rel="photos-lib">
+                                    <img alt="Berry Lace Dress" src="assets/pages/img/products/model4.jpg">
+                                </a>
+                                <a href="assets/pages/img/products/model5.jpg" class="fancybox-button" rel="photos-lib">
+                                    <img alt="Berry Lace Dress" src="assets/pages/img/products/model5.jpg">
+                                </a>
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6">
-                            <h1>商品名称</h1>
+                            <h1 class="good_name">商品名称</h1>
                             <div class="price-availability-block clearfix">
                                 <div class="price">
-                                    <strong><span>￥</span>47.00</strong>
-                                    <em>￥<span>62.00</span></em>
+                                    <strong><span>￥</span><span id="good_price">47.00</span></strong>
+                                    <!--<em>￥<span>62.00</span></em>-->
                                 </div>
                                 <div class="availability">
                                     库存: <strong>12</strong>
                                 </div>
                             </div>
                             <div class="description">
-                                <p>商品简介</p>
+                                <p id="spu_remark">商品简介</p>
                             </div>
                             <div class="product-page-options">
                                 <p>码数：</p>
@@ -547,7 +538,7 @@
                                         <div class="goods-type-select">38</div>
                                     </li>
                                     <li>
-                                        <div class="goods-type-selected">39</div>
+                                        <div class="goods-type-select">39</div>
                                     </li>
                                     <li>
                                         <div class="goods-num-zoo">40</div>
@@ -1187,49 +1178,26 @@
 <!-- Load javascripts at bottom, this will reduce page load time -->
 <!-- BEGIN CORE PLUGINS(REQUIRED FOR ALL PAGES) -->
 <!--[if lt IE 9]>
-<script src="assets/plugins/respond.min.js"
-        tppabs="http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/assets/plugins/respond.min.js"></script>
+<script src="assets/plugins/respond.min.js"></script>
 <![endif]-->
-<script src="assets/plugins/jquery.min.js"
-        tppabs="http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/assets/plugins/jquery.min.js"
-        type="text/javascript"></script>
-<script src="assets/plugins/jquery-migrate.min.js"
-        tppabs="http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/assets/plugins/jquery-migrate.min.js"
-        type="text/javascript"></script>
-<script src="assets/plugins/bootstrap/js/bootstrap.min.js"
-        tppabs="http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/assets/plugins/bootstrap/js/bootstrap.min.js"
-        type="text/javascript"></script>
-<script src="assets/corporate/scripts/back-to-top.js"
-        tppabs="http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/assets/corporate/scripts/back-to-top.js"
-        type="text/javascript"></script>
-<script src="assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js"
-        tppabs="http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js"
-        type="text/javascript"></script>
+<script src="assets/plugins/jquery.min.js" type="text/javascript"></script>
+<script src="assets/plugins/jquery-migrate.min.js"  type="text/javascript"></script>
+<script src="assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="assets/corporate/scripts/back-to-top.js" type="text/javascript"></script>
+<script src="assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
 <!-- END CORE PLUGINS -->
 
 <!-- BEGIN PAGE LEVEL JAVASCRIPTS (REQUIRED ONLY FOR CURRENT PAGE) -->
-<script src="assets/plugins/fancybox/source/jquery.fancybox.pack.js"
-        tppabs="http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/assets/plugins/fancybox/source/jquery.fancybox.pack.js"
-        type="text/javascript"></script><!-- pop up -->
-<script src="assets/plugins/owl.carousel/owl.carousel.min.js"
-        tppabs="http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/assets/plugins/owl.carousel/owl.carousel.min.js"
-        type="text/javascript"></script><!-- slider for products -->
-<script src="assets/plugins/zoom/jquery.zoom.min.js"
-        tppabs="http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/assets/plugins/zoom/jquery.zoom.min.js"
-        type="text/javascript"></script><!-- product zoom -->
-<script src="assets/plugins/bootstrap-touchspin/bootstrap.touchspin.js"
-        tppabs="http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/assets/plugins/bootstrap-touchspin/bootstrap.touchspin.js"
-        type="text/javascript"></script><!-- Quantity -->
+<script src="assets/plugins/fancybox/source/jquery.fancybox.pack.js" type="text/javascript"></script><!-- pop up -->
+<script src="assets/plugins/owl.carousel/owl.carousel.min.js" type="text/javascript"></script><!-- slider for products -->
+<script src="assets/plugins/zoom/jquery.zoom.min.js" type="text/javascript"></script><!-- product zoom -->
+<script src="assets/plugins/bootstrap-touchspin/bootstrap.touchspin.js" type="text/javascript"></script><!-- Quantity -->
 
 <!-- <script src="assets/plugins/uniform/jquery.uniform.min.js" tppabs="http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/assets/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script> -->
 
-<script src="assets/corporate/scripts/layout.js"
-        tppabs="http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/assets/corporate/scripts/layout.js"
-        type="text/javascript"></script>
+<script src="assets/corporate/scripts/layout.js" type="text/javascript"></script>
 <!-- 星级评分 -->
-<script src="assets/plugins/rateit/src/jquery.rateit.js"
-        tppabs="http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/assets/plugins/rateit/src/jquery.rateit.js"
-        type="text/javascript"></script>
+<script src="assets/plugins/rateit/src/jquery.rateit.js" type="text/javascript"></script>
 <!-- socket -->
 <script src="https://cdn.bootcss.com/stomp.js/2.3.3/stomp.js"></script>
 <script src="https://cdn.bootcss.com/sockjs-client/1.1.4/sockjs.js"></script>
@@ -1243,1004 +1211,53 @@
 <script type="text/javascript" src="js/mobileBUGFix.mini.js"></script>
 
 <script src="js/jquery.pagination.js"></script>
+<script type="text/javascript" src="js/shop-item.js"></script>
 <script type="text/javascript">
-    jQuery(document).ready(function () {
-        Layout.init();
-        Layout.initOWL();
-        Layout.initTwitter();
-        Layout.initImageZoom();
-        Layout.initTouchspin();
-        Layout.initUniform();
-    });
-
+    var goodId;
+    var goodInfo;
     $(function () {
-        var urlPrefix = "http://localhost:8080/userapi";
-        var rotateVal = 0;//预览图的旋转角度
-        var refreshTime = getNowDateFormat();//刷新页面的时间
-        var defaultreplySize = 3;//回复评论的默认显示数量
-        var moreReplySize = 3;//回复评论一页默认条数
-        var buyShowSize = 2;//买家秀一页默认条数
-        var reportReason = "";//举报界面代码
-        var userId = "1578412684666";//用户id
-        var goodsId = "1578412684903";//商品id
-        loadBuyShowAndComment(0, 0);
-
-        //
-        $(".comment-header li .comment_type").unbind('click').click(function () {
-            loadBuyShowAndComment($(".comment-header option:first").val(), $(this).prev().val())
-        })
-        $(".comment-header li select").unbind('click').click(function () {
-            $("#evaluate_modal").modal("show");
-
-        })
-
-
-        var picArr = new Array();
-        //上传图片按钮
-        $('.uploader-holder .upload-img-box .file-input').localResizeIMG({
-            quality: 0.9, // 压缩参数 1 不压缩 越小清晰度越低
-            success: function (result) {
-                var str = '<li class="upload-img-box">' +
-                    '<div class="picli">' +
-                    '<img src=' + result.base64 + '> ' +
-                    '</div>' +
-                    '<div class="st-success"></div>' +
-                    '<div class="tm-review-iconfont">' +
-                    '<i class="fa fa-times" aria-hidden="true"></i>' +
-                    '</div>' +
-                    //'<input type="file" class="img" name="file" value="'+img.src+'"/>'+
-                    '</li>';
-                $('.uploader-holder .upload-queue').append(str);
-                picArr[picArr.length] = dataURLtoFile(result.base64, picArr.length);
-                //更新图片数
-                $(".uploader-holder .up-tips span:eq(0)").text($(".upload-queue li").length);
-                //删除按钮点击事件
-                $(".upload-img-box .tm-review-iconfont").off("click").on("click", function () {
-                    var $this = $(this);
-                    $this.parent().remove();
-                    $(".uploader-holder .up-tips span:eq(0)").text($(".upload-queue li").length);
-                });
+        init();
+        $('.goods-type-select').on('click', function () {
+            $('.goods-type-selected').attr('class', 'goods-type-select');
+            $(this).attr('class', 'goods-type-selected');
+        });
+    });
+    function getUrlParam(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null)
+            return unescape(r[2]);
+        return null;
+    }
+    function isGoodsWeb() {
+        goodId = getUrlParam('goodId');
+        if(goodId == null || goodId == ""){
+            location.href = 'shop-index.html';
+        }
+    }
+    function init() {
+        isGoodsWeb();
+        $.ajax({
+            url : 'http://www.88k88.cn/userapi/goodsAllInfo/' + goodId,
+            method : 'get',
+            success : function (result) {
+                if(result.data.goodsInfo == null){
+                    location.href = 'shop-index.html';
+                }
+                goodInfo = result.data;
+                addInfo(goodInfo);
             }
         });
+    }
 
-        function dataURLtoFile(dataurl, filename) {
-            var arr = dataurl.split(","),
-                mime = arr[0].match(/:(.*?);/)[1],
-                bstr = atob(arr[1]),
-                n = bstr.length,
-                u8arr = new Uint8Array(n);
-            while (n--) {
-                u8arr[n] = bstr.charCodeAt(n);
-            }
-            return new File([u8arr], filename, {type: mime});
-        }
-
-        loadSubmitEvaluateBtn();
-
-        //提交评价按钮
-        function loadSubmitEvaluateBtn() {
-            $("#submit_evaluate").off("click").on("click", function () {
-                var uploadForm = new FormData();
-                for (var i = 0; i < picArr.length; i++) {
-                    uploadForm.append("file", picArr[i]);
-                }
-                $.ajax({
-                    url: urlPrefix + "/add_buyShow",
-                    method: "post",
-                    data: uploadForm,
-                    cache: false,
-                    processData: false,
-                    contentType: false,
-                    success: function (result) {
-                        if (result.code == 200) {
-                            alert(1);
-                        }
-                    }
-                })
-            })
-        }
-
-        // 初始化 ws 对象
-        // var ws = new WebSocket('ws://127.0.0.1:15674/ws');
-
-        // // 获得Stomp client对象
-        // var client = Stomp.over(ws);
-
-        // // 定义连接成功回调函数
-        // var on_connect = function(x) {
-        //     client.subscribe("/exchange/delay.exchange/delay.message", function(data) {
-        //         var msg = data.body;
-        //         alert(msg);
-        //     });
-        // };
-        // // 定义错误时回调函数
-        // var on_error =  function() {
-        //     alert('error');
-        // };
-        // // 连接RabbitMQ
-        // client.connect('crab', '123456', on_connect, on_error, '/');
-
-
-        //加载买家秀以及评论
-        function loadBuyShowAndComment(order, commentType) {
-            $.ajax({
-                url: urlPrefix + "/list_buyShow",
-                method: "get",
-                data: "pageNum=0&pageSize=" + buyShowSize + "&replySize=" + defaultreplySize + "&goodsId=" + goodsId + "&dateTime=" +
-                    refreshTime + "&order=" + order + "&commentType=" + commentType,
-                success: function (result) {
-                    if (result.code == 200) {
-                        if (result.data.list.length > 0) {
-                            //加载总评论数
-                            $("#myTab li:eq(2) a").empty().append("累计评论（" + result.data.total + "）");
-                            creatBuyShow(result.data);
-                            if (result.data.total > buyShowSize) {//超过默认条数才显示分页
-                                str = '<div id="buyShow_page" class="normal" align="left" style="padding:10px 0px"></div>';
-                                $("#Comment").append(str);
-                                buyShowPage(result.data);
-                            }
-                            $(".tab-pane .load-card").css("display", "none");//隐藏加载面板
-                        }
-                    } else {
-
-                    }
-                }
-            })
-        }
-
-        //创建买家秀
-        function creatBuyShow(data) {
-            $("#Comment .comment_box").empty();
-            $.each(data.list, function (index, obj) {
-                if (obj.grade == "1") {//根据评论等级初始化
-                    var isLike = obj.theUser == "1" ? "fa-heart liked" : "fa-heart-o";
-                    var str = '<div data-id=' + obj.comId + ' class="reply-wrap">' + //父级评论编号
-                        '                        <div class="user-face">\n' +
-                        '                          <a>\n' +
-                        '                            <img src="assets/corporate/img/tx004.png"/>\n' +
-                        '                          </a>\n' +
-                        '                        </div>\n' +
-                        '                        <div class="review-item clearfix">\n' +
-                        '                          <div class="user">\n' +
-                        '                            <a target="_blank" class="name">牛战士</a>\n' +
-                        '                            <div class="rateit" data-rateit-value=' + obj.comScore + ' data-rateit-ispreset="true" data-rateit-readonly="true"></div>' +
-                        '                          </div>  \n' +
-                        '                          <p class="text">' + obj.content + '</p>   \n' +
-                        '                          <div class="preview">\n' +
-                        '                            <ul>\n' +
-                        '                              <li class="">\n' +
-                        '                                <img src="assets/pages/img/products/model5.jpg"/>\n' +
-                        '                              </li>\n' +
-                        '                              <li class="">\n' +
-                        '                                <img src="assets/pages/img/index-sliders/slide3.jpg"/>\n' +
-                        '                              </li>\n' +
-                        '                            </ul>\n' +
-                        '                          </div>\n' +
-                        '                          <div class="info">\n' +
-                        '                            <span class="time">' + obj.time + '</span>\n' +
-                        '                            <span class="attribute">款式：xxxxx 尺码：xxxxx</span>\n' +
-                        '                            <span class="like" data-cid=' + obj.comId + '>\n' +
-                        '                              <i class="fa ' + isLike + '" aria-hidden="true"></i>' +
-                        '<span>' + obj.praiseNum + '</span>' +
-                        '                            </span>\n' +
-                        '                            <span class="reply" data-cid=' + obj.comId + '>回复</span>\n' +
-                        '                            <span class="report" data-cid=' + obj.comId + '>举报</span>\n' +
-                        '                          </div>';
-
-                    str += '<div class="reply-box" data-id=' + obj.comId + '>';
-                    if (obj.commentList.length > 0) {//有回复评论才创建
-                        str += creatComment(obj.commentList);//创建回评
-                        if (obj.commentList[0].total > defaultreplySize) {//超过默认条数回评才创建更多按钮
-                            str += '<div class="view-more">' +
-                                '                       共<b>' + obj.commentList[0].total + '</b>条回复，<a class="btn-more" data-cid=' + obj.comId + '>点击查看</a>' +
-                                '                   </div>';
-                        }
-                    }
-                    str += '</div>';
-                    str += '</div></div>';
-                    $("#Comment .comment_box").append(str);
-                }
-
-            });
-            $(".rateit").rateit();//调用星级评分插件
-            emojiParse();//表情转义
-            loadReviewPreviewClick();
-            moreReplyCommentBtn();
-            loadReplyReportClick();
-        }
-
-        //买家秀分页
-        function buyShowPage(pageInfo) {
-            total = pageInfo.total;
-            $("#buyShow_page").pagination(pageInfo.total, { //第一个参数指定共多少条记录
-                items_per_page: pageInfo.pageSize, // 每页显示多少条记录
-                next_text: ">", //下一页按钮图标
-                prev_text: "<", //上一页按钮图标
-                num_display_entries: 5,//主体页数
-                num_edge_entries: 0, //边缘页数
-                callback: function (index) {
-                    var pageNum = ++index;
-                    $.ajax({
-                        url: urlPrefix + "/list_buyShow",
-                        method: "get",
-                        data: "pageNum=" + pageNum + "&pageSize=" + buyShowSize + "&replySize=" + defaultreplySize + "&goodsId=" + goodsId + "&dateTime=" +
-                            refreshTime + "&order=0",
-                        success: function (result) {
-                            if (result.code == 200) {
-                                if (result.data.list.length > 0) {
-                                    $("#Comment .comment_box *").remove();
-                                    creatBuyShow(result.data);
-                                }
-                            } else {
-
-                            }
-                        }
-                    })
-                }
-            });
-        }
-
-        //创建回复评论
-        function creatComment(data) {
-            var str = "";
-            $.each(data, function (i, obj) {
-                var content = obj.content;
-                if (obj.grade == "3") {//被回复的回评才需加@名字
-                    content = obj.byUserName != null ? "回复@" + obj.byUserName + "：" + obj.content : obj.content;
-                }
-                var isLike = obj.theUser == "1" ? "fa-heart liked" : "fa-heart-o";//判断该用户是否点赞
-                str += '<div class="reply-item" data-cid=' + obj.comId + '>' + //回复评论编号
-                    '                              <a class="reply-face">\n' +
-                    '                                <img src="assets/corporate/img/tx004.png"/>\n' +
-                    '                              </a>\n' +
-                    '                              <div class="reply-con">\n' +
-                    '                                <div class="user">\n' +
-                    '                                  <a target="_blank" class="name">面具怪</a>\n' +
-                    '                                  <span class="text-con">' + content + '</span>\n' +
-                    '                                </div>\n' +
-                    '                              </div>\n' +
-                    '                              <div class="info">\n' +
-                    '                                <span class="time">' + obj.time + '</span>\n' +
-                    '                                <span class="like" data-cid=' + obj.comId + '>' +
-                    '<i class="fa ' + isLike + '" aria-hidden="true"></i>' +
-                    '<span>' + obj.praiseNum + '</span>' +
-                    '</span>' +
-                    '                                <span class="reply" data-cid=' + obj.comId + '>回复</span>\n' +
-                    //if(userId==obj.user.)
-                    '                                <span class="report" data-cid=' + obj.comId + '>举报</span>\n' +
-                    '                              </div>\n' +
-                    '                           </div>';
-            });
-            return str;
-        }
-
-        //更多回评按钮点击事件
-        function moreReplyCommentBtn() {
-            $(".view-more .btn-more").off("click").on("click", function () {
-                var $this = $(this);
-                $.ajax({
-                    url: urlPrefix + "/list_comment",
-                    method: "get",
-                    data: "pageNum=0&pageSize=" + moreReplySize + "&commentId=" + $this.attr("data-cid") +
-                        "&dateTime=" + refreshTime + "&order=1",
-                    success: function (result) {
-                        if (result.code == 200) {
-                            //删除现有回评
-                            $this.parent().parent().children().not(":eq(-1)").remove();
-                            var str = creatComment(result.data.list);
-                            if (result.data.total > moreReplySize) {
-                                str += '<div class="comment_page reduced" align="left" style="padding:10px 0px"></div>'
-                            }
-                            $this.parent().parent().append(str);
-                            replyCommentPage($this.parent().parent(), result.data);
-                            $this.parent().remove();
-                            emojiParse();//表情转义
-                            loadReplyReportClick();
-                        } else {
-
-                        }
-                    }
-                })
-            })
-        }
-
-        //回复评论的分页（回评大框,分页数据）
-        function replyCommentPage($this, pageInfo) {
-            total = pageInfo.total;
-            $this.find(".comment_page").pagination(pageInfo.total, { //第一个参数指定共多少条记录
-                items_per_page: pageInfo.pageSize, // 每页显示多少条记录
-                next_text: "下一页", //下一页按钮图标
-                prev_text: "上一页", //上一页按钮图标
-                num_display_entries: 5,//主体页数
-                num_edge_entries: 0, //边缘页数
-                callback: function (index) {
-                    var pageNum = ++index;
-                    $.ajax({
-                        url: urlPrefix + "/list_comment",
-                        method: "get",
-                        data: "pageNum=" + pageNum + "&pageSize=" + moreReplySize + "&commentId=" +
-                            $this.attr("data-id") +
-                            "&dateTime=" + refreshTime + "&order=1",
-                        success: function (result) {
-                            if (result.code == 200) {
-                                $this.children().not(":eq(-1)").remove();
-                                $this.prepend(creatComment(result.data.list));
-                                emojiParse();//表情转义
-                                loadReplyReportClick();
-                            }
-                        }
-                    })
-                }
-            });
-        }
-
-        //缩略图按钮点击事件
-        function loadReviewPreviewClick() {
-            //缩略图按钮点击事件
-            $(".review-item .preview").find("li").on("click", function () {
-                rotateVal = 0;//清空旋转角度
-                var displayTime = 200;//显示隐藏的过渡时间
-                var $btn = $(this);
-                var $img = $btn.find("img");//获取点击的缩略图
-                if ($btn.parent().find(".active").length <= 0) {//二次点击同一行缩略图则不隐藏
-                    $(".viewer-stage").hide(displayTime);
-                }
-                if ($btn.attr("class") == "") {//判断是否点击同一个缩略图
-                    $(".review-item .preview").find("li").attr("class", "");//取消所有缩略图框
-                    $btn.attr("class", "active");//缩略图框变色
-                    //第一次点击此评论的缩略图则创建预览框
-                    if ($btn.parent().next().length <= 0) {
-                        var str = '<div class="viewer-stage" >\n' +
-                            '                              <div class="toolbar">\n' +
-                            '                                <a class="retract"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i>收起</a>\n' +
-                            '                                <a class="fancybox-button" href=""><i class="fa fa-arrows-alt" aria-hidden="true"></i>原图</a>\n' +
-                            '                                <a class="left-turn">向左转</a>\n' +
-                            '                                <a class="right-turn">向右转</a>\n' +
-                            '                              </div>\n' +
-                            '                              <div class="img-box">\n' +
-                            '                                <div class="image-wrapper">\n' +
-                            '                                  <img src=""/>';
-                        str += '<a class="prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>';
-                        str += '<a class="next"><i class="fa fa-chevron-right" aria-hidden="true"></i></a></div></div></div>';
-                        $btn.parent().parent().append(str);
-                        //收起预览框按钮点击事件
-                        $(".viewer-stage .retract").off("click").on("click", function () {
-                            displayPreviewBox(displayTime);
-                        });
-                        leftAndRightRotationBtn();//左右旋转按钮事件
-                        //上下页按钮显示隐藏
-                        displaySwitchBtn($btn.prev().length, $btn.next().length,
-                            $btn.parent().next().children(".img-box").find(".prev"),
-                            $btn.parent().next().children(".img-box").find(".next"));
-                        //调用预览框上下页按钮
-                        loadPreviewSwitchBtn();
-                        //显示预览框并在回调方法启用图片自适应处理
-                        $btn.parent().parent().find(".viewer-stage").show(displayTime, function () {
-                            imageAdaptation($btn.parent().parent().find(".viewer-stage"), $img, 0);
-                        });
-                    } else {
-                        //显示预览框并在回调方法启用图片自适应处理
-                        $btn.parent().parent().find(".viewer-stage").show(displayTime, function () {
-                            imageAdaptation($btn.parent().parent().find(".viewer-stage"), $img, 0);
-                        });
-                        //上下页按钮显示隐藏
-                        displaySwitchBtn($btn.prev().length, $btn.next().length,
-                            $btn.parent().next().children(".img-box").find(".prev"),
-                            $btn.parent().next().children(".img-box").find(".next"));
-                    }
-                    //给原图按钮更新图片
-                    $btn.parent().parent().find(".viewer-stage .toolbar .fancybox-button")
-                        .attr("href", $img.attr("src"));
-                } else {
-                    //取消所有缩略图框并隐藏预览框
-                    displayPreviewBox(displayTime);
-                }
-            });
-        }
-
-        //一条评论的所有按钮事件
-        function loadReplyReportClick() {
-            //喜欢按钮点击事件
-            $(".reply-wrap .like").off("click").on("click", function () {
-                $this = $(this);
-                $.ajax({
-                    url: urlPrefix + "/spot_praise",
-                    method: "post",
-                    data: "commentId=" + $this.attr("data-cid"),
-                    success: function (result) {
-                        if (result.code == 200) {
-                            if (result.data) {//判断是点或取消
-                                $this.find("span").text(parseInt($this.text()) + 1);
-                                $this.find("i").attr("class", "fa fa-heart liked");
-                            } else {
-                                $this.find("span").text(parseInt($this.text()) - 1);
-                                $this.find("i").attr("class", "fa fa-heart-o");
-                            }
-
-                        }
-                    }
-                })
-            })
-            //回复按钮点击事件
-            $(".review-item .reply").off("click").on("click", function () {
-                var $clickBtn = $(this);
-                //父级评论编号
-                var parentCid = $clickBtn.parent().parent().parent().attr("data-id");
-                //被回复者名称
-                var byReplyName = $clickBtn.parent().prev().find(".name").text();
-                byReplyName = byReplyName == "" ? "文明用语" : "回复 @" + byReplyName;
-                if (parentCid != "" && parentCid != null) {//没有父级评论编号则无法创建
-                    //同一个评论下的回复则重复创建回复框
-                    if ($('.reply-wrap[data-id=' + parentCid + '] .comment-send').length <= 0) {
-                        $(".reply-wrap .comment-send").remove();
-                        var str = '<div class="comment-send">\n' +
-                            '                            <div class="user-face">\n' +
-                            '                              <img src="assets/corporate/img/tx004.png"/>\n' +
-                            '                            </div>\n' +
-                            '                            <div class="textarea-container">\n' +
-                            '                              <textarea class="ipt-txt textarea" cols="80" name="msg" rows="5" placeholder="' + byReplyName + '" ></textarea>\n' +
-                            '                              <button type="submit" data-parentCid=' + parentCid + ' class="comment-submit">发表评论</button>\n' +
-                            '                            </div>\n' +
-                            '<div class="comment-emoji">' +
-                            '<i class="fa fa-smile-o" aria-hidden="true"></i>' +
-                            '<span>表情</span>' +
-                            '</div>'
-                        '                          </div>';
-                        //添加至该父级评论底部
-                        $(".reply-wrap[data-id='" + parentCid + "'] .review-item").append(str);
-                        $(".comment-send textarea").focus();//设置焦点
-                        loadEmoji();
-                        loadCommentSubmitBtn($clickBtn, $clickBtn.parent().prev().find(".name").text());
-                    } else {
-                        //更新被回复者名称
-                        $('.reply-wrap[data-id=' + parentCid + '] .comment-send')
-                            .find("textarea").attr("placeholder", byReplyName).focus();
-                    }
-                }
-            });
-            //鼠标滑入回复评论显示举报按钮
-            $(".reply-box .reply-item").off("mouseenter").on("mouseenter", function () {
-                $(this).find(".report").css({"display": "block"});
-            });
-            //鼠标滑出回复评论隐藏举报按钮
-            $(".reply-box .reply-item").off("mouseleave").on("mouseleave", function () {
-                $(this).find(".report").css({"display": "none"});
-            });
-            //举报按钮点击事件
-            $(".reply-wrap .report").off("click").on("click", function () {
-                //获取举报的评论编号
-                var commentId = $(this).attr("data-cid");
-                $(".comment-report-mask").remove();
-                //初始化举报界面
-                if (reportReason == "") {
-                    $.ajax({
-                        url: urlPrefix + "/list_reportReason",
-                        method: "get",
-                        async: false,
-                        success: function (result) {
-                            if (result.code == 200) {
-                                reportReason = '<div class="comment-report-mask">\n' +
-                                    '  <div class="comment-report-frame">\n' +
-                                    '    <div class="title">\n' +
-                                    '      请选择举报理由\n' +
-                                    '      <i class="fa fa-times btn-close" aria-hidden="true"></i>\n' +
-                                    '    </div>\n' +
-                                    '    <div class="con">\n' +
-                                    '      <div class="reason-box">\n' +
-                                    '        <dl class="clearfix">\n';
-                                $.each(result.data, function (index, obj) {
-                                    reportReason += '   <dd>\n' +
-                                        '            <label class="type-selector radio-selector">\n' +
-                                        '              <div class="radio radio-info radio-inline">\n' +
-                                        '                  <input name="report_reason" class="radio" id="report_index_' + index + '" type="radio" value=' + obj.reaInfo + '>\n' +
-                                        '                  <label for="report_index_' + index + '">' + obj.reaInfo + '</label>\n' +
-                                        '              </div>\n' +
-                                        '            </label>\n' +
-                                        '          </dd>\n';
-                                })
-                                reportReason += '</dl>\n' +
-                                    '      </div>\n' +
-                                    '      <div class="other">\n' +
-                                    '        <div class="btn-other">\n' +
-                                    '          <label class="type-selector radio-selector">\n' +
-                                    '            <div class="radio radio-info radio-inline">\n' +
-                                    '                <input name="report_reason" class="radio" id="other" type="radio" >\n' +
-                                    '                <label for="other">其他</label>\n' +
-                                    '            </div>\n' +
-                                    '          </label>\n' +
-                                    '        </div>\n' +
-                                    '        <div class="ta">\n' +
-                                    '          <textarea placeholder="自定义理由" ></textarea>\n' +
-                                    '        </div>\n' +
-                                    '      </div>\n' +
-                                    '      <div class="btn-con">\n' +
-                                    '        <a class="btn-cancel">取消</a>\n' +
-                                    '        <a class="btn-submit">确定</a>\n' +
-                                    '      </div>\n' +
-                                    '    </div>\n' +
-                                    '  </div>\n' +
-                                    '</div>';
-                            }
-                        }
-                    })
-                }
-                $("body").append(reportReason);
-                loadReportFrameBtn(commentId);
-            });
-        }
-
-        //重载表情配置
-        function loadEmoji() {
-            $(".emoji_container").remove();
-            if ($(".emoji_container").length <= 0) {
-                $(".comment-send .textarea").emoji({
-                    button: ".comment-emoji",
-                    animation: 'slide',
-                    showTab: true,
-                    position: "bottomRight",
-                    icons: [{
-                        name: "emoji",
-                        path: "emoji/1/bqfh",
-                        maxNum: 50,
-                        file: ".png",
-                        placeholder: "{{alias}}",
-                        alias: {
-                            1: "hehe",
-                            2: "haha",
-                            3: "tushe",
-                            4: "a",
-                            5: "ku",
-                            6: "lu",
-                            7: "kaixin",
-                            8: "han",
-                            9: "lei",
-                            10: "heixian",
-                            11: "bishi",
-                            12: "bugaoxing",
-                            13: "zhenbang",
-                            14: "qian",
-                            15: "yiwen",
-                            16: "yinxian",
-                            17: "tu",
-                            18: "yi",
-                            19: "weiqu",
-                            20: "huaxin",
-                            21: "hu",
-                            22: "xiaonian",
-                            23: "neng",
-                            24: "taikaixin",
-                            25: "huaji",
-                            26: "mianqiang",
-                            27: "kuanghan",
-                            28: "guai",
-                            29: "shuijiao",
-                            30: "jinku",
-                            31: "shengqi",
-                            32: "jinya",
-                            33: "pen",
-                            34: "aixin",
-                            35: "xinsui",
-                            36: "meigui",
-                            37: "liwu",
-                            38: "caihong",
-                            39: "xxyl",
-                            40: "taiyang",
-                            41: "qianbi",
-                            42: "dnegpao",
-                            43: "chabei",
-                            44: "dangao",
-                            45: "yinyue",
-                            46: "haha2",
-                            47: "shenli",
-                            48: "damuzhi",
-                            49: "ruo",
-                            50: "OK"
-                        },
-                        title: {
-                            1: "呵呵",
-                            2: "哈哈",
-                            3: "吐舌",
-                            4: "啊",
-                            5: "酷",
-                            6: "怒",
-                            7: "开心",
-                            8: "汗",
-                            9: "泪",
-                            10: "黑线",
-                            11: "鄙视",
-                            12: "不高兴",
-                            13: "真棒",
-                            14: "钱",
-                            15: "疑问",
-                            16: "阴脸",
-                            17: "吐",
-                            18: "咦",
-                            19: "委屈",
-                            20: "花心",
-                            21: "呼~",
-                            22: "笑脸",
-                            23: "冷",
-                            24: "太开心",
-                            25: "滑稽",
-                            26: "勉强",
-                            27: "狂汗",
-                            28: "乖",
-                            29: "睡觉",
-                            30: "惊哭",
-                            31: "生气",
-                            32: "惊讶",
-                            33: "喷",
-                            34: "爱心",
-                            35: "心碎",
-                            36: "玫瑰",
-                            37: "礼物",
-                            38: "彩虹",
-                            39: "星星月亮",
-                            40: "太阳",
-                            41: "钱币",
-                            42: "灯泡",
-                            43: "茶杯",
-                            44: "蛋糕",
-                            45: "音乐",
-                            46: "haha",
-                            47: "胜利",
-                            48: "大拇指",
-                            49: "弱",
-                            50: "OK"
-                        }
-                    }, {
-                        name: "经典表情",
-                        path: "emoji/qq/",
-                        maxNum: 50,
-                        file: ".gif",
-                        placeholder: "#qq_{alias}#"
-                    }]
-                });
-            }
-            $(".comment-send .comment-emoji").off("click").on("click", function (e) {
-                $(".emoji_container").css("top", e.pageY + 22);
-            })
-        }
-
-        //举报页面的按钮事件
-        function loadReportFrameBtn(commentId) {
-            //选中其他理由则显示文本框
-            $(".comment-report-mask input").off("click").on("click", function () {
-                var $input = $(this);
-                if ($input.attr("id") == "other") {
-                    $(".comment-report-mask .ta").css({"display": "block"});
-                } else {
-                    $(".comment-report-mask .ta").css({"display": "none"});
-                }
-            });
-            //举报界面关闭按钮事件
-            $(".comment-report-mask .btn-close").off("click").on("click", function () {
-                $(".comment-report-mask").remove();
-            });
-            //举报界面取消按钮点击事件
-            $(".comment-report-mask .btn-cancel").off("click").on("click", function () {
-                $(".comment-report-mask").remove();
-            });
-            //举报界面提交按钮事件
-            $(".comment-report-mask .btn-submit").off("click").on("click", function () {
-                var $this = $(this);
-                var reason;
-                //判断是选择默认理由或者自定义
-                if (typeof ($this.parent().prev().prev().find("input:radio:checked").val()) != "undefined") {
-                    reason = $this.parent().prev().prev().find("input:radio:checked").val();
-                } else {
-                    reason = $this.parent().prev().find("textarea").val();
-                }
-                if (reason != "" && reason != null) {
-                    $.ajax({
-                        url: urlPrefix + "/add_report",
-                        method: "post",
-                        data: "commentId=" + commentId + "&reason=" + reason,
-                        success: function (result) {
-                            if (result.code == 200) {
-                                $(".comment-report-mask").remove();
-                            }
-                        }
-                    })
-                } else {
-                    alert("请选择理由");
-                }
-            });
-        }
-
-        //发表评论按钮点击事件
-        function loadCommentSubmitBtn($rplyBtn, byReplyName) {
-            byReplyName = byReplyName == "" ? "" : "回复 @" + byReplyName;
-            //获取评论级别
-            $(".comment-send .comment-submit").off("click").on("click", function () {
-                var $btn = $(this);
-                //获取评论内容
-                var replyCon = $btn.prev().val().trim();
-                var time = getNowDateFormat();
-                var str = '<div class="reply-item" data-cid="2003">' + //回复评论编号
-                    '                              <a class="reply-face">' +
-                    '                                <img src="assets/corporate/img/tx004.png"/>\n' +
-                    '                              </a>\n' +
-                    '                              <div class="reply-con">\n' +
-                    '                                <div class="user">\n' +
-                    '                                  <a target="_blank" class="name">我牛逼</a>\n' +
-                    '                                  <span class="text-con">' + byReplyName + "：" + replyCon + '</span>\n' +
-                    '                                </div>\n' +
-                    '                              </div>\n' +
-                    '                              <div class="info">\n' +
-                    '                                <span class="time">' + time + '</span>\n' +
-                    '                              </div>\n' +
-                    '                          </div>';
-                var commentData = {
-                    "goodsId": goodsId, "parentId": $btn.attr("data-parentCid"),
-                    "bycId": $rplyBtn.attr("data-cid"), "content": replyCon, "time": time
-                };
-                $.ajax({
-                    url: urlPrefix + "/add_comment",
-                    method: "post",
-                    data: commentData,
-                    success: function (result) {
-                        if (result.code == 200) {
-                            alert(111);
-                            $(".reply-box[data-id=" + $btn.attr("data-parentCid") + "]").prepend(str);
-                            emojiParse();
-                            $(".reply-wrap .comment-send").remove();//删除发表评论框
-                        } else {
-
-                        }
-                    }
-                })
-            });
-        }
-
-        //隐藏图片预览框
-        function displayPreviewBox(displayTime) {
-            $(".review-item .preview").find("li").attr("class", "");
-            $(".viewer-stage").hide(displayTime);
-        };
-
-        //左右旋转按钮事件
-        function leftAndRightRotationBtn() {
-            //向左旋转按钮点击事件
-            $(".viewer-stage .left-turn").rotate({
-                bind: {
-                    click: function () {
-                        var $this = $(this);
-                        rotateVal -= 90;
-                        //调用预览框图片处理
-                        imageAdaptation($this.parent().parent()
-                            , $this.parent().next().find(".image-wrapper img"), rotateVal);
-                    }
-                }
-            });
-            //向右旋转按钮点击事件
-            $(".viewer-stage .right-turn").rotate({
-                bind: {
-                    click: function () {
-                        var $this = $(this);
-                        rotateVal += 90;
-                        //调用预览框图片处理
-                        imageAdaptation($this.parent().parent()
-                            , $this.parent().next().find(".image-wrapper img"), rotateVal);
-                    }
-                }
-            });
-        }
-
-        //预览框图片的自适应(预览框，图片)
-        function imageAdaptation($previewBox, $img, rotateAngle) {
-            //在内存中生成一张图片获取size，赋值给真正的预览框
-            $("<img/>").attr("src", $img.attr("src")).load(function () {
-                var FitWidth = 400;//最大宽度
-                var FitHeight = 400;//最大高度
-                var imgWidth = this.width;
-                var imgHeight = this.height;
-                if (imgWidth > FitWidth) {//宽度是否超出
-                    imgHeight = (imgHeight * FitWidth) / imgWidth;//计算比例
-                    imgWidth = FitWidth;
-                }
-                if (imgHeight > FitHeight) {//高度是否超出
-                    imgWidth = (imgWidth * FitHeight) / imgHeight;
-                    imgHeight = FitHeight;
-                }
-                if ((rotateAngle / 90) % 2 != 0) {//旋转角度
-                    $previewBox.css({"width": imgHeight});//预览框设定宽
-                    $previewBox.find(".image-wrapper").css({"height": imgWidth});//图片框设定高
-                } else {
-                    $previewBox.css({"width": imgWidth});
-                    $previewBox.find(".image-wrapper").css({"height": imgHeight});
-                }
-                if (rotateAngle == 0) {//切换图片才新建img
-                    $previewBox.find(".image-wrapper img").remove();
-                    $previewBox.find(".image-wrapper").prepend("<img/>")
-                    $previewBox.find(".image-wrapper img")//更新图片和大小
-                        .attr("src", $img.attr("src"))
-                        .css({"width": imgWidth, "height": imgHeight});
-                } else {//旋转只更新预览框高宽
-                    $previewBox.find(".image-wrapper img")
-                        .css({"display": "none"})
-                        .rotate({
-                            animateTo: rotateAngle,//旋转角度
-                            duration: 150,//时间
-                            callback: function () {//旋转完的回调
-                                $previewBox.find(".image-wrapper img")//旋转完后更新大小并显示
-                                    .css({"width": imgWidth, "height": imgHeight, "display": "block"})
-                            }
-                        });
-                }
-            });
-        }
-
-        //预览框上下页按钮事件
-        function loadPreviewSwitchBtn() {
-            //上一页
-            $(".image-wrapper").find(".prev").off("click").on("click", function () {
-                rotateVal = 0;//清空旋转角度
-                var $this = $(this);
-                //获取当前被点击的缩略图
-                var $item = $this.parent().parent().parent().prev().children(".active");
-                if ($item.prev().length > 0) {//判断是否第一张
-                    var $img = $item.prev().find("img");//获取图片
-                    //给前一个缩略图加框
-                    $item.attr("class", "").prev().attr("class", "active");
-                    //更新原图按钮图片
-                    $this.parent().parent().prev().find(".fancybox-button").attr("href", $img.attr("src"));
-                    //预览框图片自适应处理
-                    imageAdaptation($this.parent().parent().parent(), $img, 0);
-                }
-                //获取更新后的缩略图框
-                var $newItem = $this.parent().parent().parent().prev().children(".active");
-                displaySwitchBtn($newItem.prev().length, $newItem.next().length, $this, $this.next());
-            });
-            //下一页
-            $(".image-wrapper").find(".next").off("click").on("click", function () {
-                rotateVal = 0;//清空旋转角度
-                var $this = $(this);
-                var $item = $this.parent().parent().parent().prev().children(".active");
-                if ($item.next().length > 0) {
-                    var $img = $item.next().find("img");
-                    $item.attr("class", "").next().attr("class", "active");
-                    $this.parent().parent().prev().find(".fancybox-button").attr("href", $img.attr("src"));
-                    imageAdaptation($this.parent().parent().parent(), $img, 0);
-                }
-                var $newItem = $this.parent().parent().parent().prev().children(".active");
-                displaySwitchBtn($newItem.prev().length, $newItem.next().length, $this.prev(), $this);
-            });
-        }
-
-        //上下页按钮鼠标滑入滑出事件
-        function displaySwitchBtn(prevLength, nextLength, $prevBtn, $nextBtn) {
-            $prevBtn.attr("class", "prev display");//隐藏上一页按钮
-            $nextBtn.attr("class", "next display");//隐藏下一页按钮
-            if (prevLength > 0) {//判断是否第一张图片
-                $prevBtn.attr("class", "prev");
-                $prevBtn.off("mouseenter").mouseenter(function () {//鼠标滑入
-                    $(this).find("i").fadeIn();
-                });
-                $prevBtn.off("mouseleave").mouseleave(function () {//滑出
-                    $(this).find("i").fadeOut();
-                });
-            }
-            if (nextLength > 0) {//判断是否最后一张图片
-                $nextBtn.attr("class", "next");
-                $nextBtn.off("mouseenter").mouseenter(function () {
-                    $(this).find("i").fadeIn();
-                });
-                $nextBtn.off("mouseleave").mouseleave(function () {
-                    $(this).find("i").fadeOut();
-                });
-            }
-        }
-
-        //表情格式转码
-        function emojiParse() {
-            $(".reply-con .text-con").removeData("plugin_emojiParse");
-            $(".reply-con .text-con").emojiParse({
-                icons: [{
-                    path: "emoji/1/bqfh",
-                    file: ".png",
-                    placeholder: "{{alias}}",
-                    alias: {
-                        1: "hehe",
-                        2: "haha",
-                        3: "tushe",
-                        4: "a",
-                        5: "ku",
-                        6: "lu",
-                        7: "kaixin",
-                        8: "han",
-                        9: "lei",
-                        10: "heixian",
-                        11: "bishi",
-                        12: "bugaoxing",
-                        13: "zhenbang",
-                        14: "qian",
-                        15: "yiwen",
-                        16: "yinxian",
-                        17: "tu",
-                        18: "yi",
-                        19: "weiqu",
-                        20: "huaxin",
-                        21: "hu",
-                        22: "xiaonian",
-                        23: "neng",
-                        24: "taikaixin",
-                        25: "huaji",
-                        26: "mianqiang",
-                        27: "kuanghan",
-                        28: "guai",
-                        29: "shuijiao",
-                        30: "jinku",
-                        31: "shengqi",
-                        32: "jinya",
-                        33: "pen",
-                        34: "aixin",
-                        35: "xinsui",
-                        36: "meigui",
-                        37: "liwu",
-                        38: "caihong",
-                        39: "xxyl",
-                        40: "taiyang",
-                        41: "qianbi",
-                        42: "dnegpao",
-                        43: "chabei",
-                        44: "dangao",
-                        45: "yinyue",
-                        46: "haha2",
-                        47: "shenli",
-                        48: "damuzhi",
-                        49: "ruo",
-                        50: "OK"
-                    }
-                }, {
-                    path: "emoji/qq/",
-                    file: ".gif",
-                    placeholder: "#qq_{alias}#"
-                }]
-            });
-        }
-
-        //获取当前时间
-        function getNowDateFormat() {
-            var nowDate = new Date();
-            var year = nowDate.getFullYear();
-            var month = filterNum(nowDate.getMonth() + 1);
-            var day = filterNum(nowDate.getDate());
-            var hours = filterNum(nowDate.getHours());
-            var min = filterNum(nowDate.getMinutes());
-            var seconds = filterNum(nowDate.getSeconds());
-            return year + "-" + month + "-" + day + " " + hours + ":" + min + ":" + seconds;
-        }
-
-        //小于10的数字加多一个0
-        function filterNum(num) {
-            if (num < 10) {
-                return "0" + num;
-            } else {
-                return num;
-            }
-        }
-
-        //搜索框获取焦点
-        $(".search-form").find("input").on("focus", function () {
-            var $btn = $(".search-form").find(".input-group");
-            $btn.append('<div class="search-result"><a>aj111</a></div>').slideDown();
-        });
-        //搜索框失去焦点
-        $(".search-form").find("input").on("blur", function () {
-            var $btn = $(".search-form").find(".input-group");
-            $btn.find(".search-result").fadeTo("slow", 0.01, function () {//fade
-                $(this).slideUp("slow", function () {//slide up
-                    $(this).remove();//then remove from the DOM
-                });
-            });
-        });
-
-
-    })
+    function addInfo(data) {
+        $('title').text(data.goodsInfo.goodsName);
+        $('#good_title').text(data.goodsInfo.goodsName);
+        $('.good_name').text(data.goodsInfo.goodsName);
+        $('#good_price').text(data.skuRelations[0].skuInfo.skuPrice);
+        $('#spu_remark').text(data.goodsInfo.spuInfo.spuRemark)
+    }
 </script>
-
-<!-- END PAGE LEVEL JAVASCRIPTS -->
 </body>
 <!-- END BODY -->
 </html>

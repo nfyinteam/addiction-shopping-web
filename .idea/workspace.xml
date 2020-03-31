@@ -2,23 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8720a9a1-e80e-4907-a751-2274165dc2ff" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/corporate/img/logos/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/shop-item.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-about.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-account.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-account.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-checkout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-contacts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-faq.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-faq.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-goods-compare.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-goods-compare.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop-item.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-item.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-privacy-policy.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-privacy-policy.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-product-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-product-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-search-result.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-search-result.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-shopping-cart-null.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-shopping-cart-null.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-shopping-cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-shopping-cart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-standart-forms.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-standart-forms.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-terms-conditions-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-terms-conditions-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-wishlist.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-wishlist.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,17 +44,20 @@
     </option>
   </component>
   <component name="ProjectId" id="1YynE2Or4L8E0q6Ly6ypMOTpex4" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../hansen" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -99,7 +89,7 @@
       <workItem from="1583923588144" duration="2166000" />
       <workItem from="1583929397434" duration="167000" />
       <workItem from="1584691240410" duration="9967000" />
-      <workItem from="1585211842920" duration="6617000" />
+      <workItem from="1585211842920" duration="20767000" />
     </task>
     <task id="LOCAL-00001" summary="create web project">
       <created>1583923929136</created>
@@ -164,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585214053759</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="修改了所有页面的导航栏">
+      <created>1585220442035</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1585220442035</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,37 +179,39 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="create web project" />
     <MESSAGE value="add README.md" />
     <MESSAGE value="删除了.idea" />
     <MESSAGE value="修改了商品页面" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改了商品页面" />
+    <MESSAGE value="修改了所有页面的导航栏" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改了所有页面的导航栏" />
   </component>
   <component name="WindowStateProjectService">
     <state x="690" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585209646738">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585209646738" />
-    <state x="380" y="114" key="CommitChangelistDialog2" timestamp="1585214048303">
+    <state x="380" y="114" key="CommitChangelistDialog2" timestamp="1585619551667">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="380" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585214048303" />
-    <state x="740" y="264" key="FileChooserDialogImpl" timestamp="1583998669798">
+    <state x="380" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585619551667" />
+    <state x="740" y="264" key="FileChooserDialogImpl" timestamp="1585594283298">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="264" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1583998669798" />
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1585214055975">
+    <state x="740" y="264" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1585594283298" />
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1585220444284">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1585214055975" />
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1585220444284" />
     <state x="639" y="322" key="git4idea.merge.GitPullDialog" timestamp="1584942919181">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="639" y="322" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584942919181" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1584725626563">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1585581408101">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1584725626563" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1585581408101" />
     <state x="790" y="314" key="svn.repositoryBrowser" timestamp="1583923653780">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
