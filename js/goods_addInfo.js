@@ -89,9 +89,12 @@ function addInfo(data) {
         if(goodsImg.imgIndex == 1){
             $("#good-img-index").empty();
             $("#good-img-index").append(
+                '<a href="http://www.88k88.cn:9090/Server-files/Images/goodsImges/' + goodsImg.img.imgFile +
+                '" class="fancybox-button" rel="photos-lib">' +
                 '<img src="http://www.88k88.cn:9090/Server-files/Images/goodsImges/' +
                 goodsImg.img.imgFile + '" class="img-responsive"' +
-                'data-BigImgsrc = "http://www.88k88.cn:9090/Server-files/Images/goodsImges/' + goodsImg.img.imgFile + '">'
+                'data-BigImgsrc = "http://www.88k88.cn:9090/Server-files/Images/goodsImges/' + goodsImg.img.imgFile + '">' +
+                '</a>'
             );
         }else{
             $('#good-imgs').append(
@@ -101,5 +104,48 @@ function addInfo(data) {
                 '">' + '</a>'
             );
         }
+    });
+    $('#Description').empty();
+    $.each(data.introduceTypes, function(i, type){
+        var values = data.introduceMap[type.itName];
+        var introduceType = "";
+        $.each(values, function(index, value){
+            if(value.img.imgId != null && value.img.imgId != ""){
+                introduceType += '<img class="introduce-img" src="http://www.88k88.cn:9090/Server-files/Images/goodsImges/' + value.img.imgFile + '">'
+                if(value.iRemark != null || value.iRemark != ""){
+                    introduceType += '<p class="introduce-remarks-p">'+ value.iRemark + '</p>'
+                }
+            }else{
+                if(value.iRemark != null || value.iRemark != ""){
+                    introduceType += '<p class="introduce-remarks-p">'+ value.iRemark + '</p>'
+                }
+            }
+        });
+        $('#Description').append(
+                '<div class="row" style="margin-left: 10px;margin-top: 20px;">'+
+                '<h1 class="introduce-title">' + type.itName + '</h1>'+
+                '<div class="col-md-12">'+ introduceType +
+                '</div>'+
+                '</div>'
+        );
+    });
+
+    $('#Information').empty();
+    var keyRelationInfo = "";
+    $.each(data.keyRelationMap, function(key, values){
+        $.each(values, function(index, value){
+            keyRelationInfo += '<tr>'+ '<td class="datasheet-features-type">' + value.key.keyName + '</td>'+
+                '<td>' + value.value.valueName + '</td>'+
+                '</tr>';
+        });
+        $('#Information').append(
+            '<table class="datasheet key-relation-type">'+
+            '<tr>'+
+            '<th colspan="2">' + key + '</th>'+
+            '</tr>' +
+            keyRelationInfo +
+            '</table>'
+        );
+        keyRelationInfo = "";
     });
 }
