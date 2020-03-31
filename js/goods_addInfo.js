@@ -22,7 +22,7 @@ function init() {
         url : 'http://www.88k88.cn/userapi/goodsAllInfo/' + goodId,
         method : 'get',
         success : function (result) {
-            if(result.data.goodsInfo == null || result.code != 200){
+            if(result.data == null || result.code != 200){
                 location.href = 'shop-index.html';
             }
             goodInfo = result.data;
