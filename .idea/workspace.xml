@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8720a9a1-e80e-4907-a751-2274165dc2ff" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/pages/img/face.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/buy_now.jhtml.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/buy-now.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/control.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/jquery.easing.1.3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/stepBar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy_now.html" beforeDir="false" afterPath="$PROJECT_DIR$/buy_now.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +99,7 @@
       <workItem from="1583929397434" duration="167000" />
       <workItem from="1584691240410" duration="9967000" />
       <workItem from="1585211842920" duration="38596000" />
-      <workItem from="1585677417546" duration="19664000" />
+      <workItem from="1585677417546" duration="21430000" />
     </task>
     <task id="LOCAL-00001" summary="create web project">
       <created>1583923929136</created>
@@ -232,7 +227,21 @@
       <option name="project" value="LOCAL" />
       <updated>1585715026447</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="添加了创建订单页面">
+      <created>1585758110187</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1585758110187</updated>
+    </task>
+    <task id="LOCAL-00020" summary="添加了创建订单页面">
+      <created>1585758264465</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1585758264465</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -266,7 +275,8 @@
     <MESSAGE value="实现了商品加载名称价格" />
     <MESSAGE value="完成商品属性选择" />
     <MESSAGE value="完成商品页面" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成商品页面" />
+    <MESSAGE value="添加了创建订单页面" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加了创建订单页面" />
   </component>
   <component name="WindowStateProjectService">
     <state x="690" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585209646738">
@@ -281,10 +291,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="264" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1585620132319" />
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1585758169898">
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1585758265910">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1585758169898" />
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1585758265910" />
     <state x="639" y="322" key="git4idea.merge.GitPullDialog" timestamp="1585680340291">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
