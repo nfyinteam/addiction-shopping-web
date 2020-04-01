@@ -939,6 +939,7 @@ line-height: 118px;
 }
 .introduce-img{
     width: 100%;
+    height: auto;
     margin-bottom: 20px;
 }
 .introduce-remarks-p{
