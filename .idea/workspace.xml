@@ -247,7 +247,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585811390211</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="添加了创建订单页面">
+      <created>1585811674796</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1585811674796</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,10 +296,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585209646738" />
-    <state x="380" y="114" key="CommitChangelistDialog2" timestamp="1585811666149">
+    <state x="380" y="114" key="CommitChangelistDialog2" timestamp="1585811672681">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="380" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585811666149" />
+    <state x="380" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585811672681" />
     <state x="184" y="92" key="DiffContextDialog" timestamp="1585811654163">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -309,10 +316,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="708" y="235" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585811486952" />
-    <state x="639" y="322" key="git4idea.merge.GitPullDialog" timestamp="1585811504327">
+    <state x="639" y="322" key="git4idea.merge.GitPullDialog" timestamp="1585812265143">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="639" y="322" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585811504327" />
+    <state x="639" y="322" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585812265143" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1585674421712">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
