@@ -1,6 +1,8 @@
-var urlPrefix="http://www.88k88.cn/userapi";
+var urlPrefix="http://127.0.0.1:8080/userapi";
+//var urlPrefix="http://www.88k88.cn/adminapi";
 //买家秀图片地址
-var commentImageUrl="http://www.88k88.cn:9090/Server-files/Images/commentImges";
+var commentImageUrl="http://www.88k88.cn:9090/Server-files/Images/commentImges/";
+var userFaceImageUrl="http://www.88k88.cn:9090/Server-files/Images/userFace/";
 var emojiUrl="http://www.88k88.cn:9090/Server-files/Images/emoji";
 var rotateVal=0;//预览图的旋转角度
 var refreshTime=getNowDateFormat();//刷新页面的时间
@@ -83,12 +85,12 @@ function creatBuyShow(data){
       var str='<div data-id='+obj.comId+' class="reply-wrap">'+ //父级评论编号
 '                        <div class="user-face">\n' +
 '                          <a>\n' +
-'                            <img src="../assets/corporate/img/tx004.png"/>\n' +
+'                            <img src="'+userFaceImageUrl+obj.userFace+'"/>\n' +
 '                          </a>\n' +
 '                        </div>\n' +
 '                        <div class="review-item clearfix">\n' +
 '                          <div class="user">\n' +
-'                            <a target="_blank" class="name">牛战士</a>\n' +
+'                            <a target="_blank" class="name">'+obj.userName+'</a>\n' +
 '                            <div class="rateit" data-rateit-value='+obj.comScore+' data-rateit-ispreset="true" data-rateit-readonly="true"></div>' +
 '                          </div>  \n' +
 '                          <p class="text">'+obj.content+'</p>';
@@ -133,7 +135,7 @@ function loadBuyShowImage(data){
   var str='<div class="preview"><ul>';
   $.each(data,function(index,obj){
     str+='<li class="">' +
-            '<img src='+commentImageUrl+""/"/"+obj.imgName+'>' +
+            '<img src="'+commentImageUrl+obj.imgName+'"/>' +
           '</li>';
   });
   str+='</ul></div>';
@@ -184,11 +186,11 @@ function creatComment(data){
     var isLike=obj.theUser=="1"?"fa-heart liked":"fa-heart-o";//判断该用户是否点赞
     str+='<div class="reply-item" data-cid='+obj.comId+'>'+ //回复评论编号
 '                              <a class="reply-face">\n' +
-'                                <img src="../assets/corporate/img/tx004.png"/>\n' +
+'                                <img src="'+userFaceImageUrl+obj.userFace+'"/>\n' +
 '                              </a>\n' +
 '                              <div class="reply-con">\n' +
 '                                <div class="user">\n' +
-'                                  <a target="_blank" class="name">面具怪</a>\n' +
+'                                  <a target="_blank" class="name">'+obj.userName+'</a>\n' +
 '                                  <span class="text-con">'+content+'</span>\n' +
 '                                </div>\n' +
 '                              </div>\n' +
@@ -371,7 +373,7 @@ function loadCommentAllBtnClick(){
         $(".reply-wrap .comment-send").remove();
         var str='<div class="comment-send">\n' +
 '                            <div class="user-face">\n' +
-'                              <img src="../assets/corporate/img/tx004.png"/>\n' +
+'                              <img src="assets/corporate/img/tx004.png"/>\n' +
 '                            </div>\n' +
 '                            <div class="textarea-container">\n' +
 '                              <textarea class="ipt-txt textarea" cols="80" name="msg" rows="5" placeholder="'+byReplyName+'" ></textarea>\n' +
@@ -478,8 +480,8 @@ function loadCommentAllBtnClick(){
         '    </div>';
       $("body").append(deleteReason);
       //改变弹框位置
-      $(".confirm_del_comment").css({"left":e.pageX-$(".confirm_del_comment").width()/2,
-        "top":e.pageY-$(".confirm_del_comment").height()-$this.height()*2});
+      $(".confirm_del_comment").css({"left":(e.pageX-$(".confirm_del_comment").width()/2)-20,
+        "top":e.pageY-$(".confirm_del_comment").height()-$this.height()+15});
       //确定删除按钮点击事件
       $(".confirm_del_comment .ok").off("click").on("click",function(e){
         var $btn_ok=$(this);
@@ -623,7 +625,7 @@ function loadEmoji(){
             }
         },{
             name: "经典表情",
-            path: "emoji/qq/",
+            path: emojiUrl+"/qq/",
             maxNum: 50,
             file: ".gif",
             placeholder: "#qq_{alias}#"
@@ -692,7 +694,7 @@ function loadCommentSubmitBtn($rplyBtn,byReplyName){
     var time=getNowDateFormat();
     var str='<div class="reply-item" data-cid="2003">'+ //回复评论编号
 '                              <a class="reply-face">'+
-'                                <img src="../assets/corporate/img/tx004.png"/>\n' +
+'                                <img src="assets/corporate/img/tx004.png"/>\n' +
 '                              </a>\n' +
 '                              <div class="reply-con">\n' +
 '                                <div class="user">\n' +
@@ -712,7 +714,6 @@ function loadCommentSubmitBtn($rplyBtn,byReplyName){
       data:commentData,
       success:function(result){
         if(result.code==200){
-          alert(111);
           $(".reply-box[data-id="+$btn.attr("data-parentCid")+"]").prepend(str);
           emojiParse();
           $(".reply-wrap .comment-send").remove();//删除发表评论框
