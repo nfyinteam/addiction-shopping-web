@@ -1,0 +1,318 @@
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				background-color:#fce0df;
+			}
+			.c-title{
+				position: relative;?````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+				margin:0 auto;
+				height: 100px;
+			    width:100%px;
+			    background-color:white;
+			}
+			.c-content {
+				
+			    margin-top: 25px;
+			    margin-left: 90px;
+			    min-height: 550px;
+			    width: 1100px;	
+			    background-image:url(../img/milk-tea3.png)  ;
+			 	background-repeat:no-repeat;   
+			}
+			
+			.c-register {
+				position: relative;
+			    width: 360px;
+			    height: 536px;
+			    border-radius: 2px;
+			    background-color: white; 
+			    margin-right: 0;
+			    float: right;
+			}
+			
+			.c-register-header {
+			    padding-right: 30px;
+			    padding-left: 30px;
+			    height: 50px;
+			    line-height: 50px;
+			    border-bottom: 1px solid #e0e0e0;
+			    overflow: hidden;
+			    color: #EE6AA7 ;
+			    text-align: center;
+			}
+			
+			.c-register-body {
+			    padding: 30px;
+			    height: 426px;
+			    width: 300px;
+			}
+			
+			
+			#reg-form-wrapper {
+			    text-align: left;
+			}
+			
+			.information{
+				margin-bottom: 4px;
+				position: relative;
+				height: 67px;
+			    width: 300px;
+			    
+			    
+			}
+			.information1{
+				height: 46px;
+				width: 300px;
+				
+				
+			}
+			
+			.u-input-tip {
+			    font-size: 12px;
+			    color: #666;
+			    position: relative;
+			    min-height: 19px;
+			    max-height: 36px;
+			    overflow: hidden;
+			    text-overflow: ellipsis;
+			    display: -webkit-box;
+			    -webkit-line-clamp: 2;
+			    -webkit-box-orient: vertical;
+			    margin-top: 2px;
+			    margin-bottom: 5px;
+			    line-height: 1.5;
+			    display: block;
+			}
+			
+			.ui-input {
+			    padding-left: 40px;
+			    padding-right: 10px;
+			    padding-bottom: 6px;
+			    padding-top: 6px;
+			    width: 248px;
+			    height: 32px;
+			    line-height: 32px;
+			    
+			    font: 14px/20px tahoma,arial,Hiragino Sans GB,WenQuanYi Micro Hei,'\5FAE\8F6F\96C5\9ED1','\5B8B\4F53',sans-serif;
+			    color: #333;
+			    background-color: #fff;
+			    border: 1px solid #b2b2b2;
+			    border-radius: 3px;
+			    outline: 0;
+			    -webkit-transition: border-color .3s cubic-bezier(.39,.575,.565,1),background-color .3s cubic-bezier(.39,.575,.565,1);
+			    transition: border-color .3s cubic-bezier(.39,.575,.565,1),background-color .3s cubic-bezier(.39,.575,.565,1);
+			}
+			
+			.ui-input:hover{
+				border: 1px solid #666666;
+			}
+			.ipt-verify-code:hover {
+				border: 1px solid #666666;
+			}
+			.ipt-verify-code {
+				
+			    width: 106px;
+			    margin-right: 10px;
+			    padding-left: 40px;
+			    padding-right: 10px;
+			    padding-bottom: 6px;
+			    padding-top: 6px;
+			    height: 32px;
+			    line-height: 32px;
+			    font: 14px/20px tahoma,arial,Hiragino Sans GB,WenQuanYi Micro Hei,'\5FAE\8F6F\96C5\9ED1','\5B8B\4F53',sans-serif;
+			    color: #333;
+			    background-color: #fff;
+			    border: 1px solid #b2b2b2;
+			    border-radius: 3px;
+			    outline: 0;
+			    -webkit-transition: border-color .3s cubic-bezier(.39,.575,.565,1),background-color .3s cubic-bezier(.39,.575,.565,1);
+			    transition: border-color .3s cubic-bezier(.39,.575,.565,1),background-color .3s cubic-bezier(.39,.575,.565,1);
+			}
+	
+			input::-webkit-input-placeholder { /* WebKit browsers */
+				  color:#B2B2B2;
+				   font: 14px/20px tahoma,arial,Hiragino Sans GB,WenQuanYi Micro Hei,'\5FAE\8F6F\96C5\9ED1','\5B8B\4F53',sans-serif;
+				}
+				.c-icon {
+				    display: inline-block;
+				    vertical-align: top;
+					position: absolute;
+				    top: 13px;
+				    left: 11px;
+				    z-index: 1;
+			    }
+			    
+			    .c-icon-mobile {
+				    background-image: url(//member-ssl.vipstatic.com/img/passport/sprites-hash-37a2448b.png?3377aaf5);
+				    background-position: -568px -161px;
+				    width: 20px;
+				    height: 20px;
+				}
+				
+				.c-icon-captcha {
+				    background-image: url(//member-ssl.vipstatic.com/img/passport/sprites-hash-37a2448b.png?3377aaf5);
+				    background-position: -592px -161px;
+				    width: 20px;
+				    height: 20px
+				}
+				
+				.c-icon-password {
+				    background-image: url(//member-ssl.vipstatic.com/img/passport/sprites-hash-37a2448b.png?3377aaf5);
+				    background-position: -544px -161px;
+				    width: 20px;
+				    height: 20px;
+				}
+				
+				.information2{
+					
+					height: 57px;
+					width: 300px;
+					
+				}
+				
+				.information3{
+					margin-top: 6px;
+					margin-bottom: 30px;
+					height: 46px;
+					width: 300px;
+					
+				}
+				
+				.apply{
+					font-family: "\5FAE\8F6F\96C5\9ED1",Arial,tahoma,sans-serif;
+				    font-size: 16px;
+				    width: 298px;
+				    height: 40px;
+				    line-height: 40px;
+				    margin-top: 4px;
+				    padding: 0;
+    				overflow: hidden;
+    				color: #fff;
+    				background-color: #EE6AA7;
+    				border: 1px solid #EE6AA7;
+    				font: 18px/44px tahoma,arial,Hiragino Sans GB,WenQuanYi Micro Hei,'\5FAE\8F6F\96C5\9ED1','\5B8B\4F53',sans-serif;
+					display: inline-block;
+				    border-radius: 3px;
+				    text-decoration: none;
+				    text-align: center;
+				    vertical-align: top;
+				    transition: .3s;
+				    cursor: pointer;
+				}
+				
+				.nowregister{
+					margin: 0 auto;
+					height: 40px;
+					width: 64px;
+					line-height: 40px;
+					font-size: 16px
+				}
+				
+				.ui-form-item-group {
+				width: 300px;
+				height: 36px;
+				
+						
+				}
+				
+				.ui-checkbox {
+				    vertical-align: top;
+				    width: 19px;
+				    height: 13px;
+				    margin-right: 0;
+				    display: inline-block;
+				}
+				
+				.ui-checkbox-normal {
+				    display: none;
+				    vertical-align: text-top
+				}
+				
+				.ui-checkbox-simulation:hover {
+				    background-position: -24px -21px;
+				}
+				.ui-checkbox-simulation {
+				    display: block;
+				    user-select: none;
+				    background-image: url(//bootstrap.vipstatic.com/img/ui/sprite.png?d9eadd17);
+				    background-position: -48px 0;
+				    width: 19px;
+				    height: 16px;
+				    cursor: pointer;
+				}
+				
+				 .u-provision-txt {
+				    vertical-align: middle;
+				    font-size: 12px;
+				    display: inline-block;
+				    width: 276px;
+				    line-height: 1.5;
+				    cursor: default;
+				}
+				
+				.u-link {
+				    color: #1d94d1;
+				    text-decoration: none;
+				}
+				
+				.u-link:hover {
+				    color: #3cbdff;
+				    text-decoration: none;
+				}
+				
+				.ui-btn-medium{
+					float: right;
+					padding: 0 12px;
+				    width: 106px;
+				    font-size: 14px;
+				    height: 44px;
+				    line-height: 44px;
+				    border: 1px solid #d0d0d0;
+				    color: #999;
+				    background: #d0d0d0;
+				    cursor: not-allowed;
+				    min-width: 60px;
+				    font: 15px/30px tahoma,arial,Hiragino Sans GB,WenQuanYi Micro Hei,'\5FAE\8F6F\96C5\9ED1','\5B8B\4F53',sans-serif;
+				    display: inline-block;
+				    border-radius: 3px;
+				    text-decoration: none;
+				    text-align: center;
+				    vertical-align: top;
+				    -webkit-transition: .3s;
+				    transition: .3s;
+				    
+				}
+				
+				
+				.textregister{
+					height: 44px;
+    				line-height: 44px;
+    				font-size:14px;
+				}
+				.text{
+					color: #333;
+				}
+				.tetimage{
+					display: inline-block;
+					margin-left: 120px;
+					height: 100px;
+					width: 200px;
+				}
+				.apply:hover{
+					background-color: #f10180;
+
+				}
+				
+				.tetimage1{
+					display: inline-block;
+					float: right;
+					padding-top: 32px;
+					padding-right:118px;
+					height: 50px;
+					width: 400px;
+				}
+				
+				
+				
