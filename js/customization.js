@@ -1,4 +1,5 @@
-var urlPrefix="http://localhost:8080/adminapi";
+//var urlPrefix="http://www.88k88.cn/adminapi";
+var urlPrefix="http:/127.0.0.1:8080/adminapi";
 loadPageRegion();
 
 function loadPageRegion(){
@@ -75,7 +76,7 @@ $(".preview_region").off("click").on('click',function() {
         $(".region-container img").css({"border":"0px solid "});
         $(".region-container .edit-label-region *")
             .css({"border":"0px solid","min-height":""});
-        $(".edit").removeClass("edit-label-region");
+        //$(".edit").removeClass("edit-label-region");
     }else{
         isPreview=true;
         $(this).text("预览");
@@ -84,8 +85,8 @@ $(".preview_region").off("click").on('click',function() {
         $(".region-container>*:not(:first-child)").css({"border":"1px solid #611610"});
         $(".region-container img").css({"border":"1px solid #403336"});
         $(".region-container .edit-label-region *")
-            .css({"border":"0px solid","min-height":"14px"});
-        $(".edit").addClass("edit-label-region");
+            .css({"border":"1px solid","min-height":"14px"});
+        //$(".edit").addClass("edit-label-region");
     }
 
 })
