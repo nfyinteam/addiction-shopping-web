@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8720a9a1-e80e-4907-a751-2274165dc2ff" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buy_now.html" beforeDir="false" afterPath="$PROJECT_DIR$/buy_now.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +35,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="carb" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -241,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585758264465</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="添加了创建订单页面">
+      <created>1585811390211</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1585811390211</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,22 +289,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585209646738" />
-    <state x="380" y="114" key="CommitChangelistDialog2" timestamp="1585758262257">
+    <state x="380" y="114" key="CommitChangelistDialog2" timestamp="1585811666149">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="380" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585758262257" />
+    <state x="380" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585811666149" />
+    <state x="184" y="92" key="DiffContextDialog" timestamp="1585811654163">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="184" y="92" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585811654163" />
     <state x="740" y="264" key="FileChooserDialogImpl" timestamp="1585620132319">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="264" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1585620132319" />
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1585758265910">
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1585811392876">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1585758265910" />
-    <state x="639" y="322" key="git4idea.merge.GitPullDialog" timestamp="1585680340291">
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1585811392876" />
+    <state x="708" y="235" key="git4idea.branch.GitSmartOperationDialog" timestamp="1585811486952">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="639" y="322" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585680340291" />
+    <state x="708" y="235" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585811486952" />
+    <state x="639" y="322" key="git4idea.merge.GitPullDialog" timestamp="1585811504327">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="639" y="322" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585811504327" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1585674421712">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
