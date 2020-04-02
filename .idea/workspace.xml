@@ -28,7 +28,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="WarehouseManagement" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -41,7 +41,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1YynE2Or4L8E0q6Ly6ypMOTpex4" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -87,6 +89,7 @@
       <workItem from="1583929397434" duration="167000" />
       <workItem from="1584691240410" duration="9967000" />
       <workItem from="1584966029780" duration="124000" />
+      <workItem from="1585868050950" duration="34000" />
     </task>
     <task id="LOCAL-00001" summary="create web project">
       <created>1583923929136</created>
@@ -170,10 +173,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1584773689070" />
-    <state x="559" y="327" key="git4idea.merge.GitPullDialog" timestamp="1584966127976">
-      <screen x="0" y="23" width="1680" height="982" />
+    <state x="559" y="327" key="git4idea.merge.GitPullDialog" timestamp="1585307022926">
+      <screen x="0" y="23" width="1680" height="981" />
     </state>
     <state x="639" y="322" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584942919181" />
+    <state x="559" y="327" key="git4idea.merge.GitPullDialog/0.23.1680.981@0.23.1680.981" timestamp="1585307022926" />
     <state x="559" y="327" key="git4idea.merge.GitPullDialog/0.23.1680.982@0.23.1680.982" timestamp="1584966127976" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1584725626563">
       <screen x="0" y="0" width="1920" height="1040" />
