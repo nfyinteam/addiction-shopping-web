@@ -2,22 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8720a9a1-e80e-4907-a751-2274165dc2ff" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/pages/img/data-v-4-image2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/pages/img/data-v-4-image3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/pagination.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/LocalResizeIMG.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/jquery.pagination.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/mobileBUGFix.mini.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-index-header-fix.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-index-light-footer.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/corporate/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/corporate/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/css/components.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/pages/css/components.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/pages/css/shopping-goods.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/pages/css/shopping-goods.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/css/slider.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/pages/css/slider.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/pages/css/style-shop.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/pages/css/style-shop.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/shop-slider/slide1/bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/pages/img/shop-slider/slide1/bg.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/plugins/bootstrap/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/plugins/bootstrap/css/bootstrap.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/plugins/font-awesome/css/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/plugins/font-awesome/css/font-awesome.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/pagination.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/pagination.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/LocalResizeIMG.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/LocalResizeIMG.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/jquery.emoji.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/jquery.emoji.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-center.html" beforeDir="false" afterPath="$PROJECT_DIR$/message-center.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/jquery.pagination.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/jquery.pagination.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/mobileBUGFix.mini.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/mobileBUGFix.mini.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop-item.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-item.html" afterDir="false" />
     </list>
@@ -58,7 +57,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1YynE2Or4L8E0q6Ly6ypMOTpex4" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -74,55 +75,6 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\ideaprojects\addiction-shopping-web" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <module name="addiction-shopping-web" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
-      <module name="addiction-shopping-web" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -224,6 +176,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="380" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1584773683301" />
+    <state x="184" y="92" key="DiffContextDialog" timestamp="1585810809087">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="184" y="92" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585810809087" />
     <state x="740" y="264" key="FileChooserDialogImpl" timestamp="1583998669798">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -232,10 +188,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1584773689070" />
-    <state x="639" y="322" key="git4idea.merge.GitPullDialog" timestamp="1584942919181">
+    <state x="639" y="322" key="git4idea.merge.GitPullDialog" timestamp="1585810485703">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="639" y="322" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584942919181" />
+    <state x="639" y="322" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585810485703" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1584725626563">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -54,7 +54,7 @@
                  * 生成base64
                  * 兼容修复移动设备需要引入mobileBUGFix.js
                  */
-                var base64 = canvas.toDataURL('image/jpeg', obj.quality || 0.8);
+                var base64 = canvas.toDataURL('image/png', obj.quality || 0.8);
 
                 // 修复IOS
                 if (navigator.userAgent.match(/iphone/i)) {
@@ -64,7 +64,7 @@
                         maxHeight: h,
                         quality: obj.quality || 0.8
                     });
-                    base64 = canvas.toDataURL('image/jpeg', obj.quality || 0.8);
+                    base64 = canvas.toDataURL('image/png', obj.quality || 0.8);
                 }
 
                 // 修复android
