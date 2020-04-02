@@ -180,46 +180,12 @@
                         </form>
                       </li>
                       <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
+                        <span href="javascript:;">
                           消息
-                        </a>
-                        <ul class="dropdown-menu news" style="margin: 0px -220px;">
-                          <li>
-                            <div class="header-navigation-content " style="padding: 0px;">
-                              <div class="panel_head"><span>未读通知</span></div>
-                              
-                              <ul class="panel_body scroller" style="height: 250px;">
-                                <!-- <div class="not_news_image">
-                                  <img src>
-                                </div> -->
-                                <li>
-                                  <a>
-                                    <span class="info" href="shop-item.html" >消息内容消息内容消息内容消息内容消息内容</span>
-                                    <div style="float: right;">
-                                      <span class="type">系统消息</span>
-                                      <span class="time">2020-1-1</span>
-                                    </div>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a>
-                                    <span class="info" href="shop-item.html" >消息内容消息内容消息内容消息内容消息内容</span>
-                                    <div style="float: right;">
-                                      <span class="type">系统消息</span>
-                                      <span class="time">2020-1-1</span>
-                                    </div>
-                                  </a>
-                                </li>
-                              </ul>
-                              <div class="panel_foot">
-                                <span href="#">查看全部消息</span>
-                              </div>
-                            </div>
-                          </li>
-                        </ul>
+                        </span>
                       </li>
                       <li class="dropdown">
-                        <span href="javascript:;">
+                        <span class="userName" href="javascript:;">
                           用户登录
                         </span>
                       </li>
@@ -736,6 +702,8 @@
 
     <script src="assets/corporate/scripts/layout.js" tppabs="http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/assets/corporate/scripts/layout.js" type="text/javascript"></script>
     <script src="assets/pages/scripts/bs-carousel.js" tppabs="http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/assets/pages/scripts/bs-carousel.js" type="text/javascript"></script>
+    <!-- 导航栏和尾部 -->
+    <script type="text/javascript" src="js/HeadAndFooter.js"></script> 
     <!-- 轮播图 -->
     <script type="text/javascript" src="js/slider.js"></script> 
     <!-- 页面区域 -->
@@ -745,12 +713,17 @@
 
         var urlPrefix="http://www.88k88.cn/userapi";
         var pageImageUrl="http://www.88k88.cn:9090/Server-files/Images/pageImges/";
+
+
         loadPageRegion();
 
         function loadPageRegion(){
           $.ajax({
             url:urlPrefix+"/list_pageRegion",
             method:"get",
+            xhrFields:{
+              withCredentials:true
+            },
             success:function(result){	
               if(result.code==200){
                 $.each(result.data,function(i,obj){
@@ -774,22 +747,6 @@
         $(".region-container img").off("click").on("click",function(){
           $(this).parent().click();
         })
-
-
-        //搜索框获取焦点
-        $(".search-form").find("input").on("focus",function() {             
-          var $btn=$(".search-form").find(".input-group");
-          $btn.append('<div class="search-result"><a>aj111</a></div>').slideDown();
-        });
-        //搜索框失去焦点
-        $(".search-form").find("input").on("blur",function() {   
-          var $btn=$(".search-form").find(".input-group");
-          $btn.find(".search-result").fadeTo("slow", 0.01, function(){//fade
-            $(this).slideUp("slow", function() {//slide up
-              $(this).remove();//then remove from the DOM
-            });
-          });
-        });
       })
     </script>
 </body>

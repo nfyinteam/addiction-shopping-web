@@ -1,102 +1,113 @@
-
- 
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title></title>
-		
-		<link rel="stylesheet" type="text/css" href="css/login.css"/>
-		<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
-		<script type="text/javascript" src="js/login.js"></script>
-	</head>
-	<body>
-		<div class="c-title">
-			<div class="tetimage">
-				<img src="img/logo.png" height="100" width="200px"/>
-			</div>
-			<!--<div class="tetimage1">
-				<img src="img/title.png"/>
-			</div>-->
-		</div>
-		<div class="c-content">
-			<div class="c-register">
-				<div class="c-register-header"><h3>用&nbsp;户&nbsp;登&nbsp;录</h3></div>
-				<div class="c-register-body">
-					<div id="reg-form-wrapper">
-						<form  action="${path}/FindUserServlet" method="post" id="give">
-							<div class="box">
-								<div class="u-input-tip1">
-									<span class="text1"></span>
-								</div>
-							</div>
-							<div class="information">
-								<div class="information1">
-									<input type="text" class="ui-input" name="loginName" maxlength="11" placeholder="手机号">
-									<span class="c-icon c-icon-account "></span>
-								</div>
-								<div class="u-input-tip">
-									<span class="text"></span>
-								</div>
-							</div>
-							<div class="information">
-								<div class="information1">
-									<input type="password" class="ui-input" name="password" maxlength="11" placeholder="密码" οncοpy="return false" οnpaste="return false">
-									<span class="c-icon c-icon-password "></span>
-								</div>
-								<div class="u-input-tip">
-									<span class="text"></span>
-								</div>
-							</div>
-							<div class="c-form-item">
-								<div class="u-other-item ">
-									<div class="f-right ">
-										<a href="" class="f-right-a ">
-											忘记密码
-										</a>
-									</div>
-									<div class="f-left">
-					                    <div class="ui-checkbox">
-					                        <input type="checkbox" id="J_remember_username" name="remUser" class="ui-checkbox-normal" checked="">
-					                        <label for="J_remember_username" class="ui-checkbox-simulation"></label>
-					                    </div>
-					                    <label for="J_remember_username" class="u-checkbox-label">记住用户名</label>
-					                </div>
-								</div>
-								<div class="u-input-tip">
-									<span class="text"></span>
-								</div>
-							</div>
-							<div class="u-form-submit">
-								<div class="ui-btn-loading">
-									<span class="ui-btn-loading-before">登&nbsp;录</span>
-								</div>
-							</div>
-						</form>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/login.css"/>
+</head>
+<body>
+<div class="c-title">
+	<div class="tetimage">
+		<img src="img/logo.png" height="100" width="200px"/>
+	</div>
+	<!--<div class="tetimage1">
+		<img src="img/title.png"/>
+	</div>-->
+</div>
+<div class="c-content">
+	<div class="c-register">
+		<div class="c-register-header"><h3>用&nbsp;户&nbsp;登&nbsp;录</h3></div>
+		<div class="c-register-body">
+			<div id="reg-form-wrapper">
+				<form  action="${path}/FindUserServlet" method="post" id="give">
+					<div class="box">
+						<div class="u-input-tip1">
+							<span class="text1"></span>
+						</div>
 					</div>
-				</div>
-				<div class="c-login-panel-footer ">
-					<div class="c-login-third">
-						<div class="c-login-third-special">
-							<div class="c-login-third-wechat-wrapper">
-								<img src="img/register.png" width="40px" height="40px" />
+					<div class="information">
+						<div class="information1">
+							<input type="text" class="ui-input userId" name="userId" placeholder="手机号">
+							<span class="c-icon c-icon-account "></span>
+						</div>
+						<div class="u-input-tip">
+							<span class="text"></span>
+						</div>
+					</div>
+					<div class="information">
+						<div class="information1">
+							<input type="password" class="ui-input password" name="password"  placeholder="密码" οncοpy="return false" οnpaste="return false">
+							<span class="c-icon c-icon-password "></span>
+						</div>
+						<div class="u-input-tip">
+							<span class="text"></span>
+						</div>
+					</div>
+					<div class="c-form-item">
+						<div class="u-other-item ">
+							<div class="f-right ">
+								<a href="" class="f-right-a ">
+									忘记密码
+								</a>
+							</div>
+							<div class="f-left">
+								<div class="ui-checkbox">
+									<input type="checkbox" id="J_remember_username" name="remUser" class="ui-checkbox-normal" checked="">
+									<label for="J_remember_username" class="ui-checkbox-simulation"></label>
+								</div>
+								<label for="J_remember_username" class="u-checkbox-label">记住用户名</label>
 							</div>
 						</div>
-						<div class="c-login-third-content">
-						
-							<a href="register.html" class="c-register-link">用户注册</a>
-						
-							</div>
+						<div class="u-input-tip">
+							<span class="text"></span>
+						</div>
 					</div>
-					
+					<div class="u-form-submit">
+						<div class="ui-btn-loading">
+							<span class="ui-btn-loading-before">登&nbsp;录</span>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="c-login-panel-footer ">
+			<div class="c-login-third">
+				<div class="c-login-third-special">
+					<div class="c-login-third-wechat-wrapper">
+						<img src="img/register.png" width="40px" height="40px" />
+					</div>
+				</div>
+				<div class="c-login-third-content">
+					<a href="register.html" class="c-register-link">用户注册</a>
 				</div>
 			</div>
 		</div>
-		
-		<script>
-		
-		
-		</script>
-		
-	</body>
+	</div>
+</div>
+<script src="assets/plugins/jquery.min.js" tppabs="http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/assets/plugins/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+	$(function(){
+		var urlPrefix="http://localhost:8080/userapi";
+		var pageurl="http://www.topyin.cn/addiction-shopping-web/";
+		$(".ui-btn-loading").off("click").on("click",function(){
+			$.ajax({
+			url:urlPrefix+"/user/login",
+			method:"post",
+			data:"userId="+$(".userId").val()+"&passWord="+$(".password").val(),
+			xhrFields:{
+            	withCredentials:true
+        	},
+			success:function(result){
+				if(result.code==200){
+					window.location.replace("shop-index.html");
+				}else{
+					alert(result.message);
+				}
+			}
+		})
+		})
+			
+	})
+</script>
+</body>
 </html>

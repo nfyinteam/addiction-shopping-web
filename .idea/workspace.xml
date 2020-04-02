@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8720a9a1-e80e-4907-a751-2274165dc2ff" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/js/customization.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/customization.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/HeadAndFooter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/buy-now.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buy-now.html" beforeDir="false" afterPath="$PROJECT_DIR$/buy-now.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/comment.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/comment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/goods_addInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/goods_addInfo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-item.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-item.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -278,7 +286,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585841003211</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="修改了comment">
+      <created>1585841351437</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1585841351437</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -322,10 +337,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585817714643" />
-    <state x="380" y="114" key="CommitChangelistDialog2" timestamp="1585841001077">
+    <state x="380" y="114" key="CommitChangelistDialog2" timestamp="1585841349350">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="380" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585841001077" />
+    <state x="380" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585841349350" />
     <state x="740" y="264" key="FileChooserDialogImpl" timestamp="1585620132319">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -334,18 +349,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="669" y="236" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585841240452" />
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1585841004800">
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1585841356519">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1585841004800" />
-    <state x="639" y="322" key="git4idea.merge.GitPullDialog" timestamp="1585680340291">
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1585841356519" />
+    <state x="639" y="322" key="git4idea.merge.GitPullDialog" timestamp="1585841459425">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="639" y="322" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585680340291" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1585674421712">
+    <state x="639" y="322" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585841459425" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1585853140669">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1585674421712" />
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1585853140669" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1585658240476">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

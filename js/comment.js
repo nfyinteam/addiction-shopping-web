@@ -1,4 +1,4 @@
-var urlPrefix="http://127.0.0.1:8080/userapi";
+var urlPrefix="http://localhost:8080/userapi";
 //var urlPrefix="http://www.88k88.cn/adminapi";
 //买家秀图片地址
 var commentImageUrl="http://www.88k88.cn:9090/Server-files/Images/commentImges/";
@@ -10,9 +10,27 @@ var defaultreplySize=3;//回复评论的默认显示数量
 var moreReplySize=3;//回复评论一页默认条数
 var buyShowSize=2;//买家秀一页默认条数
 var reportReason="";//举报界面代码
-var userId="1578412684666";//用户id
+var userId;//用户id
 var goodsId="1578412684903";//商品id
-loadBuyShowAndComment();
+
+$.ajax({
+  url:urlPrefix+"/get_userInfo",
+  method:"get",
+  xhrFields:{
+      withCredentials:true
+  },
+  success:function(result){
+      if(result.code==200){
+          if(result.data!=null){
+              userId=result.data.userId;
+              $(".dropdown .userName").text(result.data.userName).off("click").on("click",function(){
+                //window.open('.html');//跳转到用户中心
+              });
+          }
+          loadBuyShowAndComment();
+      }
+  }
+})
 
 var commentType=1;
 //排序类型

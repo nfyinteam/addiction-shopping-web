@@ -54,7 +54,7 @@ function addButton() {
         if(skuId == null || skuId == ""){
             alert("你还没有选择好商品");
         }else{
-            window.open("buy-now.html?skuIds=" + skuId);
+            window.open("buy-now.html?skuId=" + skuId);
         }
     });
 }
