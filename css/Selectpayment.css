@@ -1,0 +1,39 @@
+.logoborder{
+    border-right: solid 1px #636363;
+}
+.neirbordertop{
+    border-top: #636363 2px solid;
+    border-bottom: #636363 2px solid;
+    
+}
+.neirmarin{
+    padding: 1rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-right: 2rem;
+}
+.neirmarin:hover{
+    border: #8aa2d0 3px solid;
+}
+
+.inputrj{
+    border-radius: 50%;
+}
+.zfborder{
+    border: #8aa2d0 3px solid;
+}
+.bouttonborder{
+    border-bottom: 1px #e6e6e6 solid;
+}
+.selectborder{
+    border: solid #e6e6e6 1px;
+}
+.selectbordertwo{
+    border: dashed #e6e6e6 1px;
+    margin-left: 2rem;
+}
+.selectpa{
+    padding: 1rem;
+}
+
+
