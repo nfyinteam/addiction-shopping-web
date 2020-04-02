@@ -268,19 +268,25 @@
 .review-item .info .liked{
     color: #FF4657;
 }
-.review-item .info .reply,.review-item .info .report{
+.review-item .info .reply,.review-item .info .report,.review-item .info .delete{
 	padding: 0 5px;
     border-radius: 4px;
     cursor: pointer;
     display: inline-block;
 }
-.review-item .info .report{
+.review-item .info .report,.review-item .info .delete{
 	float: right;
     margin-right: 0px;
 }
-.review-item .info .reply:hover,.review-item .info .report:hover,.reply-box .view-more .btn-more:hover{
+.review-item .info .reply:hover,
+.review-item .info .report:hover,
+.review-item .info .delete:hover,
+.reply-box .view-more .btn-more:hover{
 	color: #f60;
     background: #e5e9ef;
+}
+.reply-box .reply-item:hover .delete,.reply-box .reply-item:hover .report{
+    display: block;
 }
 .review-item .info .attribute {
 	margin-right: 20px;
@@ -325,7 +331,7 @@
 .reply-box .reply-item .like{
 	float: none;
 }
-.reply-box .reply-item .report{
+.reply-box .reply-item .report,.reply-box .reply-item .delete{
 	display: none;
 }
 .reply-box .view-more{
@@ -730,9 +736,6 @@ input[type="radio"]:checked + label::after{
     display: inline-block;
     width: 549px;
 }
-#evaluate_modal .rate-box {
-    /* display: inline-block; */
-}
 #evaluate_modal .rate-box-title{
 line-height: 118px;
     height: 118px;
@@ -849,10 +852,11 @@ line-height: 118px;
     filter: alpha(opacity=0);
     z-index: 9999;
 }
+
 #evaluate_modal .upload-img-box .file-input{
+    width: 0px;
+    height: 0px;
     display: block;
-    /* height: 500px;
-    width: 220px; */
     cursor: pointer;
     font-size: 100px;
     margin-top: -50px;
@@ -867,6 +871,10 @@ line-height: 118px;
     letter-spacing: normal;
     word-spacing: normal;
     vertical-align: top; 
+}
+#evaluate_modal .ks-uploader-button:hover .file-input{
+    height: 500px;
+    width: 220px;
 }
 #evaluate_modal .st-success{
     position: absolute;
@@ -898,7 +906,7 @@ line-height: 118px;
 #evaluate_modal .upload-img-box:hover .tm-review-iconfont{
     display: block;
 }
-#evaluate_modal .tm-review-iconfont i{
+#evaluate_modal .tm-review-iconfont i,#evaluate_modal .upload-img-box i{
     pointer-events: none;
 }
 #evaluate_modal .upload-img-box .img{
@@ -924,6 +932,7 @@ line-height: 118px;
     background: #c40000;
     border-color: #c40000;
 }
+/* end */
 .goods-type{
     float: left;
     margin-left: -6%;
