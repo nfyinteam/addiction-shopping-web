@@ -224,6 +224,7 @@ ul li{
     margin-top: 30px;
     min-width: 230px;
     min-height: 230px;
+    width: 230px;
 }
 .region-container[data-v-2] .goods-box .goods-set-img{
     margin-top: 0;

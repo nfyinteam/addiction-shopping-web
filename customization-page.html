@@ -512,25 +512,28 @@ $(function(){
 						$(".modal_imgae").find(".image").remove();
 						$(".modal_imgae").find(".upload-image").before(
 							'<img src="'+file+'" class="image" style="max-width: 400px;max-height: 300px;">');
-						var prId="",index="",link="",base64="";
-						$('.upload-image').localResizeIMG({
-							quality: 1,
-							success: function (result) {
-								base64=result.base64;
-								$(".modal_imgae .image").attr("src",base64);
-							}
-						});
+						var prId="",index="",link="";
 						$("#modal_imgae .OK").off("click").on("click",function(){
 							prId=$(t).attr("data-prId");
 							index=$(t).index(".region-container[data-prid="+prId+"] .edit");					
 							link=$(".modal_imgae .link").val();
-							updateEditRegionImage($(t),prId,index,link,base64);
+							updateEditRegionImage($(t),prId,index,link);
 						})	
 					}
 				}
 		})
 
 	}
+
+	//图片上传
+	var imageBase64="";
+	$('.upload-image').localResizeIMG({
+		quality: 1,
+		success: function (result) {
+			imageBase64=result.base64;
+			$(".modal_imgae .image").attr("src",imageBase64);
+		}
+	});
 
 	//标签确认事件
 	function labelEditableBtnOK(btn){
@@ -608,9 +611,9 @@ $(function(){
 	}
 
 	//修改区域图片
-	function updateEditRegionImage($img,prId,index,link,base64){
-		if(base64!=""){//判断是否上传了图片
-			var file=dataBase64toFile(base64,index);
+	function updateEditRegionImage($img,prId,index,link){
+		if(imageBase64!=""){//判断是否上传了图片
+			var file=dataBase64toFile(imageBase64,index);
 			var data=new FormData();
 			data.append("prId",prId);
 			data.append("index",index);
@@ -627,7 +630,7 @@ $(function(){
 				success:function(result){
 					$img.attr("href",link);
 					if($img.find("img").length>0){
-						$img.find("img").attr("src",base64).css({"border":"0"});	
+						$img.find("img").attr("src",imageBase64).css({"border":"0"});	
 					}
 					$("#modal_imgae").modal("hide");
 				}
