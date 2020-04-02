@@ -1,5 +1,6 @@
 var goodId;
 var goodInfo;
+var skuId;
 $(function () {
     init();
 });
@@ -37,6 +38,7 @@ function addButton() {
         $(this).attr('class', 'goods-type-selected');
         var value = $(this).find("input[name='skuPrice']").val();
         var keyValue = $(this).text();
+        skuId = $(this).find('input[name="skuId"]').val();
         $('#good_price').text(value);
         $('#sku-skuStock').text($(this).find("input[name='skuStock']").val());
         for (var i = 0; i < $('.goods-type-selected').length; i++){
@@ -46,6 +48,13 @@ function addButton() {
             }else{
                 $('.goods-selected-p').append("，已选" + $('.goods-type-selected').slice(i,i + 1).parent().parent().prev().text() + ":" + test);
             }
+        }
+    });
+    $('#buy_now').on('click', function () {
+        if(skuId == null || skuId == ""){
+            alert("你还没有选择好商品");
+        }else{
+            window.open("buy-now.html?skuIds=" + skuId);
         }
     });
 }
@@ -64,6 +73,7 @@ function addInfo(data) {
                     '<div class="goods-num-zoo">' + value.valueName +
                     '<input type="hidden" name="skuStock" value="' + value.skuInfo.skuStock + '"/>' +
                     '<input type="hidden" name="skuPrice" value="' + value.skuInfo.skuPrice + '"/>' +
+                    '<input type="hidden" name="skuId" value="' + value.skuInfo.skuId + '"/>' +
                     '</div>' +
                     '</li>';
             }else{
@@ -71,6 +81,7 @@ function addInfo(data) {
                     '<div class="goods-type-select">' + value.valueName +
                     '<input type="hidden" name="skuStock" value="' + value.skuInfo.skuStock + '"/>' +
                     '<input type="hidden" name="skuPrice" value="' + value.skuInfo.skuPrice + '"/>' +
+                    '<input type="hidden" name="skuId" value="' + value.skuInfo.skuId + '"/>' +
                     '</div>' +
                     '</li>';
             }

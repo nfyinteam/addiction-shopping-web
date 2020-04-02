@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <!--[if IE 8]>
 <html lang="en" class="ie8 no-js"> <![endif]-->
@@ -524,7 +524,7 @@
                             <div class="product-page-cart">
                                 <p class="goods-selected-p"></p>
                                 <button class="btn btn-info" type="button">收藏</button>
-                                <button class="btn btn-primary" type="button">立即购买</button>
+                                <button class="btn btn-primary" type="button" id="buy_now">立即购买</button>
                             </div>
                             <div class="review">
                                 <input type="range" value="4" step="0.25" id="backing4">
@@ -596,92 +596,6 @@
                                         </div>
                                     </div>
                                     <div class="comment_box"></div>
-                                    <!-- <div class="reply-wrap" data-id="1002">
-                                  <div class="user-face">
-                                    <a>
-                                      <img src="assets/corporate/img/tx004.png"/>
-                                    </a>
-                                  </div>
-                                  <div class="review-item clearfix">
-                                    <div class="user">
-                                      <a target="_blank" class="name">牛战士</a>
-                                      <div class="rateit" data-rateit-value="5" data-rateit-ispreset="true" data-rateit-readonly="true"></div>
-                                    </div>
-                                    <p class="text">评论内容啊啊啊啊啊啊</p>
-                                    <div class="preview">
-                                      <ul>
-                                        <li class="">
-                                          <img src="assets/pages/img/message-nothing.png"/>
-                                        </li>
-                                        <li class="">
-                                          <img src="assets/pages/img/fa-angle-brands.png"/>
-                                        </li>
-                                        <li class="">
-                                          <img src="assets/pages/img/index-sliders/slide3.jpg"/>
-                                        </li>
-                                      </ul>
-                                      <div class="viewer-stage">
-                                        <div class="toolbar">
-                                          <a><i class="fa fa-chevron-circle-up" aria-hidden="true"></i>收起</a>
-                                          <a>向左转</a>
-                                          <a>向右转</a>
-                                        </div>
-                                        <div class="img-box">
-                                          <div class="image-wrapper">
-                                            <img src=""/>
-                                            <a class="prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
-                                            <a class="next"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="info">
-                                      <span class="time">2020-1-1 22:22</span>
-                                      <span class="attribute">款式：xxxxx 尺码：xxxxx</span>
-                                      <span class="like"><i class="fa fa-heart" aria-hidden="true"></i>666</span>
-                                      <span class="reply">回复</span>
-                                      <span class="report">举报</span>
-                                    </div>
-                                    <div class="reply-box" data-id="1002">
-                                      <div class="reply-item" data-cid="3001">
-                                        <a class="reply-face">
-                                          <img src="assets/corporate/img/tx004.png"/>
-                                        </a>
-                                        <div class="reply-con" data-ud="777">
-                                          <div class="user">
-                                            <a target="_blank" class="name">蝙蝠侠</a>
-                                            <span class="text-con">回复内容啊啊啊啊</span>
-                                          </div>
-                                        </div>
-                                        <div class="info">
-                                          <span class="time">2020-1-1 22:22</span>
-                                          <span class="like" data-cid="3001"><i class="fa fa-heart-o" aria-hidden="true"></i>666</span>
-                                          <span class="reply" data-cid="3001">回复</span>
-                                          <span class="report" data-cid="3001">举报</span>
-                                        </div>
-                                      </div>
-                                      <div class="reply-item" data-id="3002">
-                                        <a class="reply-face">
-                                          <img src="assets/corporate/img/tx004.png"/>
-                                        </a>
-                                        <div class="reply-con" data-id="888">
-                                          <div class="user">
-                                            <a target="_blank" class="name">蛇仙人</a>
-                                            <span class="text-con">回复内容啊啊啊啊</span>
-                                          </div>
-                                        </div>
-                                        <div class="info">
-                                          <span class="time">2020-1-1 22:22</span>
-                                          <span class="like" data-cid="3001">
-                                            <i class="fa fa-heart-o" aria-hidden="true"></i>666
-                                          </span>
-                                          <span class="reply" data-cid="3002">回复</span>
-                                          <span class="report" data-cid="3002">举报</span>
-                                        </div>
-                                      </div>
-                                      <div class="view-more">
-                                        共<b>666</b>条回复，<a class="btn-more">点击查看</a>
-                                      </div> -->
                                 </div>
 
                             </div>
@@ -692,14 +606,12 @@
             </div>
 
             <!-- 在class加上sticker-sale有个销售标准 -->
-            <div class="sticker></div>
+            <div class="sticker"></div>
         </div>
     </div>
 </div>
-<!-- END CONTENT -->
-<!-- END SIDEBAR & CONTENT -->
 
-<!-- BEGIN SIMILAR PRODUCTS -->
+
 <div class="row margin-bottom-40">
     <div class="col-md-1 col-sm-12"></div>
     <div class="col-md-11 col-sm-12">
@@ -792,7 +704,6 @@
                 </div>
             </div>
         </div>
-    </div>
     </div>
 </div>
 <!-- END SIMILAR PRODUCTS -->
@@ -1122,6 +1033,8 @@
 <!-- 商品信息加载 -->
 <script type="text/javascript" src="js/goods_addInfo.js"></script>
 <script type="text/javascript" src="js/shop-item.js"></script>
+<!-- 评论的js -->
+<script src="js/comment.js"></script>
 </body>
 <!-- END BODY -->
 </html>
