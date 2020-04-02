@@ -2,41 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8720a9a1-e80e-4907-a751-2274165dc2ff" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/pages/img/09.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/pages/img/1560437D3E8E476790.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/pages/img/676hg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/pages/img/99dsfds.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/pages/img/aaa.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/pages/img/ad_ctr.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/pages/img/asdxzcx.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/pages/img/bbb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/pages/img/bvnbjl.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/pages/img/dot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/pages/img/fdgfd.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/pages/img/fxbxc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/pages/img/hgjg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/pages/img/jhkjk.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/pages/img/ssad.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/pages/img/vcbfgc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/pages/img/ytjy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/pages/img/萨达萨达.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/jquery.dad.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customization-page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/comment.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/html5sortable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/jquery.contextmenu.r2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/loadPageRegion.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/slider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/corporate/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/corporate/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/pages/css/components.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/pages/css/components.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/pages/css/shopping-goods.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/pages/css/shopping-goods.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/pages/css/slider.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/pages/css/slider.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/pages/img/shop-slider/slide1/bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/pages/img/shop-slider/slide1/bg.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/LocalResizeIMG.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/LocalResizeIMG.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-item.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-item.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -274,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585758264465</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="添加了创建订单页面">
+      <created>1585814309248</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1585814309248</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
