@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8720a9a1-e80e-4907-a751-2274165dc2ff" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/js/customization.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/register.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/logingoods.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/register.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buy_now.html" beforeDir="false" afterPath="$PROJECT_DIR$/buy_now.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/buy-now.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/buy-now.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customization-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/customization-page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/comment.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/comment.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/goods_addInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/goods_addInfo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-item.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-item.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-shopping-cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-shopping-cart.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,16 +71,27 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\ideaprojects\addiction-shopping-web\js" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\二学年案例\二学期压缩包\addiction-shopping-web" />
+      <recent name="F:\二学年案例\二学期压缩包\addiction-shopping-web\img" />
+      <recent name="F:\二学年案例\二学期压缩包\addiction-shopping-web\csslogin.css register.csslogin.css register.css" />
       <recent name="D:\ideaprojects\addiction-shopping-web" />
       <recent name="D:\ideaprojects\addiction-shopping-web\js" />
-      <recent name="D:\ideaprojects\addiction-shopping-web\css" />
-      <recent name="D:\ideaprojects\addiction-shopping-web\assets\pages\img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\二学年案例\二学期压缩包\addiction-shopping-web\css" />
+      <recent name="D:\ideaprojects\addiction-shopping-web\js" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -109,6 +121,7 @@
       <workItem from="1584691240410" duration="9967000" />
       <workItem from="1585211842920" duration="38596000" />
       <workItem from="1585677417546" duration="21430000" />
+      <workItem from="1585833860524" duration="2022000" />
     </task>
     <task id="LOCAL-00001" summary="create web project">
       <created>1583923929136</created>
@@ -271,7 +284,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585816276042</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="修改了创建订单页面">
+      <created>1585819490945</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1585819490945</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,25 +326,27 @@
     <MESSAGE value="完成商品属性选择" />
     <MESSAGE value="完成商品页面" />
     <MESSAGE value="添加了创建订单页面" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加了创建订单页面" />
+    <MESSAGE value="修改了创建订单页面" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改了创建订单页面" />
   </component>
   <component name="WindowStateProjectService">
     <state x="690" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585817714643">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585817714643" />
-    <state x="380" y="114" key="CommitChangelistDialog2" timestamp="1585816273633">
+    <state x="380" y="114" key="CommitChangelistDialog2" timestamp="1585819488681">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="380" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585816273633" />
-    <state x="740" y="264" key="FileChooserDialogImpl" timestamp="1585620132319">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="380" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585819488681" />
+    <state x="526" y="185" key="FileChooserDialogImpl" timestamp="1585835873914">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="526" y="185" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1585835873914" />
     <state x="740" y="264" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1585620132319" />
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1585816281916">
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1585819492829">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1585816281916" />
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1585819492829" />
     <state x="639" y="322" key="git4idea.merge.GitPullDialog" timestamp="1585680340291">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

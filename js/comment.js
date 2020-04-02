@@ -712,7 +712,6 @@ function loadCommentSubmitBtn($rplyBtn,byReplyName){
       data:commentData,
       success:function(result){
         if(result.code==200){
-          alert(111);
           $(".reply-box[data-id="+$btn.attr("data-parentCid")+"]").prepend(str);
           emojiParse();
           $(".reply-wrap .comment-send").remove();//删除发表评论框

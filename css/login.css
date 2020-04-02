@@ -1,0 +1,371 @@
+				*{
+					margin: 0;
+					padding: 0;
+				}
+				body{
+					background-color:rgb(231,231,233);
+					
+				}
+				.c-title{
+					position: relative;
+					margin:0 auto;
+					height: 100px;
+				    width:100%;
+				    background-color:white;
+				}
+				.c-content {
+					
+				    margin-top: 25px;
+				    margin-left: 170px;
+				    min-height: 550px;
+				    width: 1100px;
+				    background-image:url(../img/logingoods.png)  ;
+				 	background-repeat:no-repeat;   
+				}
+				
+				.c-register {
+					margin-top: 30px;
+					position: relative;
+				    width: 360px;
+				    height: 451px;
+				    border-radius: 2px;
+				    background-color: white; 
+				    margin-right: 100px;
+				    float: right;
+				}
+				
+				.c-register-header {
+				    padding-right: 30px;
+				    padding-left: 30px;
+				    height: 50px;
+				    line-height: 50px;
+				    border-bottom: 1px solid #e0e0e0;
+				    overflow: hidden;
+				    color: #e84d1c ;
+				    text-align: center;
+				   
+				}
+				
+				.c-register-body {
+				    padding: 0px 30px;
+    				height: 279px;
+				    width: 300px;
+				}
+				
+				
+				#reg-form-wrapper {
+				    text-align: left;
+				}
+				
+			
+			
+				.tetimage{
+					display: inline-block;
+					margin-left: 120px;
+					height: 100px;
+					width: 200px;
+				}
+				
+				.tetimage1{
+					display: inline-block;
+					float: right;
+					padding-top: 32px;
+					padding-right:118px;
+					height: 50px;
+					width: 400px;
+				}
+				
+				.c-icon {
+				    display: inline-block;
+				    vertical-align: top;
+					position: absolute;
+				    top: 13px;
+				    left: 11px;
+				    z-index: 1;
+			    }
+			    
+				.c-icon-account {
+				    background-image: url(//member-ssl.vipstatic.com/img/passport/sprites-hash-c9975078.png?4eaaf192);
+				    background-position: -504px -221px;
+				    width: 20px;
+				    height: 20px;
+				}
+				
+				.u-input-tip {
+			    font-size: 12px;
+			    color: #666;
+			    position: relative;
+			    min-height: 19px;
+			    max-height: 36px;
+			    overflow: hidden;
+			    text-overflow: ellipsis;
+			    display: -webkit-box;
+			    -webkit-line-clamp: 2;
+			    -webkit-box-orient: vertical;
+			    margin-top: 2px;
+			    margin-bottom: 5px;
+			    line-height: 1.5;
+			    display: block;
+			}
+			.u-input-tip1 {
+			    font-size: 12px;
+			    color: #666;
+			    position: relative;
+			    min-height: 19px;
+			    max-height: 36px;
+			    overflow: hidden;
+			    text-overflow: ellipsis;
+			    display: -webkit-box;
+			    -webkit-line-clamp: 2;
+			    -webkit-box-orient: vertical;
+			    margin-top: 2px;
+			    margin-bottom: 5px;
+			    line-height: 1.5;
+			    display: block;
+			    padding-top:15px;
+			}
+			
+			.ui-input {
+			    padding-left: 40px;
+			    padding-right: 10px;
+			    padding-bottom: 6px;
+			    padding-top: 6px;
+			    width: 248px;
+			    height: 32px;
+			    line-height: 32px;
+			    
+			    font: 14px/20px tahoma,arial,Hiragino Sans GB,WenQuanYi Micro Hei,'\5FAE\8F6F\96C5\9ED1','\5B8B\4F53',sans-serif;
+			    color: #333;
+			    background-color: #fff;
+			    border: 1px solid #b2b2b2;
+			    border-radius: 3px;
+			    outline: 0;
+			    -webkit-transition: border-color .3s cubic-bezier(.39,.575,.565,1),background-color .3s cubic-bezier(.39,.575,.565,1);
+			    transition: border-color .3s cubic-bezier(.39,.575,.565,1),background-color .3s cubic-bezier(.39,.575,.565,1);
+			}
+			
+			.information{
+				margin-bottom: 4px;
+				position: relative;
+				height: 67px;
+			    width: 300px;
+			    
+			    
+			}
+			.information1{
+				height: 46px;
+				width: 300px;
+				
+				
+			}
+			
+			.text{
+					color: #333;
+				}
+			
+			.text1{
+					color: rgb(246, 74, 74);
+				}	
+			.box{
+				height: 40px;
+				width: 300px;
+			}
+			
+			input::-webkit-input-placeholder { /* WebKit browsers */
+				  color:#B2B2B2;
+				   font: 14px/20px tahoma,arial,Hiragino Sans GB,WenQuanYi Micro Hei,'\5FAE\8F6F\96C5\9ED1','\5B8B\4F53',sans-serif;
+				}
+				
+			.c-icon-password {
+			    background-image: url(//member-ssl.vipstatic.com/img/passport/sprites-hash-c9975078.png?4eaaf192);
+			    background-position: -528px -221px;
+			    width: 20px;
+			    height: 20px;
+			}	
+			
+			.c-form-item{
+				height: 40px;
+				width: 300px;
+				
+			}
+			
+			.u-other-item {
+			    width: 300px;
+			    height: 19px;
+			}
+			.f-right {
+				display: inline-block;
+ 			   float: right;
+ 			   width: 48px;
+ 			   height: 18px;
+ 			   
+			}
+			.f-right-a{
+				color:#333;
+ 			   font: 12px/1.5 tahoma,arial,Hiragino Sans GB,WenQuanYi Micro Hei,\5FAE\8F6F\96C5\9ED1,\5B8B\4F53,sans-serif;
+			}
+			
+			.f-right-a:hover{
+				color: #e84d1c;
+				cursor: pointer;
+			}
+			
+			.f-left {
+			    float: left;
+			    display: inline-block;
+			}
+			.u-form-submit{
+				margin-top: 8px;
+				width: 300px;
+				height: 50px;
+			}
+			
+			button{
+				margin: 0;
+			}
+			.ui-btn-loading {
+			    padding: 0;
+			    overflow: hidden;
+			    height: 44px;
+			    cursor: pointer;
+    			outline: 0;
+    			margin-top: 4px;
+    			width: 298px;
+    			color: #fff;
+    			font: 18px/44px tahoma,arial,Hiragino Sans GB,WenQuanYi Micro Hei,'\5FAE\8F6F\96C5\9ED1','\5B8B\4F53',sans-serif;
+    			display: inline-block;
+			    border-radius: 3px;
+			    text-decoration: none;
+			    text-align: center;
+			    vertical-align: top;
+			    -webkit-transition: .3s;
+			    transition: .3s;
+			    background-color: #FF4500;
+    			border: 1px solid #FF4500;
+			}
+			.ui-btn-loading:hover{
+				background-color: #e84d1c;
+			}
+			
+			.ui-btn-loading-before {
+			    display: inline-block;
+			}
+			
+			.c-login-panel-footer {
+			    padding-right: 30px;
+			    padding-left: 30px;
+			    width: 300px;
+			    height: 121px;
+			    
+			}
+			
+			.c-login-third {
+			    position: relative;
+			    z-index: 1;
+			    padding-top: 30px;
+			    padding-bottom: 15px;
+			    widows: 300px;
+			    height: 76px;
+			    
+			    
+			}
+			
+			.c-login-third-special {
+			    position: relative;
+			    z-index: 1;
+			    margin-bottom: 12px;
+			    height: 40px;
+			}
+			
+			.c-login-third-special:before {
+			    position: absolute;
+			    top: 0;
+			    left: 50%;
+			    margin-left: -30px;
+			    z-index: 2;
+			    width: 60px;
+			    height: 40px;
+			    content: '';
+			    background-color: #fff;
+			}
+			
+			.c-login-third-wechat-wrapper {
+			    position: relative;
+			    z-index: 2;
+			    margin-right: auto;
+			    margin-left: auto;
+			    width: 40px;
+			    height: 40px;
+			}
+			
+			.c-login-third-special:after {
+			    position: absolute;
+			    z-index: 1;
+			    content: '';
+			    top: 20px;
+			    left: 0;
+			    width: 100%;
+			    border-top: 1px solid #e0e0e0;
+			}
+			
+			.c-login-third-content{
+				height: 24px;
+				width: 56px;
+				margin: auto;
+				font-size: 14px
+			}
+			.c-register-link {
+				color: #333;
+			}
+			
+			.c-register-link:hover{
+				color:#e84d1c;
+			}
+			
+			a{
+				text-decoration: none;
+				
+			}
+			
+			.ui-checkbox {
+			    display: inline-block;
+			    vertical-align: middle;
+			    margin-right: 5px;
+			    font-size: 0;
+			    line-height: 0;
+			}
+			
+			.ui-checkbox-normal {
+			    display: none;
+			
+			    vertical-align: text-top;
+			}
+			
+			
+			
+			.ui-checkbox-normal:checked+.ui-checkbox-simulation {
+			    background-position: -24px 0;
+			}
+			.ui-checkbox-simulation {
+			    display: block;
+			    -webkit-user-select: none;
+			    -moz-user-select: none;
+			    -ms-user-select: none;
+			    user-select: none;
+			    background-image: url(//bootstrap.vipstatic.com/img/ui/sprite.png?d9eadd17);
+			    background-position: -48px 0;
+			    width: 19px;
+			    height: 16px;
+			
+			    cursor: pointer;
+			}
+			
+			.ui-checkbox-simulation:hover {
+			    background-position: -24px -21px;
+			}
+			.u-checkbox-label{
+				font: 12px/1.5 tahoma,arial,Hiragino Sans GB,WenQuanYi Micro Hei,\5FAE\8F6F\96C5\9ED1,\5B8B\4F53,sans-serif;
+   			 	color: #333;
+
+			}
+			
