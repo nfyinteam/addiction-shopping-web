@@ -933,3 +933,31 @@ line-height: 118px;
     border-color: #c40000;
 }
 /* end */
+.goods-type{
+    float: left;
+    margin-left: -6%;
+    margin-top: -0.5%;
+}
+.goods-type-name{
+    float: left;
+    font-size:16px;
+}
+.introduce-title{
+    color: #4A5863;
+    font-family: "adineueproblack", "微软雅黑", "PingFangSC-Regular", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+}
+.introduce-img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.introduce-remarks-p{
+    color: #4A5863;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.key-relation-type{
+    margin-bottom:20px;
+    margin-top:5px;
+    color: #4A5863;
+}

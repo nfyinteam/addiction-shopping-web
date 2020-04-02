@@ -1,0 +1,45 @@
+.buy-serial-title{
+    font-size: 25px;
+    padding: 30px;
+}
+.address-div{
+    padding: 10px 0px;
+}
+.address-div:hover{
+    padding: 9px 0px;
+    background-color: #FFDFB4;
+    border: 1px solid #ff5000;
+}
+.address-div-selected{
+    padding: 9px 0px;
+    background-color: #FFDFB4;
+    border: 1px solid #ff5000;
+}
+.address-selected{
+    color: #ff5000;
+}
+.buy-good-title{
+    padding: 10px 0px;
+}
+.buy-good-title-2{
+    border-bottom: 2px solid skyblue;
+    text-align: center;
+    margin: 0px 7px;
+}
+.buy-good-value{
+    text-align: center;
+    line-height:40px;
+    display: table;
+    margin: 5px 7px;
+}
+.good-img{
+    width: 100%;
+    height: auto;
+}
+#buy-button{
+    margin-top: 10px;
+    width: 50%;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}

@@ -281,16 +281,16 @@ Header and header elements
 	text-decoration: none;
 }
 .del-goods {
-	background: #d7dde3 url("../img/icons/del-goods.png"/*tpa=http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/assets/pages/img/icons/del-goods.png*/) no-repeat 50% 50%;
+	background: #d7dde3 url("../img/icons/del-goods.png") no-repeat 50% 50%;
 }
 .del-goods:hover {
-	background: #E94D1C url("../img/icons/del-goods.png"/*tpa=http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/assets/pages/img/icons/del-goods.png*/) no-repeat 50% 50%;
+	background: #E94D1C url("../img/icons/del-goods.png") no-repeat 50% 50%;
 }
 .add-goods {
-	background: #7bdd00 url("../img/icons/add-goods.png"/*tpa=http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/assets/pages/img/icons/add-goods.png*/) no-repeat 50% 50%;
+	background: #7bdd00 url("../img/icons/add-goods.png") no-repeat 50% 50%;
 }
 .add-goods:hover {
-	background: #E94D1C url("../img/icons/add-goods.png"/*tpa=http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/assets/pages/img/icons/add-goods.png*/) no-repeat 50% 50%;
+	background: #E94D1C url("../img/icons/add-goods.png") no-repeat 50% 50%;
 }
 
 .top-cart-content .text-right {
@@ -358,10 +358,10 @@ Header and header elements
 	height: 63px;
 }
 .sticker-sale {
-	background: url("../img/sale.png"/*tpa=http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/assets/pages/img/sale.png*/) no-repeat;
+	background: url("../img/sale.png") no-repeat;
 }
 .sticker-new {
-	background: url("../img/new.png"/*tpa=http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/assets/pages/img/new.png*/) no-repeat;
+	background: url("../img/new.png") no-repeat;
 	left: auto;
 	right: 0;
 }
