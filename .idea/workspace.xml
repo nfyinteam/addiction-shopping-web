@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8720a9a1-e80e-4907-a751-2274165dc2ff" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/HeadAndFooter.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/HeadAndFooter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/goods_addInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/goods_addInfo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop-item.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-item.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -317,7 +315,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585919537138</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="合并螃蟹">
+      <created>1585919861138</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1585919861138</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -356,17 +361,18 @@
     <MESSAGE value="修改了comment" />
     <MESSAGE value="修改了buy-now页面" />
     <MESSAGE value="合并李顺" />
-    <option name="LAST_COMMIT_MESSAGE" value="合并李顺" />
+    <MESSAGE value="合并螃蟹" />
+    <option name="LAST_COMMIT_MESSAGE" value="合并螃蟹" />
   </component>
   <component name="WindowStateProjectService">
     <state x="690" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585817714643">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585817714643" />
-    <state x="380" y="114" key="CommitChangelistDialog2" timestamp="1585919535211">
+    <state x="380" y="114" key="CommitChangelistDialog2" timestamp="1585919859243">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="380" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585919535211" />
+    <state x="380" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585919859243" />
     <state x="740" y="264" key="FileChooserDialogImpl" timestamp="1585620132319">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -375,10 +381,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="669" y="236" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585841240452" />
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1585879003448">
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1585919862993">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1585879003448" />
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1585919862993" />
     <state x="639" y="322" key="git4idea.merge.GitPullDialog" timestamp="1585841459425">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
