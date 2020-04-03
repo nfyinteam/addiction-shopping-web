@@ -62,7 +62,7 @@
 							<span class="text"></span>
 						</div>
 					</div>
-					<div class="u-form-submit">
+					<div class="u-form-submit" id="btn-login">
 						<div class="ui-btn-loading">
 							<span class="ui-btn-loading-before">登&nbsp;录</span>
 						</div>
@@ -87,9 +87,9 @@
 <script src="assets/plugins/jquery.min.js" tppabs="http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/assets/plugins/jquery.min.js" type="text/javascript"></script>
 <script type="text/javascript">
 	$(function(){
-		var urlPrefix="http://localhost:8080/userapi";
+		var urlPrefix="http://www.88k88.cn/userapi";
 		var pageurl="http://www.topyin.cn/addiction-shopping-web/";
-		$(".ui-btn-loading").off("click").on("click",function(){
+		$("#btn-login").off("click").on("click",function(){
 			$.ajax({
 			url:urlPrefix+"/user/login",
 			method:"post",

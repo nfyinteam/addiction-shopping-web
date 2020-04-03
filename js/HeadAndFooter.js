@@ -16,6 +16,13 @@ $.ajax({
                 $(".dropdown .userName").text(result.data.userName).off("click").on("click",function(){
                   //window.open('.html');//跳转到用户中心
                 });
+                $('#user-id').val(result.data.userId);
+            }else{
+                if($('#is-login').val() != null){
+                    if($('#is-login').val() == 1){
+                        location.href="login.html";
+                    }
+                }
             }
         }
     }
