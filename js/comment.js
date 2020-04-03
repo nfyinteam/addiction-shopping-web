@@ -1,4 +1,4 @@
-var urlPrefix="http://localhost:8080/userapi";
+var urlPrefix="http://www.88k88.cn/userapi";
 //var urlPrefix="http://www.88k88.cn/adminapi";
 //买家秀图片地址
 var commentImageUrl="http://www.88k88.cn:9090/Server-files/Images/commentImges/";
