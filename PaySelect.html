@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/Selectpayment.css">
+    <style>
+        body{
+            background-color: #eff0f1;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="panel panel-default">
+        <div class="container">
+            <div class="panel-body">
+                <div class="col-md-3">
+                    <div class="col-md-5 logoborder">
+                        <img src="./img/logo.png" alt="" srcset="" height="30px">
+                    </div>
+                    <div class="col-md-7" >
+                        <span style="font-size: 1.5rem;font-weight:normal">
+                            我的结算平台
+                        </span>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    
+                </div>
+            </div>
+        </div>
+        
+    </div>
+<div class="container">
+    
+    <div class="row ">
+            <!-- 支付选择 -->
+            <div class="container ">
+                <div class="col-md-3"></div>
+                <div class="col-md-7 panel panel-default ">
+                    <!-- 1 -->
+                    <div class="row neirmarin">
+                        <div class="col-md-6">
+                            <div class="col-md-1">
+                                <input type="checkbox"class="url_btn" id="zfb" >
+                            </div>
+                            <div class="col-md-5">
+                                <div  class="row">
+                                    <div class="col-md-2">
+                                        <img src="./img/支付宝.png" alt="" srcset="" width="15px" height="15px">
+                                    </div>
+                                    <div class="col-md-8" style="font-size:1px;line-height:22px" >
+                                        支付宝
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <img src="./img/推荐.png" alt="" srcset=""width="15px" height="15px">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="col-md-6" style="float: right">
+                                <span style="font-size:1px;line-height:22px">支付</span>
+                                <span style="color: #f08835;font-weight: bold">66.66</span>
+                                <span style="font-size:1px;line-height:22px">元</span>
+                            </div>
+                        </div>
+                    </div><!--1-->
+                    <!-- 2 -->
+                    <div class="row neirmarin bouttonborder">
+                            <div class="col-md-6">
+                                <div class="col-md-1">
+                                    <input type="checkbox" class="url_btn" id="wx">
+                                </div>
+                                <div class="col-md-5">
+                                    <div  class="row">
+                                        <div class="col-md-2">
+                                            <img src="./img/微信.png" alt="" srcset="" width="18px" height="18px">
+                                        </div>
+                                        <div class="col-md-8" style="font-size:1px;line-height:22px" >
+                                            微信
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <img src="./img/推荐.png" alt="" srcset=""width="15px" height="15px">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="col-md-6" style="float: right">
+                                    <span style="font-size:1px;line-height:22px">支付</span>
+                                    <span style="color: #f08835;font-weight: bold">66.66</span>
+                                    <span style="font-size:1px;line-height:22px">元</span>
+                                </div>
+                            </div>
+                        </div><!--2-->
+                        <div class="row " >
+                            <div class="col-md-1" style="margin-left: 0rem"></div>
+                            <div class="col-md-10">
+                                    <div class="row" style="margin-left: 0.5rem;margin-top: 1rem">
+                                            <div class="col-md-7">
+                                                <div class="row">
+                                                    <div class="col-md-5 selectborder selectpa">其他方式支付</div>
+                                                    <div class="col-md-5 selectbordertwo selectpa">添加支付方式</div>
+                                                </div>
+                                            </div>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div id="main">
+                                <div class="demo">
+                                    <div id="code" style="margin-left:7rem;margin-top:1rem;visibility: hidden;margin-bottom: 2rem;">
+                                        <p>
+                                        <input type="text" class="input" id="inputUrl" value="">
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+            
+    </div>
+</div>
+</div>
+<script src="./js/jquery-3.2.1.min.js"></script>
+<script src="./js/jquery.qrcode.min.js"></script>
+<script>
+    $(function(){
+        $("#zfb").on('click',function(){
+            $('#wx').prop('checked', false); // Unchecks it
+            add("www.hao123.com")
+
+        })
+        $("#wx").on('click',function(){
+            $('#zfb').prop('checked', false); // Unchecks it
+            add("www.baidu.com")
+        })
+        function add(url){
+            $("#code").html(function(){
+                $("#code").css("visibility","visible");
+                $("#inputUrl").val(url)
+                var urlTxt = $("#inputUrl").val();
+                if (urlTxt.indexOf("http://") < 0) {
+                     urlTxt = 'http://' + urlTxt;
+                }
+                outputQRCod(urlTxt, 200, 200);
+            })
+            
+            
+        }
+    })
+</script>
+<script type="text/javascript">
+    $(function () {
+        //没有中文就可以这么简单
+        $('#code').qrcode("http://dnt.dkill.net");
+    });
+
+    //中文字符处理
+    function toUtf8(str) {
+        var out, i, len, c;
+        out = "";
+        len = str.length;
+        for (i = 0; i < len; i++) {
+            c = str.charCodeAt(i);
+            if ((c >= 0x0001) && (c <= 0x007F)) {
+                out += str.charAt(i);
+            } else if (c > 0x07FF) {
+                out += String.fromCharCode(0xE0 | ((c >> 12) & 0x0F));
+                out += String.fromCharCode(0x80 | ((c >> 6) & 0x3F));
+                out += String.fromCharCode(0x80 | ((c >> 0) & 0x3F));
+            } else {
+                out += String.fromCharCode(0xC0 | ((c >> 6) & 0x1F));
+                out += String.fromCharCode(0x80 | ((c >> 0) & 0x3F));
+            }
+        }
+        return out;
+    }
+
+    //生成二维码
+    function outputQRCod(txt, width, height) {
+        //先清空
+        $("#code").empty();
+        //中文格式转换
+        var str = toUtf8(txt);
+        //生成二维码
+        $("#code").qrcode({
+            render: "table",
+            width: width,
+            height: height,
+            text: str
+        });
+    }
+
+</script>
+</body>
