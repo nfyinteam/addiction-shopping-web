@@ -1,4 +1,5 @@
 var urlPrefix="http://www.88k88.cn/userapi";
+//var urlPrefix="http://localhost:8080/userapi";
 $(".userName").off("click").on("click",function(){
     window.open('login.html');
 })
@@ -13,6 +14,8 @@ $.ajax({
         if(result.code==200){
             if(result.data!=null){
                 sessionStorage.setItem("userId",result.data.userId);
+                sessionStorage.setItem("userName",result.data.userName);
+                sessionStorage.setItem("userFace",result.data.userFace);
                 $(".dropdown .userName").text(result.data.userName).off("click").on("click",function(){
                     //window.open('.html');//跳转到用户中心
                 });

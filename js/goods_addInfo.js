@@ -1,5 +1,5 @@
-var urlPrefix="http://localhost:8080/userapi";
-//var urlPrefix="http://www.88k88.cn/userapi";
+//var urlPrefix="http://localhost:8080/userapi";
+var urlPrefix="http://www.88k88.cn/userapi";
 //买家秀图片地址
 var commentImageUrl="http://www.88k88.cn:9090/Server-files/Images/commentImges/";
 //用户头像地址
@@ -12,7 +12,6 @@ var defaultreplySize=3;//回复评论的默认显示数量
 var moreReplySize=3;//回复评论一页默认条数
 var buyShowSize=2;//买家秀一页默认条数
 var reportReason="";//举报界面代码
-var userId=JSON.parse(sessionStorage.getItem("userId"));//用户id
 var goodId;
 var goodInfo;
 var skuId;
@@ -40,11 +39,11 @@ function init() {
         success : function (result) {
             if(result.data == null || result.code != 200){
                 location.href = 'shop-index.html';
-            }
+            }           
+            loadBuyShowAndComment();
             goodInfo = result.data;
             addInfo(goodInfo);
             addButton();
-            loadBuyShowAndComment();
         }
     });
 }
@@ -232,7 +231,7 @@ function loadBuyShowAndComment(){
 function creatBuyShow(data){
     $.each(data.list,function(index,obj){
         if(obj.grade=="1"){//根据评论等级初始化
-            var isLike=obj.theUser=="1"?"fa-heart liked":"fa-heart-o";
+            var isLike=obj.isPraise=="1"?"fa-heart liked":"fa-heart-o";
             var str='<div data-id='+obj.comId+' class="reply-wrap">'+ //父级评论编号
                 '                        <div class="user-face">\n' +
                 '                          <a>\n' +
@@ -338,7 +337,7 @@ function creatComment(data){
         if(obj.grade=="3"){//被回复的回评才需加@名字
             content=obj.byUserName!=null?"回复@"+obj.byUserName+"："+obj.content:obj.content;
         }
-        var isLike=obj.theUser=="1"?"fa-heart liked":"fa-heart-o";//判断该用户是否点赞
+        var isLike=obj.isPraise=="1"?"fa-heart liked":"fa-heart-o";//判断该用户是否点赞
         str+='<div class="reply-item" data-cid='+obj.comId+'>'+ //回复评论编号
             '                              <a class="reply-face">\n' +
             '                                <img src="'+userFaceImageUrl+obj.userFace+'"/>\n' +
@@ -355,7 +354,7 @@ function creatComment(data){
             '<i class="fa '+isLike+'" aria-hidden="true"></i>'+
             '<span>'+obj.praiseNum+'</span>'+
             '</span>';
-        if(obj.userId!=userId){
+        if(obj.theUser!="1"){
             str+=           '<span class="reply" data-cid='+obj.comId+'>回复</span>' +
                 '<span class="report" data-cid='+obj.comId+'>举报</span>';
         }else{
@@ -852,8 +851,8 @@ function loadCommentSubmitBtn($rplyBtn,byReplyName){
     //获取评论级别
     $(".comment-send .comment-submit").off("click").on("click",function(){
         var $btn=$(this);
-        //获取评论内容
-        var replyCon=$btn.prev().val().trim();
+        //将评论内容去除空格并添加换行
+        var replyCon=$btn.prev().val().trim().replace(/\n/g,"<br/>");
         var time=getNowDateFormat();
         var str='<div class="reply-item" data-cid="2003">'+ //回复评论编号
             '                              <a class="reply-face">'+
