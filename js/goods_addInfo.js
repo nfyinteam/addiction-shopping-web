@@ -184,7 +184,7 @@ function addInfo(data) {
 
 //排序类型
 var commentType=1;
-$(".comment-header .comment_form .type").off('click').click(function() {
+$(".comment-header .comment_form .radio-inline").off('click').click(function() {
     if(commentType%2==0){
         loadBuyShowAndComment();
     }
@@ -197,18 +197,20 @@ $(".comment-header li select").off("change").on('change',function() {
 
 //加载买家秀以及评论
 function loadBuyShowAndComment(){
+    $(".tab-pane .load-card").css("display","block");//显示加载面板
+    $("#Comment .comment_box").empty();
     $.ajax({
-        url:urlPrefix+"/list_buyShow",
+        url:urlPrefix+"/list_buyShow/0/"+buyShowSize+"/"+
+            defaultreplySize+"/"+goodId+"/"+refreshTime+"/"+
+            $(".order_by option:selected").val()+"/"+
+            $(".radio-inline input:radio:checked").val(),
         method:"get",
-        data:$(".comment_form").serialize()+"&pageNum=0&pageSize="+buyShowSize+"&replySize="+
-            defaultreplySize+"&goodsId="+goodId+"&dateTime="+refreshTime,
         xhrFields:{
             withCredentials:true
         },
         success:function(result){
             if(result.code==200){
                 if(result.data.list.length>0){
-                    $(".tab-pane .load-card").css("display","block");//隐藏加载面板
                     //加载总评论数
                     $("#myTab li:eq(2) a").empty().append("累计评论（"+result.data.total+"）");
                     creatBuyShow(result.data);
@@ -228,7 +230,6 @@ function loadBuyShowAndComment(){
 
 //创建买家秀
 function creatBuyShow(data){
-    $("#Comment .comment_box").empty();
     $.each(data.list,function(index,obj){
         if(obj.grade=="1"){//根据评论等级初始化
             var isLike=obj.theUser=="1"?"fa-heart liked":"fa-heart-o";
@@ -302,20 +303,21 @@ function buyShowPage(pageInfo){
         num_display_entries:5,//主体页数
         num_edge_entries: 0, //边缘页数
         callback: function(index){
+            $(".tab-pane .load-card").css("display","block");//显示加载面板
+            $("#Comment .comment_box *").remove();
             var pageNum = ++index;
             $.ajax({
-                url:urlPrefix+"/list_buyShow",
+                url:urlPrefix+"/list_buyShow/"+pageNum+"/"+buyShowSize+"/"+
+                    defaultreplySize+"/"+goodId+"/"+refreshTime+"/"+
+                    $(".order_by option:selected").val()+"/"+
+                    $(".radio-inline input:radio:checked").val(),
                 method:"get",
-                data:$(".comment_form").serialize()+"&pageNum="+pageNum+"&pageSize="+buyShowSize+"&replySize="+defaultreplySize+
-                    "&goodsId="+goodId+"&dateTime="+refreshTime,
                 xhrFields:{
                     withCredentials:true
                 },
                 success:function(result){
                     if(result.code==200){
                         if(result.data.list.length>0){
-                            $(".tab-pane .load-card").css("display","block");//显示加载面板
-                            $("#Comment .comment_box *").remove();
                             creatBuyShow(result.data);
                         }
                         $(".tab-pane .load-card").css("display","none");//隐藏加载面板
@@ -370,10 +372,9 @@ function moreReplyCommentBtn(){
     $(".view-more .btn-more").off("click").on("click",function(){
         var $this=$(this);
         $.ajax({
-            url:urlPrefix+"/list_comment",
+            url:urlPrefix+"/list_comment/0/"+moreReplySize+"/"+
+                $this.attr("data-cid")+"/"+refreshTime+"/1",
             method:"get",
-            data:"pageNum=0&pageSize="+moreReplySize+"&commentId="+$this.attr("data-cid")+
-                "&dateTime="+refreshTime+"&order=1",
             xhrFields:{
                 withCredentials:true
             },
@@ -410,11 +411,9 @@ function replyCommentPage($this,pageInfo){
         callback: function(index){
             var pageNum = ++index;
             $.ajax({
-                url:urlPrefix+"/list_comment",
+                url:urlPrefix+"/list_comment/"+pageNum+"/"+moreReplySize+"/"+
+                    $this.attr("data-id")+"/"+refreshTime+"/1",
                 method:"get",
-                data:"pageNum="+pageNum+"&pageSize="+moreReplySize+"&commentId="+
-                    $this.attr("data-id")+
-                    "&dateTime="+refreshTime+"&order=1",
                 xhrFields:{
                     withCredentials:true
                 },
@@ -503,20 +502,16 @@ function loadCommentAllBtnClick(){
         $.ajax({
             url:urlPrefix+"/spot_praise",
             method:"post",
-            data:"commentId="+$this.attr("data-cid"),
+            data:"commentId="+$this.attr("data-cid")+"&goodsId="+goodId,
             xhrFields:{
                 withCredentials:true
             },
             success:function(result){
                 if(result.code==200){
-                    if(result.data){//判断是点或取消
+                    if(!$this.find("i").hasClass("liked")){//判断是点或取消
                         $this.find("span").text(parseInt($this.text())+1);
                         $this.find("i").attr("class","fa fa-heart liked");
-                    }else{
-                        $this.find("span").text(parseInt($this.text())-1);
-                        $this.find("i").attr("class","fa fa-heart-o");
                     }
-
                 }
             }
         })
