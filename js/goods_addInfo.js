@@ -34,11 +34,11 @@ function isGoodsWeb() {
 function init() {
     isGoodsWeb();
     $.ajax({
-        url : 'http://www.88k88.cn/userapi/goodsAllInfo/' + goodId,
+        url : urlPrefix+'/goodsAllInfo/' + goodId,
         method : 'get',
         success : function (result) {
             if(result.data == null || result.code != 200){
-                location.href = 'shop-index.html';
+                //location.href = 'shop-index.html';
             }           
             loadBuyShowAndComment();
             goodInfo = result.data;
@@ -199,7 +199,7 @@ function loadBuyShowAndComment(){
     $(".tab-pane .load-card").css("display","block");//显示加载面板
     $("#Comment .comment_box").empty();
     $.ajax({
-        url:urlPrefix+"/list_buyShow/0/"+buyShowSize+"/"+
+        url:urlPrefix+"/get/buyShow/0/"+buyShowSize+"/"+
             defaultreplySize+"/"+goodId+"/"+refreshTime+"/"+
             $(".order_by option:selected").val()+"/"+
             $(".radio-inline input:radio:checked").val(),
@@ -250,11 +250,11 @@ function creatBuyShow(data){
             str+='<div class="info">\n' +
                 '                            <span class="time">'+obj.time+'</span>\n' +
                 '                            <span class="attribute">款式：xxxxx 尺码：xxxxx</span>\n' +
-                '                            <span class="like" data-cid='+obj.comId+'>\n' +
+                '                            <span class="like" data-cid='+obj.comId+' data-userid="'+obj.userId+'">\n' +
                 '                              <i class="fa '+isLike+'" aria-hidden="true"></i>'+
                 '<span>'+obj.praiseNum+'</span>'+
                 '                            </span>\n' +
-                '                            <span class="reply" data-cid='+obj.comId+'>回复</span>\n' +
+                '                            <span class="reply" data-cid='+obj.comId+' data-userid="'+obj.userId+'">回复</span>\n' +
                 '                            <span class="report" data-cid='+obj.comId+'>举报</span>\n' +
                 '                          </div>';
 
@@ -306,7 +306,7 @@ function buyShowPage(pageInfo){
             $("#Comment .comment_box *").remove();
             var pageNum = ++index;
             $.ajax({
-                url:urlPrefix+"/list_buyShow/"+pageNum+"/"+buyShowSize+"/"+
+                url:urlPrefix+"/get/buyShow/"+pageNum+"/"+buyShowSize+"/"+
                     defaultreplySize+"/"+goodId+"/"+refreshTime+"/"+
                     $(".order_by option:selected").val()+"/"+
                     $(".radio-inline input:radio:checked").val(),
@@ -350,12 +350,12 @@ function creatComment(data){
             '                              </div>\n' +
             '                              <div class="info">\n' +
             '                                <span class="time">'+obj.time+'</span>'+
-            '<span class="like" data-cid='+obj.comId+'>'+
-            '<i class="fa '+isLike+'" aria-hidden="true"></i>'+
-            '<span>'+obj.praiseNum+'</span>'+
-            '</span>';
+                                            '<span class="like" data-cid='+obj.comId+' data-userid="'+obj.userId+'">'+
+                                                '<i class="fa '+isLike+'" aria-hidden="true"></i>'+
+                                            '<span>'+obj.praiseNum+'</span>'+
+                                            '</span>';
         if(obj.theUser!="1"){
-            str+=           '<span class="reply" data-cid='+obj.comId+'>回复</span>' +
+            str+=           '<span class="reply" data-cid='+obj.comId+' data-userid="'+obj.userId+'">回复</span>' +
                 '<span class="report" data-cid='+obj.comId+'>举报</span>';
         }else{
             str+=' <span class="delete" data-cid='+obj.comId+'>删除</span>';
@@ -371,7 +371,7 @@ function moreReplyCommentBtn(){
     $(".view-more .btn-more").off("click").on("click",function(){
         var $this=$(this);
         $.ajax({
-            url:urlPrefix+"/list_comment/0/"+moreReplySize+"/"+
+            url:urlPrefix+"/get/comment/0/"+moreReplySize+"/"+
                 $this.attr("data-cid")+"/"+refreshTime+"/1",
             method:"get",
             xhrFields:{
@@ -410,7 +410,7 @@ function replyCommentPage($this,pageInfo){
         callback: function(index){
             var pageNum = ++index;
             $.ajax({
-                url:urlPrefix+"/list_comment/"+pageNum+"/"+moreReplySize+"/"+
+                url:urlPrefix+"/get/comment/"+pageNum+"/"+moreReplySize+"/"+
                     $this.attr("data-id")+"/"+refreshTime+"/1",
                 method:"get",
                 xhrFields:{
@@ -499,9 +499,10 @@ function loadCommentAllBtnClick(){
     $(".reply-wrap .like").off("click").on("click",function(){
         $this=$(this);
         $.ajax({
-            url:urlPrefix+"/spot_praise",
+            url:urlPrefix+"/post/praise",
             method:"post",
-            data:"commentId="+$this.attr("data-cid")+"&goodsId="+goodId,
+            data:"commentId="+$this.attr("data-cid")+"&goodsId="+goodId+
+                "&receiveUserId="+$this.attr("data-userid"),
             xhrFields:{
                 withCredentials:true
             },
@@ -510,6 +511,9 @@ function loadCommentAllBtnClick(){
                     if(!$this.find("i").hasClass("liked")){//判断是点或取消
                         $this.find("span").text(parseInt($this.text())+1);
                         $this.find("i").attr("class","fa fa-heart liked");
+                    }else{
+                        $this.find("span").text(parseInt($this.text())-1);
+                        $this.find("i").attr("class","fa fa-heart-o");
                     }
                 }
             }
@@ -560,7 +564,7 @@ function loadCommentAllBtnClick(){
         //初始化举报界面
         if(reportReason==""){
             $.ajax({
-                url:urlPrefix+"/list_reportReason",
+                url:urlPrefix+"/get/reportReason",
                 method:"get",
                 async:false,
                 success:function(result){
@@ -642,7 +646,7 @@ function loadCommentAllBtnClick(){
         $(".confirm_del_comment .ok").off("click").on("click",function(e){
             var $btn_ok=$(this);
             $.ajax({
-                url:urlPrefix+"/delete_comment",
+                url:urlPrefix+"/delete/comment",
                 method:"post",
                 data:"comId="+commentId,
                 xhrFields:{
@@ -827,7 +831,7 @@ function loadReportFrameBtn(commentId){
         }
         if(reason!=""&& reason!=null){
             $.ajax({
-                url:urlPrefix+"/add_report",
+                url:urlPrefix+"/post/report",
                 method:"post",
                 data:"commentId="+commentId+"&reason="+reason,
                 xhrFields:{
@@ -871,7 +875,7 @@ function loadCommentSubmitBtn($rplyBtn,byReplyName){
         var commentData={"goodsId":goodId,"parentId":$btn.attr("data-parentCid"),
             "bycId":$rplyBtn.attr("data-cid"),"content":replyCon,"time":time};
         $.ajax({
-            url:urlPrefix+"/add_comment",
+            url:urlPrefix+"/post/comment",
             method:"post",
             data:commentData,
             xhrFields:{

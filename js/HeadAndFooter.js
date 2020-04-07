@@ -5,7 +5,7 @@ $(".userName").off("click").on("click",function(){
 })
 
 $.ajax({
-    url:urlPrefix+"/get_userInfo",
+    url:urlPrefix+"/get/userInfo",
     method:"get",
     xhrFields:{
         withCredentials:true

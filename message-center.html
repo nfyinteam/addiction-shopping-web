@@ -144,45 +144,10 @@
                           <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
                             消息
                           </a>
-                          <ul class="dropdown-menu news" style="margin: 0px -220px;">
-                            <li>
-                              <div class="header-navigation-content " style="padding: 0px;">
-                                <div class="panel_head"><span>未读通知</span></div>
-                                
-                                <ul class="panel_body scroller" style="height: 250px;">
-                                  <!-- <div class="not_news_image">
-                                    <img src>
-                                  </div> -->
-                                  <li>
-                                    <a>
-                                      <span class="info" href="shop-item.html" >消息内容消息内容消息内容消息内容消息内容</span>
-                                      <div style="float: right;">
-                                        <span class="type">系统消息</span>
-                                        <span class="time">2020-1-1</span>
-                                      </div>
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a>
-                                      <span class="info" href="shop-item.html" >消息内容消息内容消息内容消息内容消息内容</span>
-                                      <div style="float: right;">
-                                        <span class="type">系统消息</span>
-                                        <span class="time">2020-1-1</span>
-                                      </div>
-                                    </a>
-                                  </li>
-                                </ul>
-                                <div class="panel_foot">
-                                  <span href="#">查看全部消息</span>
-                                </div>
-                              </div>
-                            </li>
-                          </ul>
                         </li>
                         <li class="dropdown">
-                          <span href="javascript:;">
-                            用户登录
-                          </span>
+                            <span class="userName">用户登录</span>
+                            <input id="user-id" type="hidden"/>
                         </li>
                       </ul>
                     </div>
@@ -201,27 +166,39 @@
                             <div class="text">消息中心</div>
                         </div>
                         <ul data-v-2 class="list">
-                            <li data-v-2 class="item"><a href="#/reply">回复我的</a></li>
-                            <li data-v-2 class="item">
-                                <a href="#/love">
-                                    收到的赞
-                                    <span class="notify-number">66</span>
+                            <li data-v-2 data-type="reply" class="item ">
+                                <a href="#reply">回复我的
+                                    <span class="notify-number"></span>
                                 </a>
                             </li>
-                            <li data-v-2 class="item"><a href="#/system">系统通知</a></li>
-                            <li data-v-2 class="item"><a href="#/whisper">我的消息</a></li>
+                            <li data-v-2 data-type="love" class="item ">
+                                <a href="#love">
+                                    收到的赞<span class="notify-number"></span>
+                                </a>
+                            </li>
+                            <li data-v-2 data-type="system" class="item system">
+                                <a href="#system">
+                                    系统通知<span class="notify-number"></span>
+                                </a>
+                            </li>
+                            <li data-v-2 data-type="whisper" class="item whisper">
+                                <a href="#whisper">
+                                    我的消息<span class="notify-number"></span>
+                                </a>
+                            </li>
                         </ul>
                         <div class="divided-line"></div>
-                        <div data-v-2 class="setting item">
-                            <i class="fa fa-cog" aria-hidden="true"></i>
-                            <a href="#">消息设置</a>
+                        <div data-v-2 class="setting item" data-type="config">
+                            <a  href="#config">
+                                <i class="fa fa-cog" aria-hidden="true"></i>消息设置
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div data-v-3 class="space-right">
                     <div data-v-3 class="space-right-top">
                         <div class="title">
-                            <span>xx消息</span>
+                            <a href="#" class="router-link-active">xx消息</a>
                         </div> 
                     </div>
                     <div data-v-3 class="space-right-bottom">
@@ -512,11 +489,11 @@
                                 </div> -->
                             </div>
                             <!-- 加载中显示的图片 -->
-                            <!-- <div data-v-7 data-v-loading class="card">
+                            <div data-v-7 data-v-loading class="card">
                                 <div class="loading">
                                     <img src="assets/pages/img/load.gif">
                                 </div>
-                            </div> -->
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -526,75 +503,184 @@
 </div> 
 <script src="assets/plugins/jquery.min.js" tppabs="http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/assets/plugins/jquery.min.js" type="text/javascript"></script>
 <script src="assets/plugins/bootstrap/js/bootstrap.min.js" tppabs="http://demo.cssmoban.com/cssthemes4/tops_40_ShopUI/assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>       
+<!-- 导航栏和尾部 -->
+<script type="text/javascript" src="js/HeadAndFooter.js"></script>
 <!-- 表情插件 -->
 <script src="js/jquery.mCustomScrollbar.min.js"></script>
 <script src="js/jquery.emoji.js"></script>
+
 <script>
+    /**
+     * 点击图片放大
+     **/
     $(function(){
+        // var urlPrefix="http://localhost:8080/userapi";
+        var urlPrefix="http://www.88k88.cn/userapi";
+        //买家秀图片地址
+        var commentImageUrl="http://www.88k88.cn:9090/Server-files/Images/commentImges/";
+        //用户头像地址
+        var userFaceImageUrl="http://www.88k88.cn:9090/Server-files/Images/userFace/";
+        //表情地址
+        var emojiUrl="http://www.88k88.cn:9090/Server-files/Images/emoji";
+        //消息图片地址
+        var messageImageUrl="http://www.88k88.cn:9090/Server-files/Images/messageImgs/";
+        var userId=sessionStorage.getItem("userId");
+        var userName=sessionStorage.getItem("userName");
+        var userFace=sessionStorage.getItem("userFace");
+
+        init();
+        loadNotView();
+
+        //监听url改变事件
+        $(window).bind('hashchange', function() {
+            init();
+        });
 
         //消息栏点击事件
-        $(".side-bar[data-v-2] .item").on("click",function(){
-            var $btn=$(this);
-            //清空消息框
+        // $(".side-bar .item").off("click").on("click",function(){
+            
+        // });
+
+        function init(){
+            //清空内容框
             $(".router-view[data-v-3] div").remove();
+            //显示加载面板
+            $(".card[data-v-loading]").css({"display":"block"});
             //为内容添加滚动条样式
             $(".space-right-bottom[data-v-3]").attr("class","space-right-bottom scroll_wrap")
                 .children().attr("class","scroll_cont");
-            //显示加载的图片框
-            $(".card[data-v-loading]").css({"display":"block"});
-            if($(".list[data-v-2] .item").index(this)=="0"){
-                replyMessage();
-            }else if($(".list[data-v-2] .item").index(this)=="1"){
-                loveMessage();
-
-            }else if($(".list[data-v-2] .item").index(this)=="2"){
-                systemMessage();
-            }else if($(".list[data-v-2] .item").index(this)=="3"){
-                myMessage();
-                //聊天窗口不需要滚动条样式
+            var param=getUrlParam();
+            if(param=="reply" ||param=="love"||param=="system"){
+                loadNotice(param);
+                messageBarClick($('.item[data-type='+param+']'));//改变指定的菜单栏值
+            }else if(param=="whisper"){
+                loadNews(param);
+                messageBarClick($('.item[data-type='+param+']'));//改变指定的菜单栏值
+                //聊天窗口不需要页面滚动条样式
                 $(".space-right-bottom[data-v-3]").removeClass("scroll_wrap")
                     .children().removeClass("scroll_cont");
+            }else if(param=="config"){
+
             }else{
-                messageSetting();
+                loadNotice("reply");
+                messageBarClick($('.item:eq(0)'));
             }
-            //隐藏加载图片框
-            $(".card[data-v-loading]").css({"display":"none"});
-            messageBarClick($btn);
-        });
+        }
+        
+        //截取url获取请求消息类型
+        function getUrlParam(){
+            var perimeters = window.location.href;
+            param = decodeURI(perimeters.substr(1).split('#')[1]);
+            return param;
+        }
+
+        //显示未读消息数量
+        function loadNotView(){
+            $.ajax({
+                url :  urlPrefix+"/newMessageNum",
+                method : 'get',
+                xhrFields:{withCredentials:true},
+                success : function (result) {
+                    if(result.code == 200 && result.data.length>0){
+                        //显示不同类型消息未读数量
+                        $.each(result.data,function(index,obj){
+                            if(obj.type=="0"){
+                                $(".item[data-type='reply'] .notify-number")
+                                    .html(obj.notView).css({"display":"block"});
+                            }else if(obj.type=="1"){
+                                $(".item[data-type='love'] .notify-number")
+                                .html(obj.notView).css({"display":"block"});
+                            }else if(obj.type=="2"){
+                                $(".item[data-type='system'] .notify-number")
+                                    .html(obj.notView).css({"display":"block"});
+                            }else{
+                                if(obj.newMessageNum>0){
+                                    $(".item[data-type='whisper'] .notify-number")
+                                    .html(obj.newMessageNum).css({"display":"block"});
+                                }
+                                //判断用户是否设置不显示
+                                if(obj.userSetUpList.length>0){
+                                    $.each(obj.userSetUpList,function(i,o){
+                                        $(".item:eq("+o.typeId+") .notify-number").css({"display":"none"});
+                                    })
+                                }
+                            }
+                        });
+                    }
+                }
+            });
+        }
+
+        //加载通知
+        function loadNotice(param){
+            $.ajax({
+                url :  urlPrefix+"/get/notice/"+param,
+                method : 'get',
+                xhrFields:{withCredentials:true},
+                success : function (result) {
+                    if(result.data!=null && result.code == 200){
+                        if(result.data[0].type=="0"){
+                            replyMessage(result.data);
+                        }else if(result.data[0].type=="1"){
+                            loveMessage(result.data);
+                        }else if(result.data[0].type=="2"){
+                            systemMessage(result.data);
+                        }
+                    }
+                    $(".card[data-v-loading]").css({"display":"none"});//隐藏加载面板
+                }
+            });
+        }
+
+        //加载聊天记录
+        function loadNews(param){
+            $.ajax({
+                url :  urlPrefix+"/list/"+param+"/1578412684903",
+                method : 'get',
+                xhrFields:{withCredentials:true},
+                success : function (result) {
+                    if(result.data!=null && result.code == 200){
+                        myMessage(result.data);
+                    }
+                    $(".card[data-v-loading]").css({"display":"none"});//隐藏加载面板
+                }
+            });
+        }
 
         //回复消息
-        function replyMessage(){
-            var str='             <div class="reply">\n' +
-'                                    <div data-v-7 class="card reply-card">\n' +
-'                                        <div data-reply class="reply-item">\n' +
+        function replyMessage(data){
+            var str='<div class="reply">';
+            $.each(data,function(i,obj){
+                str+=                '<div data-v-7 class="card reply-card">\n' +
+'                                        <div data-reply class="reply-item" data-cid="'+obj.comment.goodsId+'">\n' +
 '                                            <div data-reply class="basic-list-item">\n' +
-'                                                <div class="left-box">\n' +
-'                                                    <img class="avatar" src="assets/corporate/img/tx004.png"/>\n' +
-'                                                </div>\n' +
+'                                                <a class="left-box" href="#" target="_blank">\n' +
+'                                                    <img class="avatar" src="'+userFaceImageUrl+obj.comment.userFace+'"/>\n' +
+'                                                </a>\n' +
 '                                                <div class="center-box">\n' +
 '                                                    <div class="line-1">\n' +
 '                                                        <span class="name-field">\n' +
-'                                                            <a>名字</a>\n' +
+'                                                            <a href="#" target="_blank">'+obj.comment.userName+'</a>\n' +
 '                                                        </span>\n' +
 '                                                        <span class="desc-field">\n' +
-'                                                            回复了我的评论\n' +
+'                                                            '+obj.title+'\n' +
 '                                                        </span>\n' +
 '                                                    </div>\n' +
 '                                                    <div class="line-2">\n' +
 '                                                        <div class="real-reply">\n' +
-'                                                            <div class="content-list">\n' +
-'                                                                <span class="text">回复</span>\n' +
-'                                                                <a class="at">@他的名字</a>\n' +
-'                                                                <span class="text">回复内容</span>\n' +
+'                                                            <div class="content-list">\n';                                                               
+                                                    if(obj.comment.grade=="3"){
+                                                        str+='  <span class="text">回复</span>\n'+
+                                                                '  <a class="at" href="#" target="_blank">@'+userName+'</a>';
+                                                    }                           
+                                                        str+='  <span class="text">'+obj.content+'</span>\n' +
 '                                                            </div>\n' +
-'                                                            <div class="orginal-reply">\n' +
-'                                                                我的名字：我评论的内容\n' +
-'                                                            </div>\n' +
+'                                                            <div class="orginal-reply">'+userName+' : '+obj.comment.content+'</div>' +
 '                                                        </div>\n' +
 '                                                    </div>\n' +
 '                                                    <div class="line-3">\n' +
 '                                                        <span class="time-filed">\n' +
-'                                                            <span class="time time-span">2020-2-2 10:10</span>\n' +
+'                                                            <span class="time time-span">'+obj.time+'</span>\n' +
 '                                                        </span>\n' +
 '                                                        <div class="action-field">\n' +
 '                                                            <span class="action-button">\n' +
@@ -607,70 +693,75 @@
 '                                                    </div>\n' +
 '                                                </div>\n' +
 '                                                <div class="right-box">\n' +
-'                                                    <div class="text-box">买家秀的内容</div>\n' +
+'                                                    <div class="text-box">'+obj.parentContent+'</div>\n' +
 '                                                </div>\n' +
 '                                            </div>\n' +
 '                                        </div>\n' +
-'                                    </div>\n' +
-'                                </div>';
-            $(".router-view[data-v-3]").append(str);
+'                                    </div>';
+            })
+            $(".router-view[data-v-3] div").remove();
+            $(".router-view[data-v-3]").append(str+'</div>');
             loadReplyBtn();
             loadDeleteBtn();
         }
 
         //点赞消息
-        function loveMessage() {
-            var str='<div class="love">\n' +
-'                                    <div data-v-7 class="card love-card">\n' +
+        function loveMessage(data) {
+            $(".router-view[data-v-3] div").remove();
+            var str='<div class="love">';
+            $.each(data,function(i,obj){
+                str+='                <div data-v-7 class="card love-card">\n' +
 '                                        <div data-love class="love-item">\n' +
 '                                            <div data-love class="basic-list-item">\n' +
 '                                                <div class="left-box">\n' +
-'                                                    <img class="avatar" src="assets/corporate/img/tx004.png"/>\n' +
+'                                                    <img class="avatar" src="'+userFaceImageUrl+obj.comment.userFace+'"/>\n' +
 '                                                </div>\n' +
 '                                                <div class="center-box">\n' +
 '                                                    <div class="line-1">\n' +
 '                                                        <span class="name-field">\n' +
-'                                                            <a>名字</a>\n' +
+'                                                            <a>'+obj.comment.userName+'</a>\n' +
 '                                                        </span>\n' +
 '                                                        <span class="desc-field">\n' +
-'                                                            赞了我的评论\n' +
+'                                                            '+obj.title+'\n' +
 '                                                        </span>\n' +
 '                                                    </div>\n' +
 '                                                    <div class="line-3">\n' +
 '                                                        <span class="time-filed">\n' +
-'                                                            <span class="time time-span">2020-2-2 10:10</span>\n' +
+'                                                            <span class="time time-span">'+obj.time+'</span>\n' +
 '                                                        </span>\n' +
 '                                                    </div>\n' +
 '                                                </div>\n' +
 '                                                <div class="right-box">\n' +
-'                                                    <div class="text-box">买家秀的内容</div>\n' +
+'                                                    <div class="text-box">'+obj.currentContent+'</div>\n' +
 '                                                </div>\n' +
 '                                            </div>\n' +
 '                                        </div>\n' +
-'                                    </div>\n' +
-'                                </div>';
-            $(".router-view[data-v-3]").append(str);
+'                                    </div>';
+            });
+            $(".router-view[data-v-3]").append(str+'</div>');
         }
 
         //系统消息
-        function systemMessage(){
-            $(".router-view[data-v-3]")
-                .append('<div class="system">'+
-                            '<div data-v-3 data-v-7 class="card system-item">\n' +
+        function systemMessage(data){
+            var str='<div class="system">';
+            $.each(data,function(i,obj){
+                str+='      <div data-v-3 data-v-7 class="card system-item">\n' +
 '                                    <div class="top">\n' +
-'                                        <span class="title">消息标题11111</span>\n' +
-'                                        <span class="time">2020年2月2日 10:10</span>\n' +
+'                                        <span class="title">'+obj.title+'</span>\n' +
+'                                        <span class="time">'+obj.time+'</span>\n' +
 '                                    </div>\n' +
 '                                    <div class="bottom">\n' +
-'                                        <span class="text">消息内容11111</span>\n' +
+'                                        <span class="text">'+obj.content+'</span>\n' +
 '                                    </div>\n' +
 '                                </div>'+
-                            '</div>');
-            
+                            '</div>';
+            });
+            $(".router-view[data-v-3] div").remove();
+            $(".router-view[data-v-3]").append(str);      
         }
 
         //我的消息
-        function myMessage(){
+        function myMessage(data){
             var str='<div data-v-5 class="card whisper">\n' +
                     '    <div class="list">\n' +
                     '        <div class="list-title">近期消息</div>\n' +
@@ -697,14 +788,15 @@
                     '            </a>\n' +
                     '            <div class="list-loading">\n' +
                     '                <div class="lds-spinner">\n' +
-                    '                    <i class="fa fa-spinner" aria-hidden="true"></i>\n' +
+                    '                    <i class="loading fa fa-spinner" aria-hidden="true"></i>\n' +
                     '                </div>\n' +
                     '            </div>\n' +
                     '            <div class="list-load-error">\n' +
-                    '                <span>加载失败</span>\n' +
+                    '                加载失败,<span class="btn">点击重试</span>\n' +
                     '            </div>\n' +
                     '        </div>\n' +
-                    '    </div>\n' +
+                    '    </div>\n' + 
+
                     '    <div class="dialog">\n' +
                     '        <div class="title">\n' +
                     '            <span>客服</span>\n' +
@@ -732,37 +824,14 @@
                     '            </div>\n' +
                     '        </div>\n' +
                     '    </div>\n' +
-                    '    <div class="dialog" style="display:none">\n' +
-                    '        <div class="title">\n' +
-                    '            <span>客服</span>\n' +
-                    '            <div class="action-menu">\n' +
-                    '                <div class="menu-list" style="display: none;">\n' +
-                    '                    <a class="">投诉客服</a>\n' +
-                    '                    <a class="">投诉客服</a>\n' +
-                    '                </div>\n' +
-                    '                <a class="icon-more"><i class="fa fa-angle-down" aria-hidden="true"></i></a>\n' +
-                    '            </div>\n' +
-                    '            \n' +
-                    '        </div>\n' +
-                    '        <div class="new-message-tip" style="display: none;">\n' +
-                    '            <span class="text">您有0条新消息</span>\n' +
-                    '        </div>\n' +
-                    '        <div class="send-box">\n' +
-                    '            <div class="input-box">\n' +
-                    '                <textarea class="textarea" placeholder="回复一下吧~" maxlength="100" autofocus="autofocus" escape="true"></textarea>\n' +
-                    '                <div class="indicator">\n' +
-                    '                    <span>0</span>/<span>100</span>\n' +
-                    '                </div>\n' +
-                    '            </div>\n' +
-                    '            <div class="right top">\n' +
-                    '                <button class="send-btn" name="send-btn">发送</button>\n' +
-                    '            </div>\n' +
-                    '        </div>\n' +
-                    '    </div>\n' +
+                        '<div class="placeholder">'+
+                            '<img class="placeholder-img" src="img/no_message.png">'+
+                            '<div class="tip">没有新的未读消息呢</div>'+
+                        '</div>'+
                     '</div>';
             $(".router-view[data-v-3]").append(str);
+            loadChatWindow($(".whisper[data-v-5] .dialog:eq(0)"),data);
             loadMyMessageBtnClick();
-            loadChatWindow($(".whisper[data-v-5] .dialog:eq(0)"));
         }
 
         //消息设置
@@ -834,11 +903,14 @@
             $(".router-view[data-v-3]").append(str);
         }
 
-        //消息栏变色
+        //消息栏点击事件
         function messageBarClick($btn){
+            //删除点击的消息数量
+            $btn.find(".notify-number").css({"display":"none"}).text("");
             $(".item[data-v-2]").css({"color":""});
             $btn.css({"color":"#2faee3"});
-            $(".space-right-top[data-v-3]").find("span").empty().append($btn.find("a").text());
+            $(".space-right-top[data-v-3]").find(".router-link-active")
+                .empty().append($btn.find("a").text()).attr("href",$btn.find("a").attr("href"));
         }
 
         //回复按钮事件
@@ -882,6 +954,7 @@
         //加载回复评论发送按钮点击事件
         function sendCommentBtn(){
             $(".reply-box[data-v-9] .send-button").off("click").on("click",function(){
+                //cont.trim().replace(/\n/g,"<br/>")
                 var $this=$(this);
                 $this.parent().parent().css({"display":"none"});
             })
@@ -951,7 +1024,7 @@
                 //根据下标显示点击的会话聊天窗口
                 $(".whisper[data-v-5] .dialog:eq("+index+")").css({"display":"flex"});
                 //重载当前聊天窗口
-                loadChatWindow($(".whisper[data-v-5] .dialog:eq("+index+")"));
+                //loadChatWindow($(".whisper[data-v-5] .dialog:eq("+index+")"));
 
             });
             //会话关闭按钮点击事件
@@ -990,53 +1063,29 @@
         }
 
         //重新加载单个聊天窗口
-        function loadChatWindow($this){
+        function loadChatWindow($this,data){
             //重载聊天内容
             $(".dialog .message-list").remove();
+            var str="";
             if($(".dialog .message-list").length<=0){
-                $this.children("div:eq(0)")
-                .after('      <div class="message-list">\n' +
-                    '            <div class="message-list-content message_cont" >\n' +
-                    '                <div class="msg-more">\n' +
-                    '                    <div class="no-more">没有更多消息了~</div>\n' +
-                    '                </div>\n' +
-                    '                <div class="msg-time">\n' +
-                    '                    <span class="time">2020年2月2日 12:12</span>\n' +
-                    '                </div>\n' +
-                    '                <div class="msg-item is-me">\n' +
-                    '                    <a target="_blank" class="avatar" \n' +
-                    '                        style="background-image: url(assets/corporate/img/tx004.png);"></a>\n' +
-                    '                    <div class="message">\n' +
-                    '                        <div class="message-content is-me not-img">雷好劲啊</div>\n' +
-                    '                    </div>\n' +
-                    '                </div>\n' +
-                    '                <div class="msg-item not-me">\n' +
-                    '                    <a target="_blank" class="avatar" \n' +
-                    '                        style="background-image: url(assets/corporate/img/tx004.png);"></a>\n' +
-                    '                    <div class="message">\n' +
-                    '                        <div class="message-content not-me not-img">收皮啦雷</div>\n' +
-                    '                    </div>\n' +
-                    '                </div>\n' +
-                    '                <div class="msg-item not-me">\n' +
-                    '                    <a target="_blank" class="avatar" \n' +
-                    '                        style="background-image: url(assets/corporate/img/tx004.png);"></a>\n' +
-                    '                    <div class="message img-padding">\n' +
-                    '                        <div class="message-content not-me">\n' +
-                    '                            <img class="image" src="assets/pages/img/message-nothing.png">\n' +
-                    '                        </div>\n' +
-                    '                    </div>\n' +
-                    '                </div>\n' +
-                    '                <div class="msg-item is-me">\n' +
-                    '                    <a target="_blank" class="avatar" \n' +
-                    '                        style="background-image: url(assets/corporate/img/tx004.png);"></a>\n' +
-                    '                    <div class="message img-padding">\n' +
-                    '                        <div class="message-content is-me">\n' +
-                    '                            <img class="image" src="assets/pages/img/message-nothing.png">\n' +
-                    '                        </div>\n' +
-                    '                    </div>\n' +
-                    '                </div>\n' +
-                    '            </div>\n' +
-                    '        </div>\n');
+                str+='<div class="message-list">\n' +
+                '        <div class="message-list-content message_cont" >';
+                str+=        '<div class="msg-more">\n' +
+            '                    <div class="no-more">没有更多消息了~</div>'+
+                                '<div class="loading"></div>'+ 
+                                '<div class="error">'+
+                                    '消息加载失败,'+'<span class="btn">点击查新加载</span>'+
+                                '</div>'+
+            '                </div>\n' +
+            '                <div class="msg-time">\n' +
+            '                    <span class="time">2020年2月2日 12:12</span>\n' +
+            '                </div>';
+                str+='   </div>\n' +
+                '     </div>\n';
+                $this.children("div:eq(0)").after(str);
+                addNews($this,data);
+                //让滚动条到最底部
+                $(".message_cont").scrollTop($(".message_cont")[0].scrollHeight); 
             }
             //重载表情和图片按钮
             $(".dialog .operation").remove();
@@ -1070,7 +1119,7 @@
                     position:"topRight",
                     icons: [{
                         name: "emoji",
-                        path: "emoji/1/bqfh",
+                        path: emojiUrl+"/1/bqfh",
                         maxNum: 50,
                         file: ".png",
                         placeholder: "{{alias}}",
@@ -1180,15 +1229,13 @@
                         }
                     },{
                         name: "经典表情",
-                        path: "emoji/qq/",
+                        path: emojiUrl+"/qq/",
                         maxNum: 91,
                         file: ".gif",
                         placeholder: "#qq_{alias}#"
                     }]
                 });
             }
-            //让滚动条到最底部
-            $(".message_cont").scrollTop($(".message_cont")[0].scrollHeight); 
         }
 
         //发送一条聊天消息要处理的事务
@@ -1217,12 +1264,63 @@
             }
         }
 
+        //处理聊天的图片大小
+        function imageAdaptation(imgName){
+            var imgWidth,imgHeight;
+            //在内存中生成一张图片获取size，赋值给真正的预览框
+            $("<img/>").attr("src",messageImageUrl+imgName).load(function() {
+                var FitWidth=400;//最大宽度
+                var FitHeight=250;//最大高度
+                imgWidth=this.width;
+                imgHeight=this.height;
+                if(imgWidth>FitWidth){//宽度是否超出
+                    imgHeight=(imgHeight*FitWidth)/imgWidth;//计算比例
+                    imgWidth=FitWidth;
+                }
+                if(imgHeight>FitHeight){//高度是否超出
+                    imgWidth=(imgWidth*FitHeight)/imgHeight;
+                    imgHeight=FitHeight;
+                }
+                $(".message-content[data-imgId='"+imgName+"'] .image")
+                    .attr("src",messageImageUrl+imgName)
+                    .css({"height":imgHeight,"width":imgWidth});
+            })
+        }
+
+        //添加聊天记录条目
+        function addNews($this,data){
+            $.each(data,function(i,obj){
+                var str="";
+                var itemClass=obj.authorId==userId?"is-me":"not-me";
+                var messageClass=obj.imgName=="NULL"?"":"img-padding";
+                var img
+                str='<div class="msg-item '+itemClass+'">\n' +
+    '                    <a target="_blank" class="avatar" \n' +
+    '                        style="background-image: url(assets/corporate/img/tx015.png);">'+
+                        '</a>'+
+    '                    <div class="message '+messageClass+'">\n';
+                if(obj.imgName=="NULL"){
+                    str+='   <div class="message-content '+itemClass+' not-img">'
+                                +obj.content+
+                            '</div>';
+                }else{
+                    str+='  <div class="message-content '+itemClass+' " data-imgId='+obj.imgName+'>'+
+                                '<img class="image" src=""/>'+
+                            '</div>';
+                }           
+                str+='   </div>\n' +
+                    '</div>';
+                $this.find(".message-list-content").append(str);
+                imageAdaptation(obj.imgName);
+            });
+        }
+
         //表情格式转码
         function emojiParse(){
             $(".message").removeData("plugin_emojiParse");
             $(".message").emojiParse({
                 icons: [{
-                    path: "emoji/1/bqfh",
+                    path: emojiUrl+"/1/bqfh",
                     file: ".png",
                     placeholder: "{{alias}}",
                     alias: {
@@ -1278,7 +1376,7 @@
                         50: "OK"
                     }
                 },{
-                    path: "emoji/qq/",
+                    path: emojiUrl+"/qq/",
                     file: ".gif",
                     placeholder: "#qq_{alias}#"
                 }]

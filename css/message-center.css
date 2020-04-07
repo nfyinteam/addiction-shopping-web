@@ -142,6 +142,12 @@ body{
     align-items: center;
     color: #6b757b;
 }
+.side-bar[data-v-2] .setting a{
+    line-height: 40px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
 .side-bar[data-v-2] .setting i{
     margin-right: 6px;
 }
@@ -235,7 +241,9 @@ body{
 .system-item[data-v-3] .text{
     word-break: break-word;
 }
-.space-right-bottom[data-v-3] .nothing,.space-right-bottom[data-v-3] .loading{
+.list_item_cont[data-v-3] .nothing,
+.list_item_cont[data-v-3] .loading,
+.card[data-v-loading] .loading{
     width: 100%;
     height: 256px;
     display: -webkit-box;
@@ -251,7 +259,7 @@ body{
 .space-right-bottom[data-v-3] .nothing img{
     height: 100%;
 }
-.space-right-bottom[data-v-3] .loading{
+.list_item_cont[data-v-3] .loading,.card[data-v-loading] .loading{
     height: 100px;
     position: relative;
 }
@@ -589,6 +597,7 @@ body{
     color: #fff;
     position: absolute;
     transition: width 200ms, height 200ms, top 200ms, right 200ms;
+    display: none;
 }
 
 .confirm-popup[data-v-0]{
@@ -859,7 +868,43 @@ body{
     align-items: stretch;
     height: 100%;
 }
-
+.whisper[data-v-5]  .placeholder{
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: none;
+}
+.whisper[data-v-5] .placeholder-img{
+    background-image: url("/img");
+    background-size: 402px 204px;
+    margin-bottom: 32px;
+    height: 204px;
+}
+.whisper[data-v-5]  .placeholder .tip{
+    color: #8896b8;
+    font-size: 14px;
+    line-height: 1.5em;
+}
 .whisper[data-v-5] .title{
     height: 36px;
     -ms-flex-negative: 0;
@@ -958,8 +1003,10 @@ body{
     color: #23ade5;
     min-height: 38px;
 }
-.whisper[data-v-5] .no-more{
+.whisper[data-v-5] .msg-more .no-more,
+.whisper[data-v-5] .msg-more .error{
     color: #999;
+    display: none;
 }
 .whisper[data-v-5] .new-message-tip{
     height: 0;
