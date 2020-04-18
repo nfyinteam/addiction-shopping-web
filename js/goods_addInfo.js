@@ -47,6 +47,7 @@ function init() {
         }
     });
 }
+var skuStock = 0;
 function addButton() {
     $('.goods-type-select').on('click', function () {
         $('.goods-type-selected').attr('class', 'goods-type-select');
@@ -54,8 +55,39 @@ function addButton() {
         var value = $(this).find("input[name='skuPrice']").val();
         var keyValue = $(this).text();
         skuId = $(this).find('input[name="skuId"]').val();
+        /*$.ajax({
+            url : urlPrefix+'/goodsAllInfo/' + goodId,
+            method : 'get',
+            success : function (result) {
+                reloadSku(result.data);
+                addButton();
+            }
+        });*/
         $('#good_price').text(value);
-        $('#sku-skuStock').text($(this).find("input[name='skuStock']").val());
+        skuStock = $(this).find("input[name='skuStock']").val();
+        $('#sku-skuStock').text(skuStock);
+        $('#skuNum').val(1);
+        var skuNum = 1;
+        $('#add-num').on('click', function () {
+            if(skuStock > skuNum){
+                skuNum++;
+                $('#skuNum').val(skuNum);
+            }
+        });
+        $('#minus-num').on('click', function () {
+            if(skuNum != 1){
+                skuNum--;
+                $('#skuNum').val(skuNum);
+            }
+        });
+        $('#skuNum').on('keyup', function () {
+            var num = $('#skuNum').val();
+            if(num > skuStock){
+                $('#skuNum').val(skuStock);
+            }else if(num <= 0){
+                $('#skuNum').val(1);
+            }
+        });
         for (var i = 0; i < $('.goods-type-selected').length; i++){
             var test = $('.goods-type-selected').slice(i,i + 1).text();
             if(i == 0){
@@ -66,11 +98,64 @@ function addButton() {
         }
     });
     $('#buy_now').on('click', function () {
-        if(skuId == null || skuId == ""){
-            alert("你还没有选择好商品");
-        }else{
-            window.open("buy-now.html?skuIds=" + skuId);
-        }
+        $.ajax({
+            url:urlPrefix+"/get/userInfo",
+            method:"get",
+            xhrFields:{
+                withCredentials:true
+            },
+            success: function(result){
+                if(result.code == 200){
+                    if(result.data != null){
+                        alert(result.data.userId);
+                        if(skuId == null || skuId == ""){
+                            alert("你还没有选择好商品");
+                        }else{
+                            var orderId = "";
+                            window.open("buy-now.html?orderId=" + orderId);
+                        }
+                    }else{
+                        $('#login').modal("show");
+                    }
+                }else{
+                    alert(result.message);
+                }
+            }
+        });
+    });
+}
+function reloadSku(data) {
+    $("#sku_relation").empty();
+    $.each(data.skuMap, function (key,values) {
+        var goodType = "";
+        $.each(values, function(index, value){
+            if(value.skuInfo.skuStock == 0){
+                goodType += '<li>' +
+                    '<div class="goods-num-zoo">' + value.valueName +
+                    '<input type="hidden" name="skuStock" value="' + value.skuInfo.skuStock + '"/>' +
+                    '<input type="hidden" name="skuPrice" value="' + value.skuInfo.skuPrice + '"/>' +
+                    '<input type="hidden" name="skuId" value="' + value.skuInfo.skuId + '"/>' +
+                    '</div>' +
+                    '</li>';
+            }else{
+                goodType += '<li>' +
+                    '<div class="goods-type-select">' + value.valueName +
+                    '<input type="hidden" name="skuStock" value="' + value.skuInfo.skuStock + '"/>' +
+                    '<input type="hidden" name="skuPrice" value="' + value.skuInfo.skuPrice + '"/>' +
+                    '<input type="hidden" name="skuId" value="' + value.skuInfo.skuId + '"/>' +
+                    '</div>' +
+                    '</li>';
+            }
+        });
+        $("#sku_relation").append(
+            '<div class="row" style="margin-left: 0px; margin-top: 10px;">' +
+            '<span class="goods-type-name">' + key + '</span>' +
+            '<ul class="goods-type">' +
+            goodType +
+            '</ul>' +
+            '</div>'
+        );
+        $('input[name="skuId"][value="' + skuId + '"]').parent().attr('class', 'goods-type-selected');
     });
 }
 function addInfo(data) {
@@ -101,6 +186,7 @@ function addInfo(data) {
                     '</li>';
             }
         });
+
         $("#sku_relation").append(
             '<div class="row" style="margin-left: 0px; margin-top: 10px;">' +
             '<span class="goods-type-name">' + key + '</span>' +
@@ -872,8 +958,11 @@ function loadCommentSubmitBtn($rplyBtn,byReplyName){
             '                                <span class="time">'+time+'</span>\n' +
             '                              </div>\n' +
             '                          </div>';
-        var commentData={"goodsId":goodId,"parentId":$btn.attr("data-parentCid"),
-            "bycId":$rplyBtn.attr("data-cid"),"content":replyCon,"time":time};
+            var commentData={"goodsId":goodId,
+                            "parentId":$btn.attr("data-parentCid"),
+                            "bycId":$rplyBtn.attr("data-cid"),
+                            "content":replyCon,"time":time,
+                            "receiveUserId":$rplyBtn.attr("data-userid")};
         $.ajax({
             url:urlPrefix+"/post/comment",
             method:"post",
@@ -887,7 +976,7 @@ function loadCommentSubmitBtn($rplyBtn,byReplyName){
                     emojiParse();
                     $(".reply-wrap .comment-send").remove();//删除发表评论框
                 }else{
-
+                    alert(result.message);
                 }
             }
         })

@@ -85,7 +85,7 @@
 			    }
 			    
 				.c-icon-account {
-				    background-image: url(//member-ssl.vipstatic.com/img/passport/sprites-hash-c9975078.png?4eaaf192);
+				    /* background-image: url(//member-ssl.vipstatic.com/img/passport/sprites-hash-c9975078.png?4eaaf192); */
 				    background-position: -504px -221px;
 				    width: 20px;
 				    height: 20px;
@@ -177,7 +177,7 @@
 				}
 				
 			.c-icon-password {
-			    background-image: url(//member-ssl.vipstatic.com/img/passport/sprites-hash-c9975078.png?4eaaf192);
+			    /* background-image: url(//member-ssl.vipstatic.com/img/passport/sprites-hash-c9975078.png?4eaaf192); */
 			    background-position: -528px -221px;
 			    width: 20px;
 			    height: 20px;
@@ -352,7 +352,7 @@
 			    -moz-user-select: none;
 			    -ms-user-select: none;
 			    user-select: none;
-			    background-image: url(//bootstrap.vipstatic.com/img/ui/sprite.png?d9eadd17);
+			
 			    background-position: -48px 0;
 			    width: 19px;
 			    height: 16px;

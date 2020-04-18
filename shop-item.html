@@ -68,12 +68,51 @@
     <link href="assets/pages/css/shopping-goods.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/build.css">
     <link rel="stylesheet" type="text/css" href="css/pagination.css">
+    <link rel="stylesheet" type="text/css" href="css/login-mid.css">
     <!-- Theme styles END -->
 </head>
 <!-- Head END -->
 
 <!-- Body BEGIN -->
 <body class="ecommerce">
+<!-- 登录框 -->
+<div class="modal fade bs-example-modal-sm" id="login" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">
+                    TOPYIN 登录
+                    <button type="button" id="login-close" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">
+                        <i class="fa fa-close"></i>
+                    </span>
+                    </button>
+                </h4>
+            </div>
+            <div class="modal-body">
+                <form id="login-form" class="form-inline">
+                    <div class="form-group">
+                        <label>账号：</label>
+                        <input type="text" class="form-control" name="userId" placeholder="手机号或邮箱">
+                    </div>
+                    <div class="form-group">
+                        <label>密码：</label>
+                        <input type="passWord" class="form-control" name="passWord" placeholder="密码">
+                    </div>
+                    <div class="form-group">
+                        <a href="#">忘记密码？</a>
+                        <a href="#" style="position: relative; left: 120%;">注册</a>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <button type="button" id="btn-submit-login" class="btn btn-primary"
+                                style="width: 150px;margin-left: 40px;">登 录</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- 最顶部 -->
 <div class="pre-header">
     <div style="margin: 0px 30px;">
@@ -84,6 +123,8 @@
                         <a class="site-logo" href="shop-index.html">
                             <img src="assets/corporate/img/logos/logo.png" height="35">
                         </a>
+                        <button id="open-login" type="button" style="display: none;"
+                                data-toggle="modal" data-target="#login">登录</button>
                     </li>
                 </ul>
             </div>
@@ -471,12 +512,27 @@
                                     <strong><span>￥</span><span id="good_price"></span></strong>
                                     <!--<em>￥<span>62.00</span></em>-->
                                 </div>
-                                <div class="availability">
-                                    库存: <strong id="sku-skuStock"></strong>
-                                </div>
                             </div>
                             <div class="description">
                                 <p id="spu_remark"></p>
+                            </div>
+                            <div class="product-good-num">
+                                <span class="goods-type-name">数量</span>
+                                <ul class="goods-type">
+                                    <li>
+                                        <a href="#" id="minus-num">
+                                            <i class="fa fa-chevron-left"></i>
+                                        </a>
+                                        <input type="text" id="skuNum" onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"
+                                               style="font-size: 18px; width: 40px; text-align: center;" value="0"/>
+                                        <a href="#" id="add-num">
+                                            <i class="fa fa-chevron-right"></i>
+                                        </a>
+                                    </li>
+                                    <li style="margin-left: 20px; margin-top: 5px;">
+                                        库存: <strong id="sku-skuStock">0</strong>
+                                    </li>
+                                </ul>
                             </div>
                             <div class="product-page-options" id="sku_relation">
 
@@ -994,6 +1050,7 @@
 <script src="js/jquery.pagination.js"></script>
 <!-- 商品信息加载 -->
 <script type="text/javascript" src="js/goods_addInfo.js"></script>
+<script type="text/javascript" src="js/login-mid.js"></script>
 </body>
 <!-- END BODY -->
 </html>

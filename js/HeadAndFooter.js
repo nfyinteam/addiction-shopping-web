@@ -10,12 +10,12 @@ $.ajax({
     xhrFields:{
         withCredentials:true
     },
-    success:function(result){
+    success: function(result){
         if(result.code==200){
-            if(result.data!=null){
+            if(result.data != null){
                 sessionStorage.setItem("userId",result.data.userId);
                 sessionStorage.setItem("userName",result.data.userName);
-                sessionStorage.setItem("userFace",result.data.userFace);
+                sessionStorage.setItem("userFace",result.data.face.faceFile);
                 $(".dropdown .userName").text(result.data.userName).off("click").on("click",function(){
                     //window.open('.html');//跳转到用户中心
                 });

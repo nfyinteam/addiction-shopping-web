@@ -1,0 +1,17 @@
+#login .modal-header{
+    background-color: #e69455;
+}
+#login .modal-header h4, login-close{
+    font-size: 20px;
+    font-weight: bolder;
+    color: #f5f5f5;
+}
+#login .modal-body{
+
+}
+#login-form{
+    margin-left: 25px;
+}
+#login-form .form-group{
+    margin-top: 10px;
+}

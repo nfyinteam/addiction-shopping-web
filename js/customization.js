@@ -1,11 +1,12 @@
-//var urlPrefix="http://www.88k88.cn/adminapi";
-var urlPrefix="http:/127.0.0.1:8080/adminapi";
+var urlPrefix="http://www.88k88.cn/adminapi";
+//var urlPrefix="http:/localhost:8081/adminapi";
 loadPageRegion();
 
 function loadPageRegion(){
     $.ajax({
         url:urlPrefix+"/list_pageRegion",
         method:"get",
+        xhrFields:{withCredentials:true},
         success:function(result){	
             if(result.code==200){
                 $.each(result.data,function(i,obj){
@@ -48,6 +49,7 @@ sortable('.editable-region')[0].addEventListener('sortstop', function(e) {
             data: JSON.stringify(regionList),
             dataType:"json",  
             contentType : 'application/json;charset=utf-8',  
+            xhrFields:{withCredentials:true},
             success:function(result){
                 if(result.code==200){
                     
@@ -119,6 +121,7 @@ function submitRegion(regionList){
         data: JSON.stringify(regionList),
         dataType:"json",  
         contentType : 'application/json;charset=utf-8',  
+        xhrFields:{withCredentials:true},
         success:function(result){
             if(result.code==200){
                 alert(result.message);
@@ -161,6 +164,7 @@ $(".add_region").off("change").on('change',function() {
         $.ajax({
             url:urlPrefix+"/add_pageRegion/"+region_sign+"/"+index+"/"+editNumber,
             method:"post",
+            xhrFields:{withCredentials:true},
             success:function(result){
                 if(result.code==200){
                     $this.val("");//清空单选值				
@@ -205,6 +209,7 @@ function loadDeleteRegion(){
             data: JSON.stringify(regionList), 
             dataType:"json",  
             contentType :'application/json;charset=utf-8',  
+            xhrFields:{withCredentials:true},
             success:function(result){
                 if(result.code==200){
                     $btn.parent().parent().remove();
@@ -360,6 +365,7 @@ function updateEditRegionInfo(infoList){
         data: JSON.stringify(infoList),//将对象序列化成JSON字符串  
         dataType:"json",  
         contentType : 'application/json;charset=utf-8', //设置请求头信息  
+        xhrFields:{withCredentials:true},
         success:function(result){	
             $("#modal_imgae").modal("hide");
         }
@@ -383,6 +389,7 @@ function updateEditRegionImage($img,prId,index,link){
             cache: false,
             processData: false,
             contentType: false,
+            xhrFields:{withCredentials:true},
             success:function(result){
                 $img.attr("href",link);
                 if($img.find("img").length>0){

@@ -51,10 +51,11 @@ function loadSubmitEvaluateBtn(){
     for(var i=0;i<picArr.length;i++){
       uploadForm.append("imageFile",picArr[i]);
     }
+    uploadForm.append("goodsId","");//商品编号
     uploadForm.append("orderId","");//订单编号
     uploadForm.append("comScore",$(".upload-form .rateit-range").attr("aria-valuenow"));
     $.ajax({
-      url:urlPrefix+"/add_buyShow",
+      url:urlPrefix+"/post/buyShow",
       method:"post",
       data:uploadForm,
       cache: false,
